@@ -1,0 +1,765 @@
+"","Entry","gene","loucs","...4","OG","number_select","branch_select","fcc","vote_percentage"
+"1","P19657","PMA2","YPL036W","Plasma membrane H+-ATPase; isoform of Pma1p, involved in pumping protons out of the cell; regulator of cytoplasmic pH and plasma membrane potential","OG1171",19,"['Arxula_adeninivorans_Seq_770', 'Candida_auris_Seq_1164', 'Candida_orthopsilosis_Seq_1919', 'Kluyveromyces_marxianus_Seq_3424', 'Nakaseomyces_nivariensis_Seq_902', 'Node43', 'Node45', 'Node49', 'Node51', 'Node6', 'Node77', 'Node80', 'Saprochaete_clavata_Seq_4897', 'yHAB143_Kazachstania_siamensis_Seq_5094', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1029', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3881', 'yHMPu5000034933_Kuraishia_molischiana_Seq_620', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_3256', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_5340']",6.69e-06,NA
+"2","P05694","MET6","YER091C","Cobalamin-independent methionine synthase; involved in methionine biosynthesis and regeneration; requires a minimum of two glutamates on the methyltetrahydrofolate substrate, similar to bacterial metE homologs","OG1813",18,"['Arxula_adeninivorans_Seq_290', 'Candida_auris_Seq_4738', 'Candida_orthopsilosis_Seq_1561', 'Kluyveromyces_marxianus_Seq_4827', 'Node10', 'Node12', 'Node15', 'Node29', 'Node52', 'Node54', 'Node58', 'Node60', 'Saprochaete_clavata_Seq_4554', 'yHAB143_Kazachstania_siamensis_Seq_1376', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_716', 'yHMPu5000034885_Ogataea_zsoltii_Seq_5124', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4586', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_1229']",0.001180431,4.347826087
+"3","P07149","FAS1","YKL182W","Beta subunit of fatty acid synthetase; complex catalyzes the synthesis of long-chain saturated fatty acids; contains acetyltransacylase, dehydratase, enoyl reductase, malonyl transacylase, and palmitoyl transacylase activities","OG1463",17,"['Arxula_adeninivorans_Seq_2120', 'Candida_orthopsilosis_Seq_117', 'Eremothecium_sinecaudum_Seq_1216', 'Kluyveromyces_marxianus_Seq_3803', 'Node12', 'Node55', 'Node56', 'Node58', 'Node61', 'Node63', 'Node71', 'Node87', 'yHAB143_Kazachstania_siamensis_Seq_1306', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2611', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3301', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4902', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_1634']",0.000294002,3.260869565
+"4","P07806","VAS1","YGR094W","Mitochondrial and cytoplasmic valyl-tRNA synthetase; human homolog VARS2 implicated in mitochondrial diseases, can partially complement yeast null mutant","OG1332",17,"['Candida_auris_Seq_644', 'Candida_orthopsilosis_Seq_1879', 'Node25', 'Node26', 'Node31', 'Node33', 'Node56', 'Node63', 'Node64', 'Node67', 'Node89', 'Node91', 'yHAB143_Kazachstania_siamensis_Seq_1835', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1545', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1835', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3284', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_349']",0.000290447,3.260869565
+"5","P14540","FBA1","YKL060C","Fructose 1,6-bisphosphate aldolase; required for glycolysis and gluconeogenesis; catalyzes conversion of fructose 1,6 bisphosphate to glyceraldehyde-3-P and dihydroxyacetone-P; locates to mitochondrial outer surface upon oxidative stress; N-terminally propionylated in vivo","OG1432",17,"['Arxula_adeninivorans_Seq_3842', 'Candida_orthopsilosis_Seq_3657', 'Eremothecium_coryli_Seq_960', 'Kluyveromyces_marxianus_Seq_3920', 'Nakaseomyces_bracarensis_Seq_3286', 'Nakaseomyces_nivariensis_Seq_928', 'Node15', 'Node19', 'Node34', 'Node42', 'Node72', 'yHAB143_Kazachstania_siamensis_Seq_2135', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2817', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3820', 'yHMPu5000034933_Kuraishia_molischiana_Seq_5239', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_1045', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_1690']",0.00942789,36.95652174
+"6","P19097","FAS2","YPL231W","Alpha subunit of fatty acid synthetase; complex catalyzes the synthesis of long-chain saturated fatty acids; contains the acyl-carrier protein domain and beta-ketoacyl reductase, beta-ketoacyl synthase and self-pantetheinylation activities","OG1316",17,"['Arxula_adeninivorans_Seq_738', 'Candida_auris_Seq_1018', 'Eremothecium_coryli_Seq_1611', 'Kluyveromyces_marxianus_Seq_2666', 'Node14', 'Node16', 'Node19', 'Node22', 'Node36', 'Node60', 'Node63', 'Saprochaete_clavata_Seq_138', 'yHAB143_Kazachstania_siamensis_Seq_2226', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2070', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5148', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2618', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_3779']",0.000184364,NA
+"7","P00560","PGK1","YCR012W",NA,"OG1424",16,"['Candida_auris_Seq_3822', 'Eremothecium_coryli_Seq_1096', 'Kluyveromyces_marxianus_Seq_4108', 'Node28', 'Node29', 'Node32', 'Node50', 'Node72', 'Node73', 'Node75', 'Node9', 'Saprochaete_clavata_Seq_3786', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3093', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2707', 'yHMPu5000034933_Kuraishia_molischiana_Seq_578', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_6225']",0.002229579,10.86956522
+"8","P00358","TDH2","YJR009C",NA,"OG1145",15,"['Arxula_adeninivorans_Seq_4255', 'Candida_orthopsilosis_Seq_1929', 'Eremothecium_sinecaudum_Seq_863', 'Nakaseomyces_bracarensis_Seq_1480', 'Node13', 'Node32', 'Node52', 'Node55', 'Node71', 'yHAB143_Kazachstania_siamensis_Seq_1846', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2390', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1358', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2412', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2660', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_2476']",0.008170192,77.17391304
+"9","P08417","FUM1","YPL262W",NA,"OG1218",15,"['Arxula_adeninivorans_Seq_5556', 'Candida_auris_Seq_1466', 'Candida_orthopsilosis_Seq_3184', 'Kluyveromyces_marxianus_Seq_4203', 'Node29', 'Node30', 'Node35', 'Node41', 'Node45', 'Node55', 'Node59', 'yHAB143_Kazachstania_siamensis_Seq_3731', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_4843', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2821', 'yHMPu5000034933_Kuraishia_molischiana_Seq_876']",7.54e-06,NA
+"10","P39708","GDH3","YAL062W",NA,"OG1892",15,"['Arxula_adeninivorans_Seq_1794', 'Candida_auris_Seq_3179', 'Candida_orthopsilosis_Seq_636', 'Kluyveromyces_marxianus_Seq_1693', 'Node30', 'Node34', 'Node37', 'Node65', 'Node67', 'Node69', 'Ogataea_polymorpha_Seq_3572', 'yHAB143_Kazachstania_siamensis_Seq_439', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2324', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3147', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2072']",3.42e-06,NA
+"11","P39954","SAH1","YER043C",NA,"OG1691",15,"['Arxula_adeninivorans_Seq_1110', 'Candida_auris_Seq_4782', 'Candida_orthopsilosis_Seq_2929', 'Eremothecium_coryli_Seq_2460', 'Eremothecium_sinecaudum_Seq_2412', 'Kluyveromyces_marxianus_Seq_3399', 'Node36', 'Node40', 'Node68', 'Node70', 'Node71', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3739', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_401', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4314', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_117']",3.39e-06,NA
+"12","P52489","PYK2","YOR347C",NA,"OG1299",15,"['Arxula_adeninivorans_Seq_1758', 'Candida_auris_Seq_2142', 'Candida_orthopsilosis_Seq_2354', 'Eremothecium_sinecaudum_Seq_2321', 'Kluyveromyces_marxianus_Seq_4989', 'Node10', 'Node19', 'Node22', 'Node53', 'Node55', 'Node57', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2255', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3634', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4846', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_3482']",0.001127115,NA
+"13","P07251","ATP1","YBL099W",NA,"OG1533",14,"['Arxula_adeninivorans_Seq_2442', 'Candida_auris_Seq_4619', 'Candida_orthopsilosis_Seq_1665', 'Kluyveromyces_marxianus_Seq_4605', 'Node3', 'Node6', 'Node85', 'Node9', 'Node91', 'Ogataea_polymorpha_Seq_867', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_171', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5342', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_3293', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_6895']",4.01e-06,NA
+"14","P46655","GUS1","YGL245W",NA,"OG1512",14,"['Arxula_adeninivorans_Seq_228', 'Eremothecium_sinecaudum_Seq_624', 'Kluyveromyces_marxianus_Seq_3586', 'Node2', 'Node23', 'Node3', 'Node32', 'Node5', 'Node73', 'Node77', 'yHAB143_Kazachstania_siamensis_Seq_2091', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2439', 'yHMPu5000034885_Ogataea_zsoltii_Seq_940', 'yHMPu5000034933_Kuraishia_molischiana_Seq_5126']",0.000594786,2.173913043
+"15","P00942","TPI1","YDR050C",NA,"OG2197",13,"['Candida_auris_Seq_233', 'Kluyveromyces_marxianus_Seq_4115', 'Node25', 'Node26', 'Node28', 'Node33', 'Node45', 'Node74', 'Node75', 'Node78', 'yHAB143_Kazachstania_siamensis_Seq_265', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2130', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3949']",1.78e-05,NA
+"16","P00950","GPM1","YKL152C",NA,"OG2794",13,"['Candida_auris_Seq_2392', 'Candida_orthopsilosis_Seq_3039', 'Eremothecium_sinecaudum_Seq_2966', 'Kluyveromyces_marxianus_Seq_1081', 'Nakaseomyces_bracarensis_Seq_1410', 'Node1', 'Node11', 'Node12', 'Node15', 'Node41', 'Node43', 'Node44', 'Node47']",0.001526608,14.13043478
+"17","P07256","COR1","YBL045C",NA,"OG4150",13,"['Candida_auris_Seq_1481', 'Candida_orthopsilosis_Seq_2288', 'Eremothecium_sinecaudum_Seq_1357', 'Kluyveromyces_marxianus_Seq_747', 'Node14', 'Node38', 'Node39', 'Node42', 'Node44', 'Node65', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_440', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2387', 'yHMPu5000034933_Kuraishia_molischiana_Seq_5047']",0.000160329,NA
+"18","P09436","ILS1","YBL076C",NA,"OG1811",13,"['Arxula_adeninivorans_Seq_5103', 'Candida_orthopsilosis_Seq_1364', 'Node24', 'Node25', 'Node3', 'Node55', 'Node62', 'Node67', 'Node69', 'yHAB143_Kazachstania_siamensis_Seq_4009', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_4542', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4875', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1904']",0.000538458,1.086956522
+"19","P38708","YHR020W","YHR020W",NA,"OG1662",13,"['Candida_auris_Seq_1286', 'Eremothecium_sinecaudum_Seq_3611', 'Kluyveromyces_marxianus_Seq_1139', 'Nakaseomyces_nivariensis_Seq_1343', 'Node14', 'Node15', 'Node17', 'Node20', 'Node36', 'Node87', 'Saprochaete_clavata_Seq_238', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_4020', 'yHMPu5000034933_Kuraishia_molischiana_Seq_334']",0.001892526,9.782608696
+"20","P38720","GND1","YHR183W",NA,"OG1488",13,"['Arxula_adeninivorans_Seq_5854', 'Candida_orthopsilosis_Seq_3179', 'Kluyveromyces_marxianus_Seq_4323', 'Nakaseomyces_nivariensis_Seq_5143', 'Node30', 'Node62', 'Node69', 'Node89', 'Node91', 'yHAB143_Kazachstania_siamensis_Seq_5064', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5962', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2160', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2391']",0.000100083,NA
+"21","P12709","PGI1","YBR196C",NA,"OG2038",12,"['Arxula_adeninivorans_Seq_2497', 'Candida_auris_Seq_4572', 'Candida_orthopsilosis_Seq_4632', 'Kluyveromyces_marxianus_Seq_1303', 'Node31', 'Node33', 'Node52', 'Node53', 'Node74', 'Node78', 'yHAB143_Kazachstania_siamensis_Seq_167', 'yHMPu5000034933_Kuraishia_molischiana_Seq_753']",0.000811136,3.260869565
+"22","P26637","CDC60","YPL160W",NA,"OG1501",12,"['Arxula_adeninivorans_Seq_3882', 'Candida_auris_Seq_573', 'Candida_orthopsilosis_Seq_1565', 'Node24', 'Node56', 'Node6', 'Node64', 'Node82', 'Node87', 'Node91', 'yHAB143_Kazachstania_siamensis_Seq_5107', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_660']",0.000403345,18.47826087
+"23","P49090","ASN2","YGR124W",NA,"OG1675",12,"['Candida_auris_Seq_2937', 'Candida_orthopsilosis_Seq_4677', 'Node24', 'Node47', 'Node48', 'Node51', 'Node72', 'Node74', 'Node77', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2528', 'yHMPu5000034885_Ogataea_zsoltii_Seq_173', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4456']",4.74e-05,NA
+"24","P09624","LPD1","YFL018C",NA,"OG1629",11,"['Arxula_adeninivorans_Seq_1345', 'Candida_auris_Seq_915', 'Candida_orthopsilosis_Seq_4631', 'Kluyveromyces_marxianus_Seq_3235', 'Node42', 'Node52', 'Node61', 'Node93', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_6072', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3080', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1328']",2.17e-05,NA
+"25","P12695","LAT1","YNL071W",NA,"OG2071",11,"['Arxula_adeninivorans_Seq_3286', 'Candida_orthopsilosis_Seq_1515', 'Kluyveromyces_marxianus_Seq_2780', 'Node25', 'Node29', 'Node48', 'Node66', 'Node84', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3681', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_1168', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_3810']",1.39e-05,NA
+"26","P15019","TAL1","YLR354C",NA,"OG1667",11,"['Candida_orthopsilosis_Seq_1418', 'Kluyveromyces_marxianus_Seq_1359', 'Node59', 'Node62', 'Node80', 'Node83', 'Node84', 'Node87', 'yHAB143_Kazachstania_siamensis_Seq_1012', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4358', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4695']",0.006949628,41.30434783
+"27","P15703","BGL2","YGR282C",NA,"OG2859",11,"['Candida_orthopsilosis_Seq_3359', 'Kluyveromyces_marxianus_Seq_978', 'Node36', 'Node39', 'Node41', 'Node56', 'Node58', 'yHAB143_Kazachstania_siamensis_Seq_1018', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2170', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4309', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_4823']",3.16e-06,NA
+"28","P17505","MDH1","YKL085W",NA,"OG1835",11,"['Arxula_adeninivorans_Seq_701', 'Candida_orthopsilosis_Seq_633', 'Kluyveromyces_marxianus_Seq_3129', 'Node35', 'Node5', 'Node78', 'Node82', 'Saprochaete_clavata_Seq_3829', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1995', 'yHMPu5000034933_Kuraishia_molischiana_Seq_44', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_310']",3.29e-05,NA
+"29","P38972","ADE6","YGR061C",NA,"OG1774",11,"['Node12', 'Node38', 'Node39', 'Node70', 'Node73', 'Node75', 'Node78', 'Node82', 'Node84', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_5132', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3183']",0.000677913,5.434782609
+"30","P41940","PSA1","YDL055C",NA,"OG1446",11,"['Candida_orthopsilosis_Seq_395', 'Nakaseomyces_bracarensis_Seq_4462', 'Nakaseomyces_nivariensis_Seq_2408', 'Node16', 'Node21', 'Node3', 'Node79', 'Node80', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3275', 'yHMPu5000034885_Ogataea_zsoltii_Seq_1813', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_1516']",1.95e-05,NA
+"31","P20967","KGD1","YIL125W",NA,"OG1585",10,"['Candida_orthopsilosis_Seq_3679', 'Node16', 'Node44', 'Node66', 'Node81', 'Node82', 'Node84', 'Node87', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3525', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2013']",3.4e-06,NA
+"32","P28240","ICL1","YER065C",NA,"OG2099",10,"['Candida_auris_Seq_4070', 'Candida_orthopsilosis_Seq_1034', 'Node50', 'Node52', 'Node59', 'Node65', 'Node73', 'Node79', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3562', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2057']",9.46e-06,NA
+"33","P32288","GLN1","YPR035W",NA,"OG1537",10,"['Candida_orthopsilosis_Seq_3478', 'Node23', 'Node29', 'Node33', 'Node61', 'Node63', 'Node69', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1415', 'yHMPu5000034933_Kuraishia_molischiana_Seq_942', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2404']",0.000260835,2.173913043
+"34","P40825","ALA1","YOR335C",NA,"OG1586",10,"['Arxula_adeninivorans_Seq_5217', 'Kluyveromyces_marxianus_Seq_4041', 'Node30', 'Node39', 'Node68', 'Node69', 'Node7', 'Node71', 'Node76', 'yHAB143_Kazachstania_siamensis_Seq_1112']",0.004321063,31.52173913
+"35","P47912","FAA4","YMR246W",NA,"OG1240",10,"['Node13', 'Node43', 'Node47', 'Node49', 'Node56', 'Node60', 'Node87', 'Ogataea_polymorpha_Seq_3466', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_4056', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3673']",3.32e-06,NA
+"36","Q06817","GRS2","YPR081C",NA,"OG1550",10,"['Arxula_adeninivorans_Seq_601', 'Kluyveromyces_marxianus_Seq_2695', 'Node23', 'Node25', 'Node28', 'Node33', 'Node51', 'Node67', 'Node74', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1595']",0.002171682,15.2173913
+"37","P04801","THS1","YIL078W",NA,"OG1771",9,"['Nakaseomyces_bracarensis_Seq_4457', 'Node11', 'Node3', 'Node41', 'Node51', 'Node82', 'Node9', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4926', 'yHMPu5000034933_Kuraishia_molischiana_Seq_895']",0.000350905,2.173913043
+"38","P10963","PCK1","YKR097W",NA,"OG1881",9,"['Candida_orthopsilosis_Seq_549', 'Kluyveromyces_marxianus_Seq_2023', 'Node1', 'Node30', 'Node49', 'Node50', 'Node54', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1297', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1843']",3.39e-06,NA
+"39","P11154","PYC1","YGL062W",NA,"OG1313",9,"['Arxula_adeninivorans_Seq_1695', 'Node11', 'Node21', 'Node23', 'Node33', 'Node65', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1370', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3676', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2804']",0.000354575,3.260869565
+"40","P22768","ARG1","YOL058W",NA,"OG1943",9,"['Kluyveromyces_marxianus_Seq_1314', 'Node4', 'Node47', 'Node48', 'Node54', 'Node59', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_680', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3583', 'yHMPu5000034885_Ogataea_zsoltii_Seq_238']",3.39e-06,NA
+"41","P38999","LYS9","YNR050C",NA,"OG1935",9,"['Arxula_adeninivorans_Seq_5440', 'Candida_auris_Seq_943', 'Kluyveromyces_marxianus_Seq_731', 'Node1', 'Node56', 'Node68', 'Node69', 'yHAB143_Kazachstania_siamensis_Seq_4472', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4674']",2.72e-06,NA
+"42","P39522","ILV3","YJR016C",NA,"OG1445",9,"['Candida_auris_Seq_4531', 'Node11', 'Node29', 'Node36', 'Node7', 'Node72', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1891', 'yHMPu5000034885_Ogataea_zsoltii_Seq_1600', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3794']",0.000104086,1.086956522
+"43","P53312","LSC2","YGR244C",NA,"OG2409",9,"['Arxula_adeninivorans_Seq_3509', 'Candida_auris_Seq_4545', 'Candida_orthopsilosis_Seq_4928', 'Kluyveromyces_marxianus_Seq_4484', 'Node32', 'Node60', 'Node75', 'Node93', 'yHMPu5000034933_Kuraishia_molischiana_Seq_5479']",2.41e-06,NA
+"44","Q00711","SDH1","YKL148C",NA,"OG1275",9,"['Arxula_adeninivorans_Seq_5040', 'Candida_orthopsilosis_Seq_3291', 'Node78', 'Node80', 'Node83', 'Node89', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_572', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4101', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1701']",4.22e-06,NA
+"45","Q12074","SPE3","YPR069C",NA,"OG2508",9,"['Arxula_adeninivorans_Seq_5593', 'Node12', 'Node15', 'Node20', 'Node39', 'Node53', 'yHAB143_Kazachstania_siamensis_Seq_872', 'yHMPu5000034933_Kuraishia_molischiana_Seq_5306', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_7341']",2.25e-06,NA
+"46","P07257","QCR2","YPR191W",NA,"OG2006",8,"['Candida_auris_Seq_3656', 'Node11', 'Node46', 'Node48', 'Node76', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2369', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3424', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_518']",8.18e-05,NA
+"47","P07263","HTS1","YPR033C",NA,"OG1983",8,"['Node13', 'Node54', 'Node55', 'Node58', 'Node81', 'Node86', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_408', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2965']",0.000216545,1.086956522
+"48","P07284","SES1","YDR023W",NA,"OG1843",8,"['Arxula_adeninivorans_Seq_4261', 'Kluyveromyces_marxianus_Seq_1712', 'Node36', 'Node5', 'Node58', 'Node61', 'Node63', 'yHAB143_Kazachstania_siamensis_Seq_504']",0.002587777,1.086956522
+"49","P08536","MET3","YJR010W",NA,"OG2365",8,"['Node2', 'Node21', 'Node79', 'Node82', 'yHAB143_Kazachstania_siamensis_Seq_4491', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2118', 'yHMPu5000034885_Ogataea_zsoltii_Seq_1016', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1017']",1.09e-05,NA
+"50","P15180","KRS1","YDR037W",NA,"OG1742",8,"['Arxula_adeninivorans_Seq_697', 'Kluyveromyces_marxianus_Seq_3853', 'Node1', 'Node27', 'Node63', 'Node90', 'Node93', 'yHAB143_Kazachstania_siamensis_Seq_4933']",0.000949887,17.39130435
+"51","P32861","UGP1","YKL035W",NA,"OG1671",8,"['Node31', 'Node34', 'Node7', 'Node80', 'Node83', 'yHAB143_Kazachstania_siamensis_Seq_5026', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2011', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3682']",0.000113107,NA
+"52","P33327","GDH2","YDL215C",NA,"OG1551",8,"['Node1', 'Node14', 'Node3', 'Node59', 'Node61', 'Node65', 'Node67', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3213']",3.13e-06,NA
+"53","P41338","ERG10","YPL028W",NA,"OG1897",8,"['Candida_auris_Seq_69', 'Node35', 'Node38', 'Node41', 'Node5', 'Node71', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5384', 'yHMPu5000034933_Kuraishia_molischiana_Seq_368']",0.000129641,1.086956522
+"54","P47169","MET5","YJR137C",NA,"OG1597",8,"['Candida_auris_Seq_2550', 'Node22', 'Node23', 'Node42', 'Node44', 'Node71', 'Node74', 'Node9']",6.04e-06,NA
+"55","P54113","ADE16","YLR028C",NA,"OG1322",8,"['Arxula_adeninivorans_Seq_4681', 'Kluyveromyces_marxianus_Seq_929', 'Node23', 'Node27', 'Node33', 'Node39', 'Node46', 'yHAB143_Kazachstania_siamensis_Seq_3687']",0.000102658,NA
+"56","P54839","ERG13","YML126C",NA,"OG1904",8,"['Arxula_adeninivorans_Seq_5152', 'Node3', 'Node34', 'Node4', 'Node7', 'Node76', 'Node80', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_868']",2.59e-05,NA
+"57","Q12680","GLT1","YDL171C",NA,"OG1589",8,"['Node1', 'Node17', 'Node29', 'Node73', 'yHAB143_Kazachstania_siamensis_Seq_2656', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1528', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4613', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_7096']",0.000510806,1.086956522
+"58","P00044","CYC1","YJR048W",NA,"OG3790",7,"['Candida_orthopsilosis_Seq_4477', 'Nakaseomyces_bracarensis_Seq_1271', 'Node41', 'Node43', 'Node89', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1685', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_5458']",3.88e-06,NA
+"59","P00958","MES1","YGR264C",NA,"OG1706",7,"['Node25', 'Node55', 'Node70', 'Node71', 'Node76', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4092', 'yHMPu5000034933_Kuraishia_molischiana_Seq_240']",1.1e-05,NA
+"60","P04802","DPS1","YLL018C",NA,"OG2433",7,"['Arxula_adeninivorans_Seq_5601', 'Candida_auris_Seq_5149', 'Node1', 'Node2', 'Node23', 'Node63', 'Node80']",0.000840548,11.95652174
+"61","P08524","ERG20","YJL167W",NA,"OG2156",7,"['Node22', 'Node45', 'Node70', 'Node81', 'Node84', 'Node87', 'yHMPu5000034933_Kuraishia_molischiana_Seq_598']",0.000212107,4.347826087
+"62","P15202","CTA1","YDR256C",NA,"OG1310",7,"['Candida_orthopsilosis_Seq_1912', 'Nakaseomyces_nivariensis_Seq_4425', 'Node21', 'Node30', 'Node40', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4080', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_82']",3.19e-06,NA
+"63","P16387","PDA1","YER178W",NA,"OG2807",7,"['Candida_orthopsilosis_Seq_69', 'Kluyveromyces_marxianus_Seq_1437', 'Node13', 'Node19', 'Node32', 'Node35', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1533']",1.08e-05,NA
+"64","P31373","CYS3","YAL012W",NA,"OG3978",7,"['Arxula_adeninivorans_Seq_3192', 'Node18', 'Node24', 'Node28', 'Node47', 'Node55', 'yHMPu5000034933_Kuraishia_molischiana_Seq_904']",2.72e-05,NA
+"65","P32316","ACH1","YBL015W",NA,"OG1429",7,"['Node43', 'Node45', 'Node48', 'Node54', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5016', 'yHMPu5000034885_Ogataea_zsoltii_Seq_450', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1889']",2.78e-05,NA
+"66","P32582","CYS4","YGR155W",NA,"OG4016",7,"['Kluyveromyces_marxianus_Seq_3664', 'Node46', 'Node48', 'Node64', 'Node67', 'Node72', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2771']",3.34e-06,NA
+"67","P38714","MSR1","YHR091C",NA,"OG1335",7,"['Node15', 'Node50', 'Node62', 'Node64', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_228', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3713', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_1636']",3.19e-06,NA
+"68","P47143","ADO1","YJR105W",NA,"OG2384",7,"['Kluyveromyces_marxianus_Seq_459', 'Node15', 'Node17', 'Node21', 'Node52', 'Node53', 'Node55']",3.89e-06,NA
+"69","P53598","LSC1","YOR142W",NA,"OG1696",7,"['Arxula_adeninivorans_Seq_2697', 'Candida_auris_Seq_3660', 'Candida_orthopsilosis_Seq_354', 'Node30', 'Node82', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2700', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4940']",3.17e-06,NA
+"70","P00830","ATP2","YJR121W",NA,"OG1802",6,"['Arxula_adeninivorans_Seq_1512', 'Candida_orthopsilosis_Seq_1926', 'Node40', 'Node81', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1109', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2086']",2.48e-06,NA
+"71","P06168","ILV5","YLR355C",NA,"OG1569",6,"['Node10', 'Node45', 'Node61', 'yHAB143_Kazachstania_siamensis_Seq_3857', 'yHMPu5000034885_Ogataea_zsoltii_Seq_847', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_784']",8.79e-05,NA
+"72","P07283","SEC53","YFL045C",NA,"OG2347",6,"['Node18', 'Node30', 'Node56', 'yHAB143_Kazachstania_siamensis_Seq_3783', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_582', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3856']",1.74e-05,NA
+"73","P08566","ARO1","YDR127W",NA,"OG1621",6,"['Node28', 'Node29', 'Node55', 'Node57', 'Node65', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3622']",0.000277231,2.173913043
+"74","P09457","ATP5","YDR298C",NA,"OG2701",6,"['Candida_orthopsilosis_Seq_4698', 'Kluyveromyces_marxianus_Seq_4128', 'Node37', 'Node42', 'Node78', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2860']",2.41e-06,NA
+"75","P10614","ERG11","YHR007C",NA,"OG1355",6,"['Node28', 'Node30', 'Node63', 'Node68', 'Node72', 'yHAB143_Kazachstania_siamensis_Seq_4517']",5.43e-06,NA
+"76","P13188","GLN4","YOR168W",NA,"OG1847",6,"['Node10', 'Node71', 'Node73', 'Node78', 'Node82', 'yHAB143_Kazachstania_siamensis_Seq_4263']",0.000124712,NA
+"77","P25087","ERG6","YML008C",NA,"OG1730",6,"['Arxula_adeninivorans_Seq_4947', 'Node23', 'Node24', 'Node42', 'Node79', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2333']",6.44e-05,NA
+"78","P28241","IDH2","YOR136W",NA,"OG1786",6,"['Arxula_adeninivorans_Seq_1028', 'Node1', 'Node10', 'Node18', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4973', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2174']",2.42e-06,NA
+"79","P28777","ARO2","YGL148W",NA,"OG2082",6,"['Candida_orthopsilosis_Seq_183', 'Kluyveromyces_marxianus_Seq_4685', 'Node58', 'Node63', 'Node89', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5248']",0.001702219,8.695652174
+"80","P31116","HOM6","YJR139C",NA,"OG1810",6,"['Node29', 'Node38', 'Node45', 'Node73', 'yHAB143_Kazachstania_siamensis_Seq_249', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1356']",6.28e-05,NA
+"81","P32799","COX13","YGL191W",NA,"OG4555",6,"['Node35', 'Node55', 'Node69', 'Node7', 'Node70', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_340']",3.12e-05,NA
+"82","P32874","HFA1","YMR207C",NA,"OG1710",6,"['Node10', 'Node14', 'Node36', 'Node41', 'Node70', 'Node89']",3.15e-06,NA
+"83","P41921","GLR1","YPL091W",NA,"OG1684",6,"['Node34', 'Node42', 'Node43', 'Node48', 'Node52', 'Node91']",3.15e-06,NA
+"84","P53852","YNL247W","YNL247W",NA,"OG1646",6,"['Node1', 'Node14', 'Node16', 'Node3', 'Node78', 'yHAB143_Kazachstania_siamensis_Seq_614']",3.75e-06,NA
+"85","Q05911","ADE13","YLR359W",NA,"OG2148",6,"['Node10', 'Node3', 'Node81', 'Node85', 'Saprochaete_clavata_Seq_5829', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_1482']",9.55e-05,NA
+"86","Q12165","ATP16","YDL004W",NA,"OG2402",6,"['Kluyveromyces_marxianus_Seq_4578', 'Node18', 'Node37', 'Node84', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1954', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2231']",1.19e-05,NA
+"87","P00817","IPP1","YBR011C",NA,"OG2522",5,"['Candida_orthopsilosis_Seq_1096', 'Kluyveromyces_marxianus_Seq_2249', 'Node75', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4025', 'yHMPu5000034933_Kuraishia_molischiana_Seq_200']",5.22e-05,NA
+"88","P00931","TRP5","YGL026C",NA,"OG1724",5,"['Node1', 'Node31', 'Node58', 'Node60', 'Node62']",7.1e-06,NA
+"89","P05626","ATP4","YPL078C",NA,"OG2132",5,"['Node51', 'Node53', 'Node73', 'Node83', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_2770']",3.12e-06,NA
+"90","P06106","MET17","YLR303W",NA,"OG1944",5,"['Node15', 'Node51', 'Node76', 'Node78', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_426']",0.000144835,1.086956522
+"91","P06738","GPH1","YPR160W",NA,"OG2841",5,"['Node14', 'Node36', 'Node54', 'Node67', 'Node68']",2.24e-06,NA
+"92","P07143","CYT1","YOR065W",NA,"OG2248",5,"['Node14', 'Node70', 'Node89', 'yHMPu5000034885_Ogataea_zsoltii_Seq_3186', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_8467']",0.000255152,NA
+"93","P07170","ADK1","YDR226W",NA,"OG2740",5,"['Arxula_adeninivorans_Seq_5349', 'Candida_orthopsilosis_Seq_2698', 'Node6', 'Node7', 'yHAB143_Kazachstania_siamensis_Seq_2013']",0.000126218,3.260869565
+"94","P07244","ADE5","YGL234W",NA,"OG1825",5,"['Node2', 'Node31', 'Node42', 'Node45', 'Node8']",0.001042502,10.86956522
+"95","P07258","CPA1","YOR303W",NA,"OG2721",5,"['Node31', 'Node39', 'Node44', 'Node49', 'Node53']",3.61e-06,NA
+"96","P07702","LYS2","YBR115C",NA,"OG1714",5,"['Node14', 'Node68', 'Node82', 'Node89', 'Node91']",0.000465345,1.086956522
+"97","P17649","UGA1","YGR019W",NA,"OG1157",5,"['Kluyveromyces_marxianus_Seq_826', 'Node13', 'Node25', 'Node68', 'Node8']",2.25e-06,NA
+"98","P19262","KGD2","YDR148C",NA,"OG1924",5,"['Arxula_adeninivorans_Seq_4400', 'Candida_orthopsilosis_Seq_883', 'Kluyveromyces_marxianus_Seq_4343', 'Node71', 'Node89']",2.24e-06,NA
+"99","P27796","POT1","YIL160C",NA,"OG1364",5,"['Candida_orthopsilosis_Seq_5147', 'Node10', 'Node2', 'Node67', 'Node70']",3.01e-06,NA
+"100","P28274","URA7","YBL039C",NA,"OG1500",5,"['Node30', 'Node77', 'Node80', 'Node84', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4147']",1.19e-05,NA
+"101","P28834","IDH1","YNL037C",NA,"OG2677",5,"['Candida_orthopsilosis_Seq_2750', 'Node10', 'Node22', 'Node6', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3874']",3.35e-06,NA
+"102","P32771","SFA1","YDL168W",NA,"OG1521",5,"['Node19', 'Node30', 'Node66', 'Node70', 'yHMPu5000034933_Kuraishia_molischiana_Seq_538']",3.12e-06,NA
+"103","P37012","PGM2","YMR105C",NA,"OG1302",5,"['Node19', 'Node38', 'Node54', 'Node86', 'Node89']",1.52e-05,NA
+"104","P38625","GUA1","YMR217W",NA,"OG1779",5,"['Kluyveromyces_marxianus_Seq_1832', 'Node37', 'Node66', 'Node90', 'Node93']",0.001682648,17.39130435
+"105","P38628","PCM1","YEL058W",NA,"OG3115",5,"['Node13', 'Node14', 'Node52', 'yHAB143_Kazachstania_siamensis_Seq_553', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2429']",3.11e-06,NA
+"106","P38703","LAG1","YHL003C",NA,"OG1303",5,"['Node14', 'Node59', 'Node93', 'yHAB143_Kazachstania_siamensis_Seq_2874', 'yHMPu5000034933_Kuraishia_molischiana_Seq_952']",2.4e-06,NA
+"107","P40215","NDE1","YMR145C",NA,"OG1199",5,"['Candida_orthopsilosis_Seq_4182', 'Node17', 'Node22', 'Node37', 'Node89']",2.07e-05,NA
+"108","P47176","BAT2","YJR148W",NA,"OG1210",5,"['Node11', 'Node32', 'Node59', 'yHAB143_Kazachstania_siamensis_Seq_2739', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2985']",2.5e-05,NA
+"109","P53090","ARO8","YGL202W",NA,"OG1377",5,"['Node15', 'Node17', 'Node41', 'Node43', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_186']",9.02e-06,NA
+"110","P54781","ERG5","YMR015C",NA,"OG1596",5,"['Node2', 'Node31', 'Node68', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_3213', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4474']",3e-06,NA
+"111","Q02207","FOX2","YKR009C",NA,"OG1869",5,"['Candida_orthopsilosis_Seq_2479', 'Node1', 'Node5', 'Node7', 'Node74']",3.17e-06,NA
+"112","P00498","HIS1","YER055C",NA,"OG3837",4,"['Nakaseomyces_bracarensis_Seq_1837', 'Node18', 'Node34', 'Node35']",0.00031633,5.434782609
+"113","P00815","HIS4","YCL030C",NA,"OG2113",4,"['Arxula_adeninivorans_Seq_902', 'Node10', 'Node49', 'Node72']",0.000394509,7.608695652
+"114","P00890","CIT1","YNR001C",NA,"OG1416",4,"['Node10', 'Node12', 'Node23', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_6558']",2.43e-05,NA
+"115","P00937","TRP3","YKL211C",NA,"OG3108",4,"['Node37', 'Node62', 'Node63', 'Node70']",7.08e-05,4.347826087
+"116","P04173","LEU2","YCL018W",NA,"OG2930",4,"['Node29', 'Node35', 'Node37', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2224']",6e-05,NA
+"117","P04397","GAL10","YBR019C",NA,"OG3994",4,"['Node11', 'Node15', 'Node33', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1220']",3.16e-06,NA
+"118","P08525","QCR8","YJL166W",NA,"OG4360",4,"['Node21', 'Node28', 'Node58', 'Node62']",1.93e-05,NA
+"119","P11412","ZWF1","YNL241C",NA,"OG1333",4,"['Arxula_adeninivorans_Seq_1735', 'Candida_orthopsilosis_Seq_1181', 'Node24', 'Node49']",3.79e-05,NA
+"120","P11986","INO1","YJL153C",NA,"OG3214",4,"['Candida_orthopsilosis_Seq_4229', 'Node13', 'Node51', 'Node64']",4.76e-06,NA
+"121","P13663","HOM2","YDR158W",NA,"OG1883",4,"['Kluyveromyces_marxianus_Seq_3257', 'Node85', 'Node89', 'yHMPu5000034885_Ogataea_zsoltii_Seq_2360']",2.75e-05,1.086956522
+"122","P15454","GUK1","YDR454C",NA,"OG1975",4,"['Arxula_adeninivorans_Seq_1900', 'Node4', 'Node77', 'Node90']",3.41e-06,NA
+"123","P16120","THR4","YCR053W",NA,"OG1603",4,"['Node28', 'Node31', 'Node57', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1159']",3.53e-06,NA
+"124","P21147","OLE1","YGL055W",NA,"OG1470",4,"['Node40', 'Node5', 'Node76', 'Node79']",0.001774927,8.695652174
+"125","P23776","EXG1","YLR300W",NA,"OG1298",4,"['Node19', 'Node22', 'Node41', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_2021']",3.31e-06,NA
+"126","P29952","PMI40","YER003C",NA,"OG1880",4,"['Node12', 'Node15', 'Node71', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_1394']",1.95e-05,NA
+"127","P32340","NDI1","YML120C",NA,"OG5490",4,"['Eremothecium_sinecaudum_Seq_674', 'Kluyveromyces_marxianus_Seq_1040', 'Node34', 'Node41']",9.81e-06,NA
+"128","P32368","SAC1","YKL212W",NA,"OG1743",4,"['Node13', 'Node31', 'Node38', 'Node60']",3.39e-06,NA
+"129","P32377","MVD1","YNR043W",NA,"OG3774",4,"['Node18', 'Node62', 'Node87', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_2560']",2.77e-05,NA
+"130","P32462","ERG24","YNL280C",NA,"OG2098",4,"['Node52', 'Node54', 'Node56', 'Node65']",3.56e-06,NA
+"131","P37297","STT4","YLR305C",NA,"OG1679",4,"['Node52', 'Node78', 'Node79', 'yHMPu5000034933_Kuraishia_molischiana_Seq_444']",3.16e-06,NA
+"132","P38131","KTR4","YBR199W",NA,"OG1311",4,"['Node29', 'Node65', 'Node67', 'Node69']",3.17e-06,NA
+"133","P39692","MET10","YFR030W",NA,"OG2147",4,"['Node1', 'Node50', 'Node53', 'Node6']",1.14e-05,5.434782609
+"134","P49095","GCV2","YMR189W",NA,"OG2227",4,"['Node45', 'Node68', 'Node70', 'Saprochaete_clavata_Seq_5914']",4.4e-06,NA
+"135","P80235","YAT1","YAR035W",NA,"OG2637",4,"['Node15', 'Node50', 'Node73', 'Node75']",6e-06,NA
+"136","Q00055","GPD1","YDL022W",NA,"OG1137",4,"['Candida_orthopsilosis_Seq_2518', 'Node45', 'Node50', 'Node72']",5.5e-06,NA
+"137","Q01217","ARG5","YER069W",NA,"OG1525",4,"['Node18', 'Node36', 'Node38', 'Node42']",0.000409879,2.173913043
+"138","Q06625","GDB1","YPR184W",NA,"OG2348",4,"['Node3', 'Node6', 'Node65', 'Node70']",2.25e-06,NA
+"139","Q06685","VIP1","YLR410W",NA,"OG1777",4,"['Node3', 'Node47', 'Node48', 'Node58']",2.94e-06,NA
+"140","Q12455","SPE4","YLR146C",NA,"OG3801",4,"['Node23', 'Node26', 'Node32', 'Node44']",3.16e-06,NA
+"141","P00431","CCP1","YKR066C",NA,"OG3839",3,"['Node13', 'Node45', 'Node48']",3.16e-06,NA
+"142","P04807","HXK2","YGL253W",NA,"OG1208",3,"['Candida_auris_Seq_542', 'yHAB143_Kazachstania_siamensis_Seq_1214', 'yHMPu5000034885_Ogataea_zsoltii_Seq_916']",0.000944419,NA
+"143","P07172","HIS5","YIL116W",NA,"OG2238",3,"['Node48', 'Node66', 'Node70']",5.73e-05,NA
+"144","P07275","PUT2","YHR037W",NA,"OG1595",3,"['Node54', 'Node57', 'Node59']",3.12e-06,NA
+"145","P07342","ILV2","YMR108W",NA,"OG1388",3,"['Node40', 'Node42', 'Node52']",0.000116488,1.086956522
+"146","P08067","RIP1","YEL024W",NA,"OG3575",3,"['Node47', 'Node51', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_6748']",0.000134542,NA
+"147","P08678","CYR1","YJL005W",NA,"OG1367",3,"['Node55', 'Node56', 'Ogataea_polymorpha_Seq_1923']",3.17e-06,NA
+"148","P09938","RNR2","YJL026W",NA,"OG1487",3,"['Node77', 'Node87', 'Node93']",3.7e-06,NA
+"149","P10869","HOM3","YER052C",NA,"OG1665",3,"['Node12', 'Node34', 'Node81']",0.000248042,4.347826087
+"150","P12684","HMG2","YLR450W",NA,"OG1360",3,"['Node19', 'Node21', 'Node23']",0.003466342,25
+"151","P14843","ARO3","YDR035W",NA,"OG2032",3,"['Node14', 'Node69', 'yHMPu5000035662_Meyerozyma_caribbica_Seq_2946']",7.47e-06,NA
+"152","P15625","FRS2","YFL022C",NA,"OG1856",3,"['Node23', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_1673', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4423']",3.15e-06,NA
+"153","P17255","VMA1","YDL185W",NA,"OG1656",3,"['Node1', 'Node52', 'Node65']",3.16e-06,NA
+"154","P18562","FUR1","YHR128W",NA,"OG3612",3,"['Node28', 'Node3', 'Node6']",2.25e-06,NA
+"155","P19358","SAM2","YDR502C",NA,"OG1516",3,"['Candida_orthopsilosis_Seq_415', 'Node17', 'yHAB143_Kazachstania_siamensis_Seq_4372']",2.22e-05,NA
+"156","P22803","TRX2","YGR209C",NA,"OG1631",3,"['Candida_auris_Seq_4128', 'Node89', 'yHMPu5000034885_Ogataea_zsoltii_Seq_4955']",1.38e-05,NA
+"157","P23542","AAT2","YLR027C",NA,"OG1650",3,"['Node45', 'Node6', 'Node89']",7.93e-06,NA
+"158","P25335","DAL2","YIR029W",NA,"OG3221",3,"['Node14', 'Node15', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4339']",2.96e-06,NA
+"159","P25340","ERG4","YGL012W",NA,"OG1434",3,"['Kluyveromyces_marxianus_Seq_4655', 'Node28', 'Node29']",3.48e-06,NA
+"160","P25358","ELO2","YCR034W",NA,"OG3021",3,"['Node36', 'Node44', 'Node72']",3.6e-06,NA
+"161","P27616","ADE1","YAR015W",NA,"OG2453",3,"['Node10', 'Node42', 'Node49']",1.69e-05,NA
+"162","P27680","COQ3","YOL096C",NA,"OG2903",3,"['Node32', 'Node34', 'Node38']",3.18e-06,NA
+"163","P29509","TRR1","YDR353W",NA,"OG1365",3,"['Candida_auris_Seq_4679', 'Kluyveromyces_marxianus_Seq_1272', 'Node34']",1.52e-05,NA
+"164","P32356","NTH1","YDR001C",NA,"OG1337",3,"['Node10', 'Node12', 'Node3']",2.97e-06,NA
+"165","P32366","VMA6","YLR447C",NA,"OG2004",3,"['Node12', 'Node8', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3884']",3.17e-06,NA
+"166","P32378","COQ2","YNR041C",NA,"OG2123",3,"['Node26', 'Node82', 'Ogataea_polymorpha_Seq_296']",3.12e-06,NA
+"167","P34227","PRX1","YBL064C",NA,"OG4247",3,"['Kluyveromyces_marxianus_Seq_1652', 'Node19', 'Node73']",2.97e-06,NA
+"168","P36051","MCD4","YKL165C",NA,"OG2046",3,"['Node14', 'Node49', 'Node51']",3.16e-06,NA
+"169","P38604","ERG7","YHR072W",NA,"OG1565",3,"['Node33', 'Node75', 'Ogataea_polymorpha_Seq_2686']",3.61e-06,NA
+"170","P38795","QNS1","YHR074W",NA,"OG1857",3,"['Node37', 'Node82', 'Node84']",2.72e-06,NA
+"171","P40054","SER3","YER081W",NA,"OG1433",3,"['Node15', 'Node19', 'Node82']",2.75e-06,NA
+"172","P40319","ELO3","YLR372W",NA,"OG3909",3,"['Node31', 'Node36', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_4125']",3.29e-06,NA
+"173","P40433","PFK26","YIL107C",NA,"OG1204",3,"['Node17', 'Node61', 'Node69']",3.01e-06,NA
+"174","P40581","HYR1","YIR037W",NA,"OG1497",3,"['Node11', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_906', 'yHMPu5000034933_Kuraishia_molischiana_Seq_4475']",2.41e-06,NA
+"175","P41735","CAT5","YOR125C",NA,"OG2684",3,"['Node52', 'Node75', 'yHMPu5000034885_Ogataea_zsoltii_Seq_950']",3.16e-06,NA
+"176","P42941","SER2","YGR208W",NA,"OG3443",3,"['Node21', 'Node38', 'Node40']",1.12e-05,NA
+"177","P43567","AGX1","YFL030W",NA,"OG3336",3,"['Node3', 'Node5', 'Node7']",3.4e-06,NA
+"178","P54838","DAK1","YML070W",NA,"OG1406",3,"['Node56', 'Node60', 'yHMPu5000034933_Kuraishia_molischiana_Seq_1200']",3.42e-05,NA
+"179","Q04792","GAD1","YMR250W",NA,"OG3506",3,"['Node54', 'Node60', 'Node62']",3.12e-06,NA
+"180","Q08220","GSH2","YOL049W",NA,"OG2031",3,"['Node35', 'Node78', 'Node86']",2.41e-06,NA
+"181","Q12154","GET3","YDL100C",NA,"OG3284",3,"['Node12', 'Node14', 'Node39']",2.24e-06,NA
+"182","Q12178","FCY1","YPR062W",NA,"OG4004",3,"['Node16', 'Node5', 'Node63']",3.39e-06,NA
+"183","Q12211","PUS1","YPL212C",NA,"OG1686",3,"['Node49', 'Node52', 'Node55']",3.17e-06,NA
+"184","Q12676","FOL3","YMR113W",NA,"OG4008",3,"['Node21', 'Node25', 'Node41']",3.26e-06,NA
+"185","Q99190","TSC13","YDL015C",NA,"OG2562",3,"['Node2', 'Node69', 'Node72']",3.35e-06,NA
+"186","Q99258","RIB3","YDR487C",NA,"OG2061",3,"['Node16', 'Node24', 'Node38']",1.16e-05,1.086956522
+"187","Q99312","ISN1","YOR155C",NA,"OG3531",3,"['Node3', 'Node37', 'Node51']",3.18e-06,NA
+"188","P00812","CAR1","YPL111W",NA,"OG2936",2,"['Node31', 'Node72']",3.4e-06,NA
+"189","P00899","TRP2","YER090W",NA,"OG2028",2,"['Node29', 'Node65']",4.56e-06,NA
+"190","P04039","COX8","YLR395C",NA,"OG4751",2,"['Node46', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_4988']",1.83e-05,NA
+"191","P04046","ADE4","YMR300C",NA,"OG1819",2,"['Node49', 'Node54']",0.000163952,2.173913043
+"192","P04161","ADE8","YDR408C",NA,"OG3043",2,"['Node61', 'Node72']",1.06e-05,NA
+"193","P06633","HIS3","YOR202W",NA,"OG2655",2,"['Node52', 'Node74']",3.16e-06,NA
+"194","P06785","CDC21","YOR074C",NA,"OG2129",2,"['Node23', 'Ogataea_polymorpha_Seq_1509']",3.35e-06,NA
+"195","P07255","COX9","YDL067C",NA,"OG4118",2,"['Node39', 'Node44']",1.18e-05,NA
+"196","P07991","CAR2","YLR438W",NA,"OG1685",2,"['Node55', 'Node71']",3.17e-06,NA
+"197","P08465","MET2","YNL277W",NA,"OG3006",2,"['Node26', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_330']",7.01e-06,NA
+"198","P15274","AMD1","YML035C",NA,"OG1622",2,"['Node65', 'Node69']",2.42e-06,NA
+"199","P15624","FRS1","YLR060W",NA,"OG2014",2,"['Node75', 'yHAB143_Kazachstania_siamensis_Seq_2110']",3.56e-06,NA
+"200","P16603","NCP1","YHR042W",NA,"OG1389",2,"['Node27', 'Node85']",3.05e-06,NA
+"201","P16661","ALG1","YBR110W",NA,"OG1673",2,"['Node74', 'Node75']",3.18e-06,NA
+"202","P17423","THR1","YHR025W",NA,"OG3120",2,"['Node79', 'Node84']",0.000156116,1.086956522
+"203","P20049","TYR1","YBR166C",NA,"OG2218",2,"['Node25', 'Node7']",4.59e-06,NA
+"204","P21264","ADE2","YOR128C",NA,"OG2053",2,"['Node12', 'Node89']",1.48e-05,NA
+"205","P21801","SDH2","YLL041C",NA,"OG2704",2,"['Arxula_adeninivorans_Seq_2081', 'Node25']",7.99e-06,NA
+"206","P21826","DAL7","YIR031C",NA,"OG1170",2,"['Candida_orthopsilosis_Seq_981', 'Node4']",4.43e-06,NA
+"207","P23337","GSY1","YFR015C",NA,"OG1266",2,"['Node25', 'Node73']",7.31e-06,NA
+"208","P25605","ILV6","YCL009C",NA,"OG2577",2,"['Node54', 'yHMPu5000034933_Kuraishia_molischiana_Seq_2722']",3.12e-06,NA
+"209","P27697","COQ8","YGL119W",NA,"OG1969",2,"['Node48', 'Node85']",3.21e-06,NA
+"210","P27810","KTR1","YOR099W",NA,"OG1158",2,"['Node36', 'Node38']",2.41e-06,NA
+"211","P28239","PPA2","YMR267W",NA,"OG4807",2,"['Nakaseomyces_nivariensis_Seq_437', 'Node25']",3.19e-06,NA
+"212","P31688","TPS2","YDR074W",NA,"OG1634",2,"['Node83', 'Node84']",0.00075282,8.695652174
+"213","P32191","GUT2","YIL155C",NA,"OG3100",2,"['Node4', 'Node51']",2.98e-06,NA
+"214","P32352","ERG2","YMR202W",NA,"OG2353",2,"['Node74', 'Node76']",2.94e-06,NA
+"215","P32353","ERG3","YLR056W",NA,"OG2465",2,"['Node32', 'Node48']",3.18e-06,NA
+"216","P32452","PHA2","YNL316C",NA,"OG3413",2,"['Node24', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_8371']",3.7e-06,NA
+"217","P32477","GSH1","YJL101C",NA,"OG2186",2,"['Node26', 'Node31']",3.17e-06,NA
+"218","P32573","SPS19","YNL202W",NA,"OG1321",2,"['Nakaseomyces_nivariensis_Seq_1597', 'Node29']",2.27e-06,NA
+"219","P32785","FMT1","YBL013W",NA,"OG3093",2,"['Node10', 'Node3']",2.97e-06,NA
+"220","P32796","CAT2","YML042W",NA,"OG2397",2,"['Node31', 'Node76']",5.34e-06,NA
+"221","P33734","HIS7","YBR248C",NA,"OG2357",2,"['Node31', 'Node40']",4.43e-06,NA
+"222","P33775","PMT1","YDL095W",NA,"OG1166",2,"['Node28', 'Node89']",3.36e-06,NA
+"223","P35196","RER2","YBR002C",NA,"OG2869",2,"['Node13', 'Node45']",3.38e-06,NA
+"224","P36126","SPO14","YKR031C",NA,"OG1625",2,"['Node54', 'Node60']",2.25e-06,NA
+"225","P36136","SHB17","YKR043C",NA,"OG2605",2,"['Node12', 'yHAB143_Kazachstania_siamensis_Seq_3179']",2.97e-06,NA
+"226","P36150","MET1","YKR069W",NA,"OG1966",2,"['Node51', 'Node80']",2.41e-06,NA
+"227","P36421","TYS1","YGR185C",NA,"OG2194",2,"['Node89', 'Saprochaete_clavata_Seq_4387']",7.18e-05,NA
+"228","P37298","SDH4","YDR178W",NA,"OG1287",2,"['Node1', 'yHMPu5000034625_Pichia_kudriavzevii_Seq_3524']",3.77e-06,NA
+"229","P38145","RIB5","YBR256C",NA,"OG2369",2,"['Node2', 'Node80']",1.23e-05,NA
+"230","P38427","TSL1","YML100W",NA,"OG1314",2,"['Node33', 'Node34']",1.44e-05,NA
+"231","P38620","PRS2","YER099C",NA,"OG2588",2,"['Node63', 'Node84']",7.92e-06,NA
+"232","P38635","HIS2","YFR025C",NA,"OG3018",2,"['Node31', 'Node78']",3.22e-06,NA
+"233","P38840","ARO9","YHR137W",NA,"OG3639",2,"['Node20', 'yHAB143_Kazachstania_siamensis_Seq_1641']",1.83e-05,NA
+"234","P38858","SOL3","YHR163W",NA,"OG3991",2,"['Node14', 'yHMPu5000034933_Kuraishia_molischiana_Seq_42']",0.000199281,NA
+"235","P38954","IPT1","YDR072C",NA,"OG4624",2,"['Node65', 'Node8']",3.2e-06,NA
+"236","P38992","SUR2","YDR297W",NA,"OG1615",2,"['Node21', 'yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5881']",3.16e-06,NA
+"237","P39006","PSD1","YNL169C",NA,"OG2394",2,"['Node65', 'Node68']",3.23e-06,NA
+"238","P40017","YAT2","YER024W",NA,"OG4391",2,"['Node14', 'Node15']",6.92e-06,NA
+"239","P40545","HIS6","YIL020C",NA,"OG1933",2,"['Node44', 'Node60']",1.35e-05,NA
+"240","P41835","THI6","YPL214C",NA,"OG3581",2,"['Node34', 'Node37']",2.25e-06,NA
+"241","P43123","QRI1","YDL103C",NA,"OG2852",2,"['Node24', 'Node62']",2.41e-06,NA
+"242","P43619","BNA6","YFR047C",NA,"OG3509",2,"['Node37', 'Node57']",2.99e-06,NA
+"243","P46681","DLD2","YDL178W",NA,"OG1331",2,"['Node39', 'Node62']",6.35e-06,NA
+"244","P48016","ATH1","YPR026W",NA,"OG3499",2,"['Node31', 'Node72']",3.4e-06,NA
+"245","P48836","VMA10","YHR039C-A",NA,"OG4068",2,"['Node6', 'Node79']",3.19e-06,NA
+"246","P49435","APT1","YML022W",NA,"OG2282",2,"['Arxula_adeninivorans_Seq_781', 'Node63']",2.41e-06,NA
+"247","P53128","MET13","YGL125W",NA,"OG2495",2,"['Node17', 'Node75']",5.3e-06,NA
+"248","P53848","FOL1","YNL256W",NA,"OG2380",2,"['Node41', 'yHMPu5000034933_Kuraishia_molischiana_Seq_3583']",2.74e-06,NA
+"249","P54783","ALO1","YML086C",NA,"OG2506",2,"['Node50', 'Node83']",3.14e-06,NA
+"250","P80210","ADE12","YNL220W",NA,"OG2086",2,"['Node49', 'Node63']",7.05e-05,NA
+"251","P81450","ATP18","YML081C-A",NA,"OG4198",2,"['Node54', 'Node7']",3.05e-06,NA
+"252","Q01802","AAT1","YKL106W",NA,"OG3525",2,"['Node5', 'Node59']",2.38e-06,NA
+"253","Q03529","SCS7","YMR272C",NA,"OG1758",2,"['Node24', 'Node4']",2.97e-06,NA
+"254","Q03557","HER2","YMR293C",NA,"OG2104",2,"['Node78', 'Node87']",2.42e-06,NA
+"255","Q03941","CAB5","YDR196C",NA,"OG2578",2,"['Node23', 'Node41']",2.97e-06,NA
+"256","Q04178","HPT1","YDR399W",NA,"OG4398",2,"['Node1', 'Node17']",2.97e-06,NA
+"257","Q04212","ARA2","YMR041C",NA,"OG2283",2,"['Node35', 'Node39']",3.15e-06,NA
+"258","Q05521","DPP1","YDR284C",NA,"OG3112",2,"['Node16', 'Node5']",3.16e-06,NA
+"259","Q05871","ECI1","YLR284C",NA,"OG1807",2,"['Node32', 'Node9']",2.42e-06,NA
+"260","Q05874","NNT1","YLR285W",NA,"OG1312",2,"['Node83', 'Node89']",3.17e-06,NA
+"261","Q05902","ECM38","YLR299W",NA,"OG4043",2,"['Node10', 'Node48']",3.38e-06,NA
+"262","Q06408","ARO10","YDR380W",NA,"OG1252",2,"['Node11', 'Node47']",5.06e-06,NA
+"263","Q06892","POS5","YPL188W",NA,"OG3597",2,"['Node13', 'Node40']",3.14e-06,NA
+"264","Q08645","MET7","YOR241W",NA,"OG2126",2,"['Node24', 'Node29']",2.97e-06,NA
+"265","Q08959","PGC1","YPL206C",NA,"OG3617",2,"['Node7', 'Saprochaete_clavata_Seq_5725']",3.17e-06,NA
+"266","Q10740","LAP2","YNL045W",NA,"OG1469",2,"['Node13', 'Node52']",2.43e-06,NA
+"267","Q12031","ICL2","YPR006C",NA,"OG5170",2,"['Node3', 'Node49']",2.25e-06,NA
+"268","Q12109","WRS1","YOL097C",NA,"OG1988",2,"['Arxula_adeninivorans_Seq_4946', 'Node17']",1.4e-05,NA
+"269","Q12166","LEU9","YOR108W",NA,"OG1115",2,"['Candida_auris_Seq_1266', 'Kluyveromyces_marxianus_Seq_2688']",3.48e-06,NA
+"270","Q12265","PRS5","YOL061W",NA,"OG2007",2,"['Node20', 'Node82']",1.24e-05,NA
+"271","Q12428","PDH1","YPR002W",NA,"OG5158",2,"['Node47', 'yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_4050']",3.39e-06,NA
+"272","P00127","QCR6","YFR033C",NA,"OG4352",1,"['Node56']",0.000172339,NA
+"273","P00128","QCR7","YDR529C",NA,"OG3208",1,"['Node48']",0.000123753,NA
+"274","P00912","TRP1","YDR007W",NA,"OG3874",1,"['Ogataea_polymorpha_Seq_3887']",4.11e-06,NA
+"275","P00927","ILV1","YER086W",NA,"OG1788",1,"['Node65']",4.39e-06,NA
+"276","P03962","URA3","YEL021W",NA,"OG3702",1,"['Node41']",0.000305777,NA
+"277","P04037","COX4","YGL187C",NA,"OG3505",1,"['Node85']",2.13e-05,NA
+"278","P04385","GAL1","YBR020W",NA,"OG4231",1,"['Node32']",3.18e-06,NA
+"279","P04803","MSW1","YDR268W",NA,"OG2466",1,"['Node61']",2.42e-06,NA
+"280","P05150","ARG3","YJL088W",NA,"OG1617",1,"['Node71']",3.34e-06,NA
+"281","P05374","CHO2","YGR157W",NA,"OG3877",1,"['Node18']",3.44e-06,NA
+"282","P05375","OPI3","YJR073C",NA,"OG2645",1,"['Node69']",2.91e-05,1.086956522
+"283","P07277","ERG12","YMR208W",NA,"OG2678",1,"['Node22']",5.32e-06,NA
+"284","P07285","TRP4","YDR354W",NA,"OG3065",1,"['Node14']",0.000279625,1.086956522
+"285","P07807","DFR1","YOR236W",NA,"OG4379",1,"['Node60']",2.28e-06,NA
+"286","P08019","SGA1","YIL099W",NA,"OG1564",1,"['Node22']",3.17e-06,NA
+"287","P08432","SPE1","YKL184W",NA,"OG3445",1,"['Node34']",3.29e-06,NA
+"288","P08456","CHO1","YER026C",NA,"OG2956",1,"['yHMPu5000034675_Blastobotrys_mokoenaii_Seq_730']",5.72e-06,NA
+"289","P09201","FBP1","YLR377C",NA,"OG1815",1,"['Node64']",2.93e-06,NA
+"290","P09368","PUT1","YLR142W",NA,"OG2629",1,"['Node70']",3.17e-06,NA
+"291","P09950","HEM1","YDR232W",NA,"OG1899",1,"['Node74']",3.43e-06,NA
+"292","P10127","ADH4","YGL256W",NA,"OG5722",1,"['Arxula_adeninivorans_Seq_5888']",3.85e-06,NA
+"293","P10174","COX7","YMR256C",NA,"OG4346",1,"['Node9']",1.32e-05,NA
+"294","P10356","YER152C","YER152C",NA,"OG1877",1,"['Node69']",3.61e-06,NA
+"295","P11325","NAM2","YLR382C",NA,"OG1748",1,"['Node82']",2.74e-06,NA
+"296","P11353","HEM13","YDR044W",NA,"OG2537",1,"['yHMPu5000034885_Ogataea_zsoltii_Seq_3727']",2.24e-06,NA
+"297","P13298","URA5","YML106W",NA,"OG1674",1,"['Node36']",2.4e-05,NA
+"298","P15179","MSD1","YPL104W",NA,"OG1962",1,"['Node15']",2.97e-06,NA
+"299","P15496","IDI1","YPL117C",NA,"OG3676",1,"['Node31']",3.16e-06,NA
+"300","P16140","VMA2","YBR127C",NA,"OG2332",1,"['Node64']",3.14e-06,NA
+"301","P16451","PDX1","YGR193C",NA,"OG3294",1,"['Arxula_adeninivorans_Seq_4000']",1.6e-05,NA
+"302","P17695","GRX2","YDR513W",NA,"OG1567",1,"['yHMPu5000034885_Ogataea_zsoltii_Seq_2583']",3.13e-06,NA
+"303","P20048","SEC59","YMR013C",NA,"OG3476",1,"['Node12']",2.97e-06,NA
+"304","P21182","SPE2","YOL052C",NA,"OG2912",1,"['Node25']",2.25e-06,NA
+"305","P21592","COX10","YPL172C",NA,"OG3460",1,"['Node78']",2.24e-06,NA
+"306","P21595","DIT2","YDR402C",NA,"OG4894",1,"['Node36']",2.4e-06,NA
+"307","P22140","EPT1","YHR123W",NA,"OG1468",1,"['Node68']",3.16e-06,NA
+"308","P22289","QCR9","YGR183C",NA,"OG4744",1,"['Node68']",2.59e-05,NA
+"309","P23797","GPI12","YMR281W",NA,"OG2363",1,"['Node15']",3.3e-06,NA
+"310","P25332","RBK1","YCR036W",NA,"OG2970",1,"['Node8']",3.15e-06,NA
+"311","P25578","PGS1","YCL004W",NA,"OG1785",1,"['Node82']",3.17e-06,NA
+"312","P25628","ARE1","YCR048W",NA,"OG1426",1,"['Node37']",6.95e-06,NA
+"313","P28789","HEM3","YDL205C",NA,"OG2057",1,"['yHAB143_Kazachstania_siamensis_Seq_3732']",3.19e-06,NA
+"314","P29465","CHS3","YBR023C",NA,"OG1230",1,"['Node79']",2.91e-06,NA
+"315","P29703","RAM2","YKL019W",NA,"OG3200",1,"['Node16']",2.24e-06,NA
+"316","P31115","DEG1","YFL001W",NA,"OG1844",1,"['Node4']",2.74e-06,NA
+"317","P31412","VMA5","YKL080W",NA,"OG2469",1,"['Node8']",3.16e-06,NA
+"318","P32190","GUT1","YHL032C",NA,"OG2455",1,"['yHMPu5000041818_Magnusiomyces_tetrasperma_Seq_274']",3.18e-06,NA
+"319","P32263","PRO3","YER023W",NA,"OG2552",1,"['Node47']",3.48e-06,NA
+"320","P32347","HEM12","YDR047W",NA,"OG2062",1,"['yHAB143_Kazachstania_siamensis_Seq_4790']",3.18e-06,NA
+"321","P32375","DAL1","YIR027C",NA,"OG3304",1,"['Node25']",2.93e-06,NA
+"322","P32383","PLC1","YPL268W",NA,"OG3760",1,"['Node7']",3.17e-06,NA
+"323","P32449","ARO4","YBR249C",NA,"OG4665",1,"['Node17']",6.71e-06,NA
+"324","P32451","BIO2","YGR286C",NA,"OG4275",1,"['Node55']",2.41e-06,NA
+"325","P32469","DPH5","YLR172C",NA,"OG1697",1,"['Node74']",3.38e-06,NA
+"326","P32567","PAH1","YMR165C",NA,"OG1687",1,"['Node8']",3.17e-06,NA
+"327","P32610","VMA8","YEL051W",NA,"OG2635",1,"['yHMPu5000034885_Ogataea_zsoltii_Seq_3356']",2.97e-06,NA
+"328","P32621","GDA1","YEL042W",NA,"OG2317",1,"['Node9']",3.38e-06,NA
+"329","P32626","UTR4","YEL038W",NA,"OG3319",1,"['Node44']",3.39e-06,NA
+"330","P32895","PRS1","YKL181W",NA,"OG1556",1,"['Node57']",9.81e-06,NA
+"331","P33300","SUR1","YPL057C",NA,"OG1502",1,"['Node24']",3.13e-06,NA
+"332","P33412","ECT1","YGR007W",NA,"OG2048",1,"['Node72']",3.19e-06,NA
+"333","P34756","FAB1","YFR019W",NA,"OG1495",1,"['Node8']",3.13e-06,NA
+"334","P35731","OAR1","YKL055C",NA,"OG4250",1,"['Node52']",3.39e-06,NA
+"335","P37254","ABZ1","YNR033W",NA,"OG2262",1,"['Node87']",2.42e-06,NA
+"336","P38013","AHP1","YLR109W",NA,"OG1305",1,"['Node54']",3.38e-06,NA
+"337","P38066","RIB1","YBL033C",NA,"OG1977",1,"['Node15']",7.72e-05,2.173913043
+"338","P38077","ATP3","YBR039W",NA,"OG2644",1,"['Candida_auris_Seq_2714']",2.24e-06,NA
+"339","P38115","ARA1","YBR149W",NA,"OG4312",1,"['Node49']",3.38e-06,NA
+"340","P38169","BNA4","YBL098W",NA,"OG3935",1,"['Node7']",3.17e-06,NA
+"341","P38221","CDS1","YBR029C",NA,"OG1695",1,"['Node87']",5.27e-06,NA
+"342","P38226","CST26","YBR042C",NA,"OG3484",1,"['Node4']",2.97e-06,NA
+"343","P38705","DIA4","YHR011W",NA,"OG3213",1,"['Node45']",0.000126488,NA
+"344","P38791","DYS1","YHR068W",NA,"OG1783",1,"['Node25']",3.16e-06,NA
+"345","P38913","FAD1","YDL045C",NA,"OG3074",1,"['Node59']",3.17e-06,NA
+"346","P38994","MSS4","YDR208W",NA,"OG1611",1,"['Node27']",3.29e-06,NA
+"347","P38998","LYS1","YIR034C",NA,"OG1451",1,"['Node51']",0.000115451,2.173913043
+"348","P39104","PIK1","YNL267W",NA,"OG2412",1,"['Node14']",3.17e-06,NA
+"349","P39525","CEM1","YER061C",NA,"OG2215",1,"['Node31']",2.98e-06,NA
+"350","P39683","NPT1","YOR209C",NA,"OG3767",1,"['Node37']",3.15e-06,NA
+"351","P39726","GCV3","YAL044C",NA,"OG3429",1,"['Node78']",3.16e-06,NA
+"352","P40009","YND1","YER005W",NA,"OG3205",1,"['Node20']",3.47e-06,NA
+"353","P40012","HEM14","YER014W",NA,"OG1273",1,"['Node3']",3.18e-06,NA
+"354","P40495","LYS12","YIL094C",NA,"OG2746",1,"['Node36']",0.000626777,4.347826087
+"355","P40857","PHS1","YJL097W",NA,"OG3624",1,"['Node44']",3.18e-06,NA
+"356","P42826","XKS1","YGR194C",NA,"OG3151",1,"['Node71']",3.19e-06,NA
+"357","P43577","GNA1","YFL017C",NA,"OG2845",1,"['Node51']",3.15e-06,NA
+"358","P46969","RPE1","YJL121C",NA,"OG2161",1,"['Candida_orthopsilosis_Seq_2851']",2.74e-05,NA
+"359","P47039","BNA3","YJL060W",NA,"OG1759",1,"['Node72']",3.81e-06,NA
+"360","P47096","BNA1","YJR025C",NA,"OG4102",1,"['Candida_auris_Seq_2935']",2.25e-06,NA
+"361","P47164","STR2","YJR130C",NA,"OG1390",1,"['Node82']",4.35e-06,NA
+"362","P48015","GCV1","YDR019C",NA,"OG4171",1,"['yHMPu5000034675_Blastobotrys_mokoenaii_Seq_5941']",2.5e-06,NA
+"363","P48360","ARH1","YDR376W",NA,"OG2316",1,"['Saprochaete_clavata_Seq_2467']",3.17e-06,NA
+"364","P48445","BPL1","YDL141W",NA,"OG1518",1,"['Node62']",2.99e-06,NA
+"365","P48525","MSE1","YOL033W",NA,"OG2864",1,"['Node23']",3.17e-06,NA
+"366","P48527","MSY1","YPL097W",NA,"OG3240",1,"['Node2']",3.39e-06,NA
+"367","P49017","COQ5","YML110C",NA,"OG3069",1,"['Node16']",2.24e-06,NA
+"368","P49367","LYS4","YDR234W",NA,"OG1111",1,"['Node15']",0.000208999,4.347826087
+"369","P50107","GLO1","YML004C",NA,"OG2868",1,"['Node42']",6.9e-06,NA
+"370","P50113","LYS5","YGL154C",NA,"OG4797",1,"['Node30']",4.22e-05,NA
+"371","P50264","FMS1","YMR020W",NA,"OG1630",1,"['Node48']",3.12e-06,NA
+"372","P50861","RIB4","YOL143C",NA,"OG4010",1,"['Node62']",2.31e-05,NA
+"373","P51601","FOL2","YGR267C",NA,"OG2774",1,"['Node35']",2.24e-06,NA
+"374","P53037","PSD2","YGR170W",NA,"OG2228",1,"['Node6']",3.16e-06,NA
+"375","P53101","STR3","YGL184C",NA,"OG3557",1,"['Node64']",4.32e-06,NA
+"376","P53164","NPY1","YGL067W",NA,"OG3458",1,"['Node22']",2.26e-06,NA
+"377","P53199","ERG26","YGL001C",NA,"OG2116",1,"['Node86']",2.24e-06,NA
+"378","P53332","CAB4","YGR277C",NA,"OG3025",1,"['Node12']",2.9e-06,NA
+"379","P53685","HST1","YOL068C",NA,"OG1414",1,"['Node5']",3.15e-06,NA
+"380","P53915","NRK1","YNL129W",NA,"OG2924",1,"['Node50']",2.97e-06,NA
+"381","P53966","KTR5","YNL029C",NA,"OG1496",1,"['Node72']",2.9e-06,NA
+"382","P54857","TGL2","YDR058C",NA,"OG4418",1,"['Node39']",2.41e-06,NA
+"383","P54885","PRO2","YOR323C",NA,"OG2752",1,"['Node64']",3.85e-06,NA
+"384","P81449","TIM11","YDR322C-A",NA,"OG4243",1,"['Node16']",3.12e-06,NA
+"385","Q00764","TPS1","YBR126C",NA,"OG1753",1,"['Node17']",8.87e-06,NA
+"386","Q02196","MET14","YKL001C",NA,"OG2837",1,"['Node1']",0.000700257,6.52173913
+"387","Q02784","GRX5","YPL059W",NA,"OG3048",1,"['Node58']",3.17e-06,NA
+"388","Q03266","ABZ2","YMR289W",NA,"OG3394",1,"['Node58']",2.25e-06,NA
+"389","Q04728","ARG7","YMR062C",NA,"OG2854",1,"['Node53']",2.97e-05,NA
+"390","Q05584","GLO2","YDR272W",NA,"OG2741",1,"['Node23']",1.83e-05,NA
+"391","Q05788","PNP1","YLR209C",NA,"OG3207",1,"['Node26']",2.25e-06,NA
+"392","Q05979","BNA5","YLR231C",NA,"OG3740",1,"['Node60']",2.25e-06,NA
+"393","Q06405","ATP17","YDR377W",NA,"OG3794",1,"['Ogataea_polymorpha_Seq_204']",3.15e-06,NA
+"394","Q06510","TAZ1","YPR140W",NA,"OG1808",1,"['Node19']",2.43e-06,NA
+"395","Q07830","GPI13","YLL031C",NA,"OG1543",1,"['Node14']",3.16e-06,NA
+"396","Q08548","ALE1","YOR175C",NA,"OG3098",1,"['Node70']",4.69e-06,NA
+"397","Q08650","DGA1","YOR245C",NA,"OG2688",1,"['Node27']",8.44e-06,NA
+"398","Q12349","ATP14","YLR295C",NA,"OG3378",1,"['Node18']",3.17e-06,NA
+"399","Q12362","RIB2","YOL066C",NA,"OG1394",1,"['Node63']",2.99e-06,NA
+"400","Q12382","DGK1","YOR311C",NA,"OG2514",1,"['Eremothecium_coryli_Seq_4216']",3.16e-06,NA
+"401","P81451","ATP19","YOL077W-A",NA,"OG3958",1,"['Node54']",2.27e-06,NA
+"402","O13525","COQ4","YDR204W",NA,"OG2152",0,"[]",3.38e-06,NA
+"403","P00175","CYB2","YML054C",NA,"OG1178",0,"[]",3.17e-06,NA
+"404","P00425","COX5B","YIL111W",NA,"OG4316",0,"[]",1.71e-05,NA
+"405","P00427","COX6","YHR051W",NA,"OG2714",0,"[]",2.5e-05,NA
+"406","P00572","CDC8","YJR057W",NA,"OG2654",0,"[]",2.97e-06,NA
+"407","P00724","SUC2","YIL162W",NA,"OG5441",0,"[]",3.17e-06,NA
+"408","P05373","HEM2","YGL040C",NA,"OG1767",0,"[]",3.07e-06,NA
+"409","P06174","HEM4","YOR278W",NA,"OG3856",0,"[]",2.41e-06,NA
+"410","P06197","PIS1","YPR113W",NA,"OG3196",0,"[]",4.28e-05,1.086956522
+"411","P06773","DCD1","YHR144C",NA,"OG1905",0,"[]",2.98e-06,NA
+"412","P06776","PDE2","YOR360C",NA,"OG1708",0,"[]",2.36e-06,NA
+"413","P07236","MST1","YKL194C",NA,"OG2358",0,"[]",3.31e-06,NA
+"414","P07250","ARG82","YDR173C",NA,"OG3041",0,"[]",3.38e-06,NA
+"415","P08431","GAL7","YBR018C",NA,"OG4707",0,"[]",0.000134702,NA
+"416","P0CZ17","ASP3-1","YLR155C",NA,"OG4185",0,"[]",2.4e-06,NA
+"417","P11491","PHO8","YDR481C",NA,"OG2979",0,"[]",2.42e-06,NA
+"418","P13259","PCT1","YGR202C",NA,"OG2214",0,"[]",2.97e-06,NA
+"419","P14020","DPM1","YPR183W",NA,"OG3902",0,"[]",4.14e-05,NA
+"420","P15700","URA6","YKL024C",NA,"OG2290",0,"[]",5.71e-06,NA
+"421","P15807","MET8","YBR213W",NA,"OG3001",0,"[]",3.2e-06,NA
+"422","P16622","HEM15","YOR176W",NA,"OG2960",0,"[]",3.2e-06,NA
+"423","P17709","GLK1","YCL040W",NA,"OG1329",0,"[]",0.000984828,1.086956522
+"424","P18408","MET16","YPR167C",NA,"OG2871",0,"[]",0.000165873,2.173913043
+"425","P18544","ARG8","YOL140W",NA,"OG2200",0,"[]",0.000697755,4.347826087
+"426","P18900","COQ1","YBR003W",NA,"OG3062",0,"[]",3.04e-06,NA
+"427","P20051","URA4","YLR420W",NA,"OG2056",0,"[]",7.8e-06,NA
+"428","P20485","CKI1","YLR133W",NA,"OG2182",0,"[]",2.73e-06,NA
+"429","P21373","UTR1","YJR049C",NA,"OG1200",0,"[]",3.15e-06,NA
+"430","P21623","DIT1","YDR403W",NA,"OG4881",0,"[]",3.15e-06,NA
+"431","P22007","RAM1","YDL090C",NA,"OG2682",0,"[]",2.97e-06,NA
+"432","P22108","APA2","YDR530C",NA,"OG1601",0,"[]",3.21e-06,NA
+"433","P22203","VMA4","YOR332W",NA,"OG4357",0,"[]",3.16e-06,NA
+"434","P22219","VPS15","YBR097W",NA,"OG1663",0,"[]",3.16e-06,NA
+"435","P22434","PDE1","YGL248W",NA,"OG3253",0,"[]",3.19e-06,NA
+"436","P22438","MSM1","YGR171C",NA,"OG3475",0,"[]",2.4e-06,NA
+"437","P22543","VPS34","YLR240W",NA,"OG3258",0,"[]",3e-06,NA
+"438","P23968","VMA16","YHR026W",NA,"OG3546",0,"[]",2.25e-06,NA
+"439","P24521","ERG8","YMR220W",NA,"OG2567",0,"[]",5.19e-05,NA
+"440","P25045","LCB1","YMR296C",NA,"OG2382",0,"[]",4.16e-06,NA
+"441","P25345","SLM5","YCR024C",NA,"OG4011",0,"[]",2.4e-06,NA
+"442","P25372","TRX3","YCR083W",NA,"OG4758",0,"[]",3.15e-06,NA
+"443","P25379","CHA1","YCL064C",NA,"OG1375",0,"[]",4.91e-06,NA
+"444","P25515","VMA3","YEL027W",NA,"OG1449",0,"[]",3.17e-06,NA
+"445","P25580","PBN1","YCL052C",NA,"OG4057",0,"[]",2.97e-06,NA
+"446","P26364","ADK2","YER170W",NA,"OG5118",0,"[]",3.22e-06,NA
+"447","P27515","URK1","YNR012W",NA,"OG2183",0,"[]",3.2e-06,NA
+"448","P27809","KRE2","YDR483W",NA,"OG5609",0,"[]",3.21e-06,NA
+"449","P29704","ERG9","YHR190W",NA,"OG2498",0,"[]",2.59e-05,NA
+"450","P30777","GPI10","YGL142C",NA,"OG3900",0,"[]",2.43e-06,NA
+"451","P32048","MSK1","YNL073W",NA,"OG3593",0,"[]",2.42e-06,NA
+"452","P32178","ARO7","YPR060C",NA,"OG2906",0,"[]",1.41e-05,NA
+"453","P32179","MET22","YOL064C",NA,"OG4266",0,"[]",1.23e-05,NA
+"454","P32419","MDH3","YDL078C",NA,"OG4605",0,"[]",3.16e-06,NA
+"455","P32459","DAL3","YIR032C",NA,"OG3683",0,"[]",2.99e-06,NA
+"456","P32473","PDB1","YBR221C",NA,"OG1959",0,"[]",5.31e-05,NA
+"457","P32476","ERG1","YGR175C",NA,"OG4061",0,"[]",0.090961769,98.91304348
+"458","P32604","FBP26","YJL155C",NA,"OG1563",0,"[]",3.39e-06,NA
+"459","P32842","VMA11","YPL234C",NA,"OG2367",0,"[]",3e-06,NA
+"460","P33312","RIB7","YBR153W",NA,"OG2356",0,"[]",2.9e-06,NA
+"461","P33330","SER1","YOR184W",NA,"OG4581",0,"[]",0.000159894,1.086956522
+"462","P33333","SLC1","YDL052C",NA,"OG1471",0,"[]",3.18e-06,NA
+"463","P33550","KTR2","YKR061W",NA,"OG1397",0,"[]",3.13e-06,NA
+"464","P34163","TGL1","YKL140W",NA,"OG1153",0,"[]",3.16e-06,NA
+"465","P35202","THI80","YOR143C",NA,"OG3114",0,"[]",3.29e-06,NA
+"466","P36013","MAE1","YKL029C",NA,"OG1276",0,"[]",9.84e-05,NA
+"467","P36107","AUR1","YKL004W",NA,"OG1242",0,"[]",4.91e-05,1.086956522
+"468","P37299","QCR10","YHR001W-A",NA,"OG4552",0,"[]",1.56e-05,NA
+"469","P38071","ETR1","YBR026C",NA,"OG3024",0,"[]",3.18e-06,NA
+"470","P38074","HMT1","YBR034C",NA,"OG3090",0,"[]",2.94e-06,NA
+"471","P38075","PDX3","YBR035C",NA,"OG2573",0,"[]",3.27e-06,NA
+"472","P38122","ECM31","YBR176W",NA,"OG2882",0,"[]",2.25e-06,NA
+"473","P38139","LDH1","YBR204C",NA,"OG3386",0,"[]",3.13e-06,NA
+"474","P38286","IFA38","YBR159W",NA,"OG4959",0,"[]",2.41e-06,NA
+"475","P38342","TSC10","YBR265W",NA,"OG3313",0,"[]",1.04e-05,NA
+"476","P38689","PRS3","YHL011C",NA,"OG2968",0,"[]",9.76e-06,NA
+"477","P38787","PAN5","YHR063C",NA,"OG2647",0,"[]",3.39e-06,NA
+"478","P38790","HTD2","YHR067W",NA,"OG3662",0,"[]",3.16e-06,NA
+"479","P38812","GEP4","YHR100C",NA,"OG2438",0,"[]",3.12e-06,NA
+"480","P39111","VMA7","YGR020C",NA,"OG1842",0,"[]",3.16e-06,NA
+"481","P39988","BUD16","YEL029C",NA,"OG4110",0,"[]",2.25e-06,NA
+"482","P40015","ISC1","YER019W",NA,"OG2734",0,"[]",3.15e-06,NA
+"483","P40099","FAU1","YER183C",NA,"OG3416",0,"[]",3.12e-06,NA
+"484","P40308","TGL3","YMR313C",NA,"OG2719",0,"[]",3.17e-06,NA
+"485","P40345","LRO1","YNR008W",NA,"OG1704",0,"[]",3.18e-06,NA
+"486","P40360","ARG2","YJL071W",NA,"OG2173",0,"[]",3.17e-06,NA
+"487","P40363","YJL068C","YJL068C",NA,"OG3241",0,"[]",2.23e-06,NA
+"488","P40471","AYR1","YIL124W",NA,"OG2808",0,"[]",2.41e-06,NA
+"489","P40506","CAB2","YIL083C",NA,"OG1491",0,"[]",3.15e-06,NA
+"490","P40553","DOT5","YIL010W",NA,"OG2275",0,"[]",3.15e-06,NA
+"491","P40970","LCB2","YDR062W",NA,"OG1683",0,"[]",5.42e-06,NA
+"492","P41734","IAH1","YOR126C",NA,"OG1799",0,"[]",3.12e-06,NA
+"493","P41807","VMA13","YPR036W",NA,"OG2820",0,"[]",2.4e-06,NA
+"494","P41903","TES1","YJR019C",NA,"OG1180",0,"[]",3.23e-06,NA
+"495","P42951","LSB6","YJL100W",NA,"OG4479",0,"[]",2.9e-06,NA
+"496","P43635","CIT3","YPR001W",NA,"OG5327",0,"[]",2.24e-05,NA
+"497","P46971","PMT4","YJR143C",NA,"OG1479",0,"[]",2.63e-05,NA
+"498","P47011","GLG2","YJL137C",NA,"OG4524",0,"[]",8.55e-06,NA
+"499","P47013","LCB3","YJL134W",NA,"OG1640",0,"[]",3.14e-06,NA
+"500","P47026","GWT1","YJL091C",NA,"OG2967",0,"[]",2.25e-06,NA
+"501","P47088","GPI14","YJR013W",NA,"OG3522",0,"[]",2.4e-06,NA
+"502","P47125","BNA2","YJR078W",NA,"OG3677",0,"[]",3.39e-06,NA
+"503","P47165","XPT1","YJR133W",NA,"OG4317",0,"[]",3.17e-06,NA
+"504","P48526","ISM1","YPL040C",NA,"OG2711",0,"[]",3.12e-06,NA
+"505","P48567","PUS4","YNL292W",NA,"OG2812",0,"[]",3.14e-06,NA
+"506","P49775","HNT2","YDR305C",NA,"OG4399",0,"[]",2.23e-06,NA
+"507","P52911","EXG2","YDR261C",NA,"OG4887",0,"[]",2.97e-06,NA
+"508","P53184","PNC1","YGL037C",NA,"OG3488",0,"[]",3.17e-06,NA
+"509","P53264","CLD1","YGR110W",NA,"OG3310",0,"[]",2.73e-06,NA
+"510","P53296","ATF2","YGR177C",NA,"OG5548",0,"[]",3.16e-06,NA
+"511","P53314","CPD1","YGR247W",NA,"OG4949",0,"[]",3.18e-06,NA
+"512","P53318","COQ6","YGR255C",NA,"OG2783",0,"[]",3.2e-06,NA
+"513","P53686","HST2","YPL015C",NA,"OG3493",0,"[]",3.1e-06,NA
+"514","P53687","HST3","YOR025W",NA,"OG3332",0,"[]",3.13e-06,NA
+"515","P53688","HST4","YDR191W",NA,"OG4573",0,"[]",2.41e-06,NA
+"516","P53909","AAH1","YNL141W",NA,"OG4226",0,"[]",3.17e-06,NA
+"517","Q01519","COX12","YLR038C",NA,"OG1254",0,"[]",1.38e-05,NA
+"518","Q02046","MTD1","YKR080W",NA,"OG2074",0,"[]",3.15e-06,NA
+"519","Q02896","YDC1","YPL087W",NA,"OG1306",0,"[]",3.18e-06,NA
+"520","Q03175","SRT1","YMR101C",NA,"OG3858",0,"[]",3.17e-06,NA
+"521","Q03262","PRM15","YMR278W",NA,"OG2571",0,"[]",2.94e-06,NA
+"522","Q03579","LIP1","YMR298W",NA,"OG5735",0,"[]",3.39e-06,NA
+"523","Q03677","ADI1","YMR009W",NA,"OG3714",0,"[]",2.99e-06,NA
+"524","Q03778","FMN1","YDR236C",NA,"OG4645",0,"[]",2.4e-06,NA
+"525","Q03835","GRX3","YDR098C",NA,"OG1746",0,"[]",3.16e-06,NA
+"526","Q04066","BNA7","YDR428C",NA,"OG4463",0,"[]",2.24e-06,NA
+"527","Q04179","URH1","YDR400W",NA,"OG3917",0,"[]",3.29e-06,NA
+"528","Q04430","CAB1","YDR531W",NA,"OG2190",0,"[]",2.98e-06,NA
+"529","Q04958","NTE1","YML059C",NA,"OG1152",0,"[]",2.24e-06,NA
+"530","Q05016","YMR226C","YMR226C",NA,"OG1227",0,"[]",3.01e-06,NA
+"531","Q05533","INM2","YDR287W",NA,"OG4583",0,"[]",3.4e-06,NA
+"532","Q05567","DPL1","YDR294C",NA,"OG2557",0,"[]",3.15e-06,NA
+"533","Q05779","COQ9","YLR201C",NA,"OG2965",0,"[]",2.25e-06,NA
+"534","Q06147","LCB5","YLR260W",NA,"OG1318",0,"[]",2.36e-06,NA
+"535","Q06178","NMA1","YLR328W",NA,"OG1473",0,"[]",2.99e-06,NA
+"536","Q06321","ATG26","YLR189C",NA,"OG2427",0,"[]",3.16e-06,NA
+"537","Q06346","KEI1","YDR367W",NA,"OG4259",0,"[]",2.29e-06,NA
+"538","Q06389","FRQ1","YDR373W",NA,"OG2087",0,"[]",3.38e-06,NA
+"539","Q06549","CDD1","YLR245C",NA,"OG4396",0,"[]",2.24e-06,NA
+"540","Q06636","GPI11","YDR302W",NA,"OG4511",0,"[]",3.14e-06,NA
+"541","Q06667","IPK1","YDR315C",NA,"OG4156",0,"[]",2.24e-06,NA
+"542","Q06703","CDA2","YLR308W",NA,"OG1498",0,"[]",3.01e-06,NA
+"543","Q06708","VAC14","YLR386W",NA,"OG2213",0,"[]",3.15e-06,NA
+"544","Q07560","CRD1","YDL142C",NA,"OG3681",0,"[]",3.17e-06,NA
+"545","Q07729","GUD1","YDL238C",NA,"OG1380",0,"[]",2.97e-06,NA
+"546","Q07938","MEU1","YLR017W",NA,"OG2308",0,"[]",2.42e-06,NA
+"547","Q08227","INP54","YOL065C",NA,"OG4109",0,"[]",3.15e-06,NA
+"548","Q08975","THI21","YPL258C",NA,"OG3811",0,"[]",3.15e-06,NA
+"549","Q08985","SAM4","YPL273W",NA,"OG3786",0,"[]",3.38e-06,NA
+"550","Q12043","TGL5","YOR081C",NA,"OG1281",0,"[]",3.17e-06,NA
+"551","Q12051","BTS1","YPL069C",NA,"OG3679",0,"[]",3.38e-06,NA
+"552","Q12184","YAH1","YPL252C",NA,"OG2836",0,"[]",2.97e-06,NA
+"553","Q12189","RKI1","YOR095C",NA,"OG1764",0,"[]",0.000119008,NA
+"554","Q12233","ATP20","YPR020W",NA,"OG3923",0,"[]",2.41e-06,NA
+"555","Q12283","MCT1","YOR221C",NA,"OG6290",0,"[]",3.17e-06,NA
+"556","Q12452","ERG27","YLR100W",NA,"OG3551",0,"[]",7.44e-05,NA
+"557","Q12471","PFK27","YOL136C",NA,"OG4377",0,"[]",2.4e-06,NA
+"558","Q12494","KCS1","YDR017C",NA,"OG1887",0,"[]",3.17e-06,NA
+"559","Q99321","DDP1","YOR163W",NA,"OG2249",0,"[]",2.25e-06,NA
+"560","P00401","COX1","Q0045",NA,"OG5314",0,"[]",7.72e-05,NA
+"561","P00045","CYC7","YEL039C",NA,NA,NA,NA,3.92e-06,NA
+"562","P00330","ADH1","YOL086C",NA,NA,NA,NA,2.96e-05,NA
+"563","P00331","ADH2","YMR303C",NA,NA,NA,NA,3.19e-06,NA
+"564","P00359","TDH3","YGR192C",NA,NA,NA,NA,0.0081718,79.34782609
+"565","P00360","TDH1","YJL052W",NA,NA,NA,NA,0.008816516,84.7826087
+"566","P00549","CDC19","YAL038W",NA,NA,NA,NA,0.001529102,1.086956522
+"567","P00635","PHO5","YBR093C",NA,"OG1116",NA,NA,2.4e-06,NA
+"568","P00924","ENO1","YGR254W",NA,NA,NA,NA,0.004645408,34.7826087
+"569","P00925","ENO2","YHR174W",NA,NA,NA,NA,0.003349148,13.04347826
+"570","P03965","CPA2","YJR109C",NA,"OG1032",NA,NA,4.63e-06,NA
+"571","P04076","ARG4","YHR018C",NA,"OG1061",NA,NA,3.6e-06,NA
+"572","P04806","HXK1","YFR053C",NA,NA,NA,NA,0.000812158,2.173913043
+"573","P05030","PMA1","YGL008C",NA,NA,NA,NA,7.29e-06,NA
+"574","P06115","CTT1","YGR088W",NA,"OG5404",NA,NA,3.12e-06,NA
+"575","P06169","PDC1","YLR044C",NA,NA,NA,NA,0.008105115,57.60869565
+"576","P06208","LEU4","YNL104C",NA,NA,NA,NA,7.41e-06,NA
+"577","P06700","SIR2","YDL042C",NA,NA,NA,NA,3.19e-06,NA
+"578","P07245","ADE3","YGR204W",NA,"OG1052",NA,NA,0.000118798,1.086956522
+"579","P07246","ADH3","YMR083W",NA,NA,NA,NA,4.94e-06,NA
+"580","P07259","URA2","YJL130C",NA,NA,NA,NA,9.3e-06,NA
+"581","P07262","GDH1","YOR375C",NA,NA,NA,NA,2.38e-06,NA
+"582","P07264","LEU1","YGL009C",NA,"OG1422",NA,NA,0.000338966,1.086956522
+"583","P08004","CHS1","YNL192W",NA,NA,NA,NA,2.42e-06,NA
+"584","P08425","MSF1","YPR047W",NA,NA,NA,NA,2.94e-06,NA
+"585","P08679","CIT2","YCR005C",NA,NA,NA,NA,2.98e-06,NA
+"586","P09440","MIS1","YBR084W",NA,NA,NA,NA,8.79e-05,NA
+"587","P0CW40","IMA3","YIL172C",NA,NA,NA,NA,3.14e-06,NA
+"588","P0CW41","IMA4","YJL221C",NA,NA,NA,NA,3.14e-06,NA
+"589","P0CX77","ASP3-2","YLR157C",NA,NA,NA,NA,3.16e-06,NA
+"590","P0CX78","ASP3-3","YLR158C",NA,NA,NA,NA,2.31e-06,NA
+"591","P0CX79","ASP3-4","YLR160C",NA,NA,NA,NA,3.14e-06,NA
+"592","P10659","SAM1","YLR180W",NA,NA,NA,NA,1.8e-05,NA
+"593","P12683","HMG1","YML075C",NA,NA,NA,NA,0.003327297,33.69565217
+"594","P13711","POX1","YGL205W",NA,"OG1122",NA,NA,3.17e-06,NA
+"595","P14065","GCY1","YOR120W",NA,"OG1045",NA,NA,3.7e-05,NA
+"596","P14180","CHS2","YBR038W",NA,"OG1012",NA,NA,3.41e-06,NA
+"597","P14742","GFA1","YKL104C",NA,NA,NA,NA,3.18e-06,NA
+"598","P16467","PDC5","YLR134W",NA,NA,NA,NA,0.004904553,20.65217391
+"599","P16550","APA1","YCL050C",NA,NA,NA,NA,2.44e-05,NA
+"600","P16861","PFK1","YGR240C",NA,"OG1054",NA,NA,0.001232064,8.695652174
+"601","P16862","PFK2","YMR205C",NA,NA,NA,NA,0.003465551,17.39130435
+"602","P17898","CPT1","YNL130C",NA,NA,NA,NA,2.43e-06,NA
+"603","P19414","ACO1","YLR304C",NA,NA,NA,NA,0.000196376,2.173913043
+"604","P21306","ATP15","YPL271W",NA,"OG7984",NA,NA,3.15e-06,NA
+"605","P21524","RNR1","YER070W",NA,"OG1070",NA,NA,3.35e-06,NA
+"606","P21672","RNR3","YIL066C",NA,NA,NA,NA,2.82e-06,NA
+"607","P21954","IDP1","YDL066W",NA,NA,NA,NA,1.22e-05,NA
+"608","P22133","MDH2","YOL126C",NA,"OG6574",NA,NA,3.07e-06,NA
+"609","P22217","TRX1","YLR043C",NA,NA,NA,NA,1.08e-05,NA
+"610","P23254","TKL1","YPR074C",NA,NA,NA,NA,3.58e-05,NA
+"611","P23501","YSR3","YKR053C",NA,NA,NA,NA,3.14e-06,NA
+"612","P24031","PHO3","YBR092C",NA,NA,NA,NA,3.15e-06,NA
+"613","P25373","GRX1","YCL035C",NA,NA,NA,NA,3.12e-06,NA
+"614","P25377","ADH7","YCR105W",NA,NA,NA,NA,2.24e-06,NA
+"615","P26263","PDC6","YGR087C",NA,NA,NA,NA,0.006386857,39.13043478
+"616","P26725","YUR1","YJL139C",NA,NA,NA,NA,2.25e-06,NA
+"617","P27472","GSY2","YLR258W",NA,NA,NA,NA,8e-06,NA
+"618","P28272","URA1","YKL216W",NA,"OG6598",NA,NA,2.12e-05,NA
+"619","P28321","YJU3","YKL094W",NA,"OG1754",NA,NA,2.41e-06,NA
+"620","P28496","LAC1","YKL008C",NA,NA,NA,NA,3.21e-06,NA
+"621","P30402","URA10","YMR271C",NA,NA,NA,NA,2.5e-05,NA
+"622","P30624","FAA1","YOR317W",NA,NA,NA,NA,3.19e-06,NA
+"623","P30902","ATP7","YKL016C",NA,"OG3747",NA,NA,3.18e-06,NA
+"624","P30952","MLS1","YNL117W",NA,NA,NA,NA,4.32e-06,NA
+"625","P31382","PMT2","YAL023C",NA,"OG1053",NA,NA,3.38e-06,NA
+"626","P32264","PRO1","YDR300C",NA,NA,NA,NA,0.00010228,2.173913043
+"627","P32327","PYC2","YBR218C",NA,NA,NA,NA,0.000288851,NA
+"628","P32463","ACP1","YKL192C",NA,"OG1136",NA,NA,3.2e-06,NA
+"629","P32528","DUR1","YBR208C",NA,"OG1168",NA,NA,2.97e-06,NA
+"630","P32563","VPH1","YOR270C",NA,"OG1046",NA,NA,3.14e-06,NA
+"631","P32603","SPR1","YOR190W",NA,NA,NA,NA,3.17e-06,NA
+"632","P32614","FRD1","YEL047C",NA,NA,NA,NA,1.08e-05,NA
+"633","P32622","YEF1","YEL041W",NA,NA,NA,NA,3.17e-06,NA
+"634","P32642","GRX4","YER174C",NA,NA,NA,NA,3.17e-06,NA
+"635","P32643","TMT1","YER175C",NA,NA,NA,NA,2.97e-06,NA
+"636","P32784","SCT1","YBL011W",NA,"OG1081",NA,NA,2.02e-05,NA
+"637","P32891","DLD1","YDL174C",NA,"OG1019",NA,NA,7.27e-06,NA
+"638","P32903","PMP1","YCR024C-A",NA,"OG140307",NA,NA,3.34e-06,NA
+"639","P33315","TKL2","YBR117C",NA,"OG1112",NA,NA,4.5e-05,NA
+"640","P33317","DUT1","YBR252W",NA,"OG11340",NA,NA,2.71e-06,NA
+"641","P33401","PGM1","YKL127W",NA,NA,NA,NA,1.61e-05,NA
+"642","P33421","SDH3","YKL141W",NA,NA,NA,NA,4.19e-06,NA
+"643","P35206","CSG2","YBR036C",NA,"OG7278",NA,NA,3.22e-06,NA
+"644","P35497","SOR1","YJR159W",NA,NA,NA,NA,3.17e-06,NA
+"645","P35842","PHO11","YAR071W",NA,NA,NA,NA,3.39e-06,NA
+"646","P36001","RMA1","YKL132C",NA,"OG17621",NA,NA,3.16e-06,NA
+"647","P36010","YNK1","YKL067W",NA,"OG3063",NA,NA,4.3e-06,NA
+"648","P36014","GPX1","YKL026C",NA,"OG17586",NA,NA,2.4e-06,NA
+"649","P36143","GLG1","YKR058W",NA,NA,NA,NA,8.1e-06,NA
+"650","P36148","GPT2","YKR067W",NA,NA,NA,NA,6.4e-05,NA
+"651","P36165","TGL4","YKR089C",NA,NA,NA,NA,2.41e-06,NA
+"652","P37291","SHM2","YLR058C",NA,NA,NA,NA,9.3e-06,NA
+"653","P37292","SHM1","YBR263W",NA,"OG1030",NA,NA,3.6e-06,NA
+"654","P37296","STV1","YMR054W",NA,NA,NA,NA,2.41e-06,NA
+"655","P37303","GLY1","YEL046C",NA,"OG1129",NA,NA,8.8e-06,NA
+"656","P38009","ADE17","YMR120C",NA,NA,NA,NA,8.01e-05,NA
+"657","P38063","PRS4","YBL068W",NA,NA,NA,NA,7.31e-06,NA
+"658","P38067","UGA2","YBR006W",NA,"OG1126",NA,NA,2.3e-06,NA
+"659","P38088","GRS1","YBR121C",NA,NA,NA,NA,0.001921135,7.608695652
+"660","P38113","ADH5","YBR145W",NA,"OG1016",NA,NA,7.95e-05,NA
+"661","P38130","KTR3","YBR205W",NA,"OG6380",NA,NA,3.19e-06,NA
+"662","P38143","GPX2","YBR244W",NA,NA,NA,NA,2.41e-06,NA
+"663","P38158","MAL32","YBR299W",NA,NA,NA,NA,3.2e-06,NA
+"664","P38211","GPI18","YBR004C",NA,"OG4301",NA,NA,3.17e-06,NA
+"665","P38287","CSH1","YBR161W",NA,NA,NA,NA,2.98e-06,NA
+"666","P38298","YPC1","YBR183W",NA,NA,NA,NA,2.9e-06,NA
+"667","P38426","TPS3","YMR261C",NA,NA,NA,NA,1.69e-05,NA
+"668","P38627","URA8","YJR103W",NA,NA,NA,NA,1.74e-05,NA
+"669","P38631","FKS1","YLR342W",NA,NA,NA,NA,0.000390922,NA
+"670","P38697","IMD2","YHR216W",NA,NA,NA,NA,0.000298267,NA
+"671","P38707","DED81","YHR019C",NA,NA,NA,NA,3.26e-05,NA
+"672","P38710","INM1","YHR046C",NA,NA,NA,NA,2.96e-06,NA
+"673","P38715","GRE3","YHR104W",NA,"OG1022",NA,NA,3.16e-06,NA
+"674","P38816","TRR2","YHR106W",NA,NA,NA,NA,3.17e-06,NA
+"675","P38891","BAT1","YHR208W",NA,NA,NA,NA,2.95e-06,NA
+"676","P38986","ASP1","YDR321W",NA,NA,NA,NA,2.97e-06,NA
+"677","P39002","FAA3","YIL009W",NA,NA,NA,NA,2.97e-06,NA
+"678","P39105","PLB1","YMR008C",NA,"OG1044",NA,NA,3.39e-06,NA
+"679","P39518","FAA2","YER015W",NA,"OG1087",NA,NA,2.41e-06,NA
+"680","P39540","ELO1","YJL196C",NA,"OG17578",NA,NA,3.19e-06,NA
+"681","P39714","BDH1","YAL060W",NA,"OG1694",NA,NA,2.42e-06,NA
+"682","P39976","DLD3","YEL071W",NA,NA,NA,NA,6.95e-06,NA
+"683","P40047","ALD5","YER073W",NA,"OG1021",NA,NA,5.17e-06,NA
+"684","P40106","GPP2","YER062C",NA,"OG1156",NA,NA,9e-05,NA
+"685","P40353","ATF1","YOR377W",NA,NA,NA,NA,2.97e-06,NA
+"686","P40459","PAN6","YIL145C",NA,"OG1004",NA,NA,3.17e-06,NA
+"687","P40510","SER33","YIL074C",NA,NA,NA,NA,3.68e-06,NA
+"688","P40559","INP51","YIL002C",NA,NA,NA,NA,3.4e-06,NA
+"689","P40884","IMA5","YJL216C",NA,"OG1179",NA,NA,2.25e-06,NA
+"690","P40975","PMP2","YEL017C-A",NA,"OG41627",NA,NA,3.74e-06,NA
+"691","P40989","GSC2","YGR032W",NA,"OG1014",NA,NA,0.000455948,NA
+"692","P41277","GPP1","YIL053W",NA,NA,NA,NA,1e-04,NA
+"693","P41911","GPD2","YOL059W",NA,NA,NA,NA,1.6e-05,NA
+"694","P41939","IDP2","YLR174W",NA,NA,NA,NA,2.4e-05,NA
+"695","P42837","FIG4","YNL325C",NA,"OG2579",NA,NA,3.16e-06,NA
+"696","P43550","DAK2","YFL053W",NA,NA,NA,NA,3.51e-05,NA
+"697","P46151","MET12","YPL023C",NA,"OG2246",NA,NA,4.85e-06,NA
+"698","P46367","ALD4","YOR374W",NA,NA,NA,NA,4.03e-06,NA
+"699","P47052","YJL045W","YJL045W",NA,NA,NA,NA,4.51e-06,NA
+"700","P47147","YMR1","YJR110W",NA,"OG1146",NA,NA,3.39e-06,NA
+"701","P47180","PGU1","YJR153W",NA,"OG7359",NA,NA,2.73e-06,NA
+"702","P47190","PMT3","YOR321W",NA,NA,NA,NA,2.52e-05,NA
+"703","P47771","ALD2","YMR170C",NA,NA,NA,NA,6.23e-06,NA
+"704","P48570","LYS20","YDL182W",NA,"OG1096",NA,NA,0.000973069,5.434782609
+"705","P49089","ASN1","YPR145W",NA,NA,NA,NA,6.59e-05,NA
+"706","P49723","RNR4","YGR180C",NA,"OG8784",NA,NA,3.01e-06,NA
+"707","P50094","IMD4","YML056C",NA,"OG1354",NA,NA,0.000272617,NA
+"708","P50095","IMD3","YLR432W",NA,NA,NA,NA,0.000198196,NA
+"709","P50277","BIO3","YNR058W",NA,"OG5438",NA,NA,3.16e-06,NA
+"710","P50942","INP52","YNL106C",NA,NA,NA,NA,2.41e-06,NA
+"711","P52867","PMT5","YDL093W",NA,NA,NA,NA,2.2e-05,NA
+"712","P52893","ALT1","YLR089C",NA,NA,NA,NA,7.88e-06,NA
+"713","P52910","ACS2","YLR153C",NA,"OG1055",NA,NA,2.21e-05,NA
+"714","P53045","ERG25","YGR060W",NA,"OG1121",NA,NA,5.89e-06,NA
+"715","P53051","IMA1","YGR287C",NA,NA,NA,NA,2.92e-06,NA
+"716","P53167","PUS2","YGL063W",NA,"OG22457",NA,NA,3.05e-06,NA
+"717","P53204","NMA2","YGR010W",NA,NA,NA,NA,3.39e-06,NA
+"718","P53315","SOL4","YGR248W",NA,NA,NA,NA,0.000256303,NA
+"719","P53319","GND2","YGR256W",NA,NA,NA,NA,0.000112441,NA
+"720","P53341","MAL12","YGR292W",NA,NA,NA,NA,3.13e-06,NA
+"721","P53629","ARE2","YNR019W",NA,NA,NA,NA,6.37e-06,NA
+"722","P53630","BIO4","YNR057C",NA,"OG6065",NA,NA,2.93e-06,NA
+"723","P53753","DSE4","YNR067C",NA,"OG1042",NA,NA,2.97e-06,NA
+"724","P53982","IDP3","YNL009W",NA,"OG1056",NA,NA,2.97e-06,NA
+"725","P54070","KTR6","YPL053C",NA,"OG11566",NA,NA,3.18e-06,NA
+"726","P54114","ALD3","YMR169C",NA,"OG1103",NA,NA,3.05e-06,NA
+"727","P54115","ALD6","YPL061W",NA,NA,NA,NA,3.04e-05,NA
+"728","Q00955","ACC1","YNR016C",NA,NA,NA,NA,3.17e-06,NA
+"729","Q01574","ACS1","YAL054C",NA,NA,NA,NA,2.15e-05,NA
+"730","Q02979","GDE1","YPL110C",NA,NA,NA,NA,3.14e-06,NA
+"731","Q03674","PLB2","YMR006C",NA,NA,NA,NA,3.4e-06,NA
+"732","Q03764","EKI1","YDR147W",NA,"OG15742",NA,NA,3.4e-06,NA
+"733","Q04120","TSA2","YDR453C",NA,NA,NA,NA,2.94e-06,NA
+"734","Q04396","LPP1","YDR503C",NA,"OG7818",NA,NA,3.17e-06,NA
+"735","Q04894","ADH6","YMR318C",NA,"OG1020",NA,NA,2.73e-06,NA
+"736","Q05506","YDR341C","YDR341C",NA,NA,NA,NA,2.85e-05,1.086956522
+"737","Q06490","THI22","YPR121W",NA,NA,NA,NA,2.25e-06,NA
+"738","Q06702","CDA1","YLR307W",NA,NA,NA,NA,3.14e-06,NA
+"739","Q07471","THI3","YDL080C",NA,"OG1060",NA,NA,2.25e-06,NA
+"740","Q07500","NDE2","YDL085W",NA,NA,NA,NA,1.98e-05,NA
+"741","Q07804","YEH1","YLL012W",NA,NA,NA,NA,2.25e-06,NA
+"742","Q07923","LOT6","YLR011W",NA,"OG5727",NA,NA,5.13e-06,NA
+"743","Q07950","YEH2","YLR020C",NA,"OG1381",NA,NA,3.39e-06,NA
+"744","Q07993","XYL2","YLR070C",NA,NA,NA,NA,3.38e-06,NA
+"745","Q08108","PLB3","YOL011W",NA,NA,NA,NA,3.17e-06,NA
+"746","Q08224","THI20","YOL055C",NA,NA,NA,NA,3.17e-06,NA
+"747","Q08558","DCI1","YOR180C",NA,NA,NA,NA,3e-06,NA
+"748","Q08911","FDH1","YOR388C",NA,"OG1458",NA,NA,3.32e-06,NA
+"749","Q12036","PPT2","YPL148C",NA,"OG6996",NA,NA,2.41e-06,NA
+"750","Q12068","GRE2","YOL151W",NA,NA,NA,NA,3.17e-06,NA
+"751","Q12122","LYS21","YDL131W",NA,NA,NA,NA,0.001411693,10.86956522
+"752","Q12246","LCB4","YOR171C",NA,NA,NA,NA,2.24e-06,NA
+"753","Q12271","INP53","YOR109W",NA,"OG1063",NA,NA,2.25e-06,NA
+"754","Q12320","GLO4","YOR040W",NA,NA,NA,NA,2.41e-06,NA
+"755","Q12358","JLP1","YLL057C",NA,"OG1109",NA,NA,3.12e-06,NA
+"756","Q12458","YPR1","YDR368W",NA,NA,NA,NA,2.42e-06,NA
+"757","Q12525","MHT1","YLL062C",NA,NA,NA,NA,2.41e-06,NA
+"758","Q3E790","TSC3","YBR058C-A",NA,"OG6371",NA,NA,2.97e-06,NA
+"759","P61829","OLI1","Q0130",NA,"OG5286",NA,NA,2.42e-06,NA
+"760","P00854","ATP6","Q0085",NA,"OG4273",NA,NA,3.18e-06,NA
+"761","P00856","ATP8","Q0080",NA,"OG170944",NA,NA,3.1e-06,NA
+"762","P00410","COX2","Q0250",NA,"OG4755",NA,NA,0.000125581,NA
+"763","P00420","COX3","Q0275",NA,"OG5621",NA,NA,8.85e-05,NA
+"764","P00163","COB","Q0105",NA,"OG5006",NA,NA,0.00017038,NA
