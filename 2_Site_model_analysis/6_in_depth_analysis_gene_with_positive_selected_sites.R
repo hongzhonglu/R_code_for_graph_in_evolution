@@ -23,46 +23,66 @@ gene_dn_ds_all_new <- read.table("result/gene_dn_ds_all_new.txt", header = TRUE,
 # positive selected gene analysis across 343 yeast species
 fubar_02_08 <- read_csv("data/fubar_02_08.csv")
 select_gene_dn_ds <- merge.data.frame(gene_dn_ds_all_new, fubar_02_08, by.x = "OG", by.y="OG")
-select_gene_dn_ds$select_num <- NA
-select_gene_dn_ds$select_num[select_gene_dn_ds$positive_num >= 3] <- "c over_3_sites"
-select_gene_dn_ds$select_num[select_gene_dn_ds$positive_num < 3 & select_gene_dn_ds$positive_num >= 1] <- "b 1-2_sites"
-select_gene_dn_ds$select_num[select_gene_dn_ds$positive_num < 1] <- "a no_select_sites"
-select_gene_dn_ds$select_num <- as.factor(select_gene_dn_ds$select_num)
+select_gene_dn_ds$Gene_number <- NA
+select_gene_dn_ds$Gene_number[select_gene_dn_ds$positive_num >= 3 ] <- "d over_3_sites"
+select_gene_dn_ds$Gene_number[select_gene_dn_ds$positive_num ==2 ] <- "c 2_sites"
+select_gene_dn_ds$Gene_number[select_gene_dn_ds$positive_num ==1 ] <- "b 1_sites"
+select_gene_dn_ds$Gene_number[select_gene_dn_ds$positive_num ==0 ] <- "a no_sites"
+select_gene_dn_ds$Gene_number <- as.factor(select_gene_dn_ds$Gene_number)
 # plot
-ggplot(select_gene_dn_ds,aes(x=select_num, y=dN_dS, fill=select_num)) + geom_boxplot() +
+ggplot(select_gene_dn_ds,aes(x=Gene_number, y=dN_dS, fill=Gene_number)) + geom_boxplot() +
   ylim(0,1) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  #theme(panel.background = element_rect(fill = "white", colour = "black")) + # generate the whole border
+  theme_bw() +                                       # control background and border
+  theme(axis.line = element_line(colour = "black"),  # control background and border
+        panel.grid.major = element_blank(),          # control background and border   
+        panel.grid.minor = element_blank(),          # control background and border
+        panel.border = element_blank(),              # control background and border
+        panel.background = element_blank()) +        # control background and border
+
   theme(legend.position = c(0.2, 0.8)) +
   theme(axis.text=element_text(size=12,face="bold", family="Arial"),
         axis.title=element_text(size=24,face="bold", family="Arial"),
         legend.text = element_text(size = 13, family = "Arial")) +  ggtitle('') +
         theme(legend.position = "none")
 
-SG1 <-  filter(select_gene_dn_ds, select_num == "c over_3_sites")
-SG2 <-  filter(select_gene_dn_ds, select_num == "b 1-2_sites")
-SG3 <-  filter(select_gene_dn_ds, select_num == "a no_select_sites")
 
 
-t.test(SG1$dN_dS,SG3$dN_dS)
-t.test(SG1$dN_dS,SG2$dN_dS)
+SG1 <-  filter(select_gene_dn_ds, Gene_number == "a no_sites")
+SG2 <-  filter(select_gene_dn_ds, Gene_number == "b 1_sites")
+SG3 <-  filter(select_gene_dn_ds, Gene_number == "c 2_sites")
+SG4 <-  filter(select_gene_dn_ds, Gene_number == "d over_3_sites")
 
-# more analysis about the positive selected number
-select_gene <- select_gene_dn_ds[select_gene_dn_ds$positive_num >= 1, ]
-select_gene$group[select_gene$positive_num >= 3] <- "over_3_select_sites"
-select_gene$group[select_gene$positive_num == 2] <- "2_select_sites"
-select_gene$group[select_gene$positive_num <= 1] <- "1_select_sites"
+# comparsion values from different groups
+t.test(SG4$dN_dS,SG1$dN_dS)
+t.test(SG4$dN_dS,SG2$dN_dS)
+t.test(SG4$dN_dS,SG3$dN_dS)
+
+t.test(SG2$dN_dS,SG1$dN_dS)
+t.test(SG3$dN_dS,SG1$dN_dS)
+
+# calculate the number of OGs with different selection number
 # plot
-ggplot(select_gene, aes(group)) +
-  geom_bar(fill = "#FF6666") +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+ggplot(select_gene_dn_ds, aes(Gene_number)) +
+  geom_bar(fill = "seagreen4") +
   theme(legend.position = c(0.2, 0.8)) +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  #theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  
+  theme_bw() +                                       # control background and border
+  theme(axis.line = element_line(colour = "black"),  # control background and border
+        panel.grid.major = element_blank(),          # control background and border   
+        panel.grid.minor = element_blank(),          # control background and border
+        panel.border = element_blank(),              # control background and border
+        panel.background = element_blank()) +        # control background and border
+  
   theme(axis.text=element_text(size=12,face="bold", family="Arial"),
         axis.title=element_text(size=24,face="bold", family="Arial"),
-        legend.text = element_text(size = 13, family = "Arial")) +  ggtitle('')
+        legend.text = element_text(size = 13, family = "Arial"))
+
 
 
 ###############################################################################################################
+select_gene <- select_gene_dn_ds
 # classification of OGs with selected sites based on KO or function annotation.
 og_panID_mapping <- read_tsv("data/representatives.tsv")
 select_gene <- left_join(select_gene, og_panID_mapping, by = c("OG" = "ortho_id"))

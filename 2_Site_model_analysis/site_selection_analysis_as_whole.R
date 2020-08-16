@@ -64,8 +64,10 @@ filterSiteBasedGap <- function(OGID, max_gap_ratio = 0.3) {
 # the dn_ds_all is calculated based on the site model, see the code from the evolution analysis
 load("data/dn_ds_all.RData")
 
+# density plot is not good
+plot(density(dn_ds_all), xlim=c(0,5))
 
-
+# bar plot
 g <- c()
 g[1] <- length(dn_ds_all[dn_ds_all<=0.2])
 g[2] <- length(dn_ds_all[dn_ds_all > 0.2 & dn_ds_all <= 0.4])
