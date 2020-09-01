@@ -77,6 +77,17 @@ ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, 
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
   theme(legend.position = c(0.8, 0.2))
 
+# plot the dN/dS larger than 0.5
+B3 <- B1[B1$dN_dS>0.5, ]
+ggplot(B3, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
+  xlim(0.5, 1.5) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+  theme(legend.position = "none")
+
+
+
+
 
 
 
