@@ -188,19 +188,21 @@ for (i in 1:nrow(gene_dn_ds_all_new)) {
 gene_dn_ds_all_new$group <- as.factor(gene_dn_ds_all_new$group)
 ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, color = group)) +
   geom_boxplot() +
+  ylim(0,1) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
   theme(legend.position = "none")
 
 G1 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g1")
 G2 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g2")
+G5 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g5")
 G6 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g6")
 G7 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g7")
 
 t.test(G1$dN_dS, G7$dN_dS)
 t.test(G2$dN_dS, G7$dN_dS)
 t.test(G6$dN_dS, G7$dN_dS)
-
+t.test(G5$dN_dS, G6$dN_dS)
 # save the gene dn_ds_all_new for re-usage
 write.table(gene_dn_ds_all_new, "result/gene_dn_ds_all_new.txt", row.names = FALSE, sep = "\t")
 
