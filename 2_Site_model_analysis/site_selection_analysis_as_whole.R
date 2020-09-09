@@ -97,12 +97,49 @@ df$range0 <-factor(df$range0, levels=df$range0)
 
 
 ggplot(data=df, aes(x=range0, y=num_log)) +
-  geom_bar(stat="identity", fill="steelblue") +
+  geom_bar(stat="identity", fill="lightblue") +
   xlab("dN/dS") + 
-  ylab("Count in log10") + 
+  ylab("log10 (Count)") + 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
   theme(axis.text=element_text(size=12, family="Arial"),
         axis.title=element_text(size=16, family="Arial"),
         legend.text = element_text(size=20, family="Arial")) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+
+
+ggplot(data=df, aes(x=range0, y=num)) +
+  geom_bar(stat="identity", fill="steelblue") +
+  xlab("dN/dS") + 
+  ylab("Count") + 
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=16, family="Arial"),
+        legend.text = element_text(size=20, family="Arial")) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+
+library(plotrix)
+x <- c(1:5, 6.9, 7)
+y <- 2^x
+from <- 33
+to <- 110
+plot(x, y, type="b", xlab="index", ylab="value")
+gap.plot(x, y, gap=c(from,to), type="b", xlab="index", ylab="value")
+axis.break(2, from, breakcol="snow", style="gap")
+axis.break(2, from*(1+0.02), breakcol="black", style="slash")
+axis.break(4, from*(1+0.02), breakcol="black", style="slash")
+axis(2, at=from)
+
+
+twogrp <- df$num
+gap.barplot(twogrp,gap=c(5500,6000),xlab="Index",
+            ylab="Group values",main="Barplot with gap")
+
+
+
+
+
+

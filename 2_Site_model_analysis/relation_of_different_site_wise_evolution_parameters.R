@@ -1,4 +1,4 @@
-# These scripts are used to produce map related to evolution project
+# These scripts are used to compare the site wise evolution rate calculated using different methods.
 # 2019.2.20
 # Hongzhong Lu
 

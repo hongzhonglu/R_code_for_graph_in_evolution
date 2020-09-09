@@ -1,0 +1,34 @@
+INFO [2020-09-09 10:54:42] $x
+INFO [2020-09-09 10:54:42] list(fubar_macse_prune = fubar_macse_prune0$OG, fubar_guidance_prune = fubar_guidance_prune0$OG, 
+INFO [2020-09-09 10:54:42]     fubar_guidance_unprune = fubar_guidance_unprune0$OG, fel_guidance_prune = fel_guidance_prune0$OG)
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $filename
+INFO [2020-09-09 10:54:42] [1] "result/site_model_results_using_different_method_combination.png"
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $height
+INFO [2020-09-09 10:54:42] [1] 1000
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $width
+INFO [2020-09-09 10:54:42] [1] 1000
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $resolution
+INFO [2020-09-09 10:54:42] [1] 300
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $imagetype
+INFO [2020-09-09 10:54:42] [1] "png"
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $col
+INFO [2020-09-09 10:54:42] [1] "transparent"
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $fill
+INFO [2020-09-09 10:54:42] c("blue", "red", "green", "orange")
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $alpha
+INFO [2020-09-09 10:54:42] [1] 0.5
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $cex
+INFO [2020-09-09 10:54:42] [1] 0.45
+INFO [2020-09-09 10:54:42] 
+INFO [2020-09-09 10:54:42] $cat.cex
+INFO [2020-09-09 10:54:42] [1] 0.45
+INFO [2020-09-09 10:54:42] 

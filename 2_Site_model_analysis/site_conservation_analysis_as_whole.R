@@ -1,4 +1,5 @@
-  # These scripts are used to produce map related to evolution project
+  # These scripts are used to analyze the highly conserved amino acid sites across different yeast species.
+  # Currently, this result is not used any more.
   # 2019.2.20
   # Hongzhong Lu
   
