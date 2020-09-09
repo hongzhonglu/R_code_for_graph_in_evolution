@@ -88,3 +88,12 @@ for (i in 1:length(gene_family_clade)){
 
 clade_gene_families <- data.frame(clade=clade_all, expanded=expanded_all, extracted = extracted_all, stringsAsFactors = FALSE)
 clade_gene_families$ratio_of_expanded_to_extracted <- clade_gene_families$expanded/clade_gene_families$extracted
+# plot a bar plot based on the clade level analysis
+# remove the Alloascoideaceae as it is only contain one species
+ggplot(data=clade_gene_families , aes(x=clade, y=expanded)) + geom_bar(stat="identity") +
+  theme(legend.position = c(0.2, 0.8)) +
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=24, family="Arial"),
+        legend.text = element_text(size = 13, family = "Arial")) +  ggtitle('') +
+  theme(legend.position = "none") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))

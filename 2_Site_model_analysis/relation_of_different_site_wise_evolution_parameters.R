@@ -219,11 +219,10 @@ unlist(res$estimate)
 
 
 
-
-
-
-
-
-
-
-
+# a small task- plot a bar plot for dN/dS just as an example graph in a flow chart of figure 4a.
+example_data <- score_summary$dnds
+example_data <- example_data[example_data <10]
+example_data <- example_data 
+example_data0 <- sample(example_data, 100)
+example_data0 <- example_data0 + 0.2
+barplot(example_data0, col = heat.colors(12))

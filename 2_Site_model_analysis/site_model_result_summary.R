@@ -89,10 +89,12 @@ ggplot(gene_dn_ds_all_new,aes(x=Type, y=dN_dS, fill=Type)) + geom_boxplot() +
         panel.background = element_blank()) +        # control background and border
   
   theme(legend.position = c(0.2, 0.8)) +
-  theme(axis.text=element_text(size=12,face="bold", family="Arial"),
-        axis.title=element_text(size=24,face="bold", family="Arial"),
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial"),
         legend.text = element_text(size = 13, family = "Arial")) +  ggtitle('') +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
 t.test(gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Positive_selection"], gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Negative_selection"])
 
 
