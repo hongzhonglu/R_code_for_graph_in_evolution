@@ -101,9 +101,9 @@ yeast_fermentation_filter %>%
   geom_boxplot(alpha = 0.1) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=20,family="Arial"),
+        legend.text = element_text(size=18, family="Arial")) +
   ggtitle('') +
   theme(legend.position = "none") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1))
