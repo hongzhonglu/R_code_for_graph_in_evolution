@@ -76,3 +76,6 @@ dn_ds_df0 %>%
   t.test(dn_ds_function[["Site"]], dn_ds_function[["all_site"]])
   t.test(dn_ds_function[["Active site"]], dn_ds_function[["all_site"]])
   t.test(dn_ds_function[["Binding site"]], dn_ds_function[["all_site"]])
+  
+  t.test(dn_ds_function[["Site"]], dn_ds_function[["Peptide"]])
+  

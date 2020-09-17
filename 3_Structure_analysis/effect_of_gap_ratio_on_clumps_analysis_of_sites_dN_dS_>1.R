@@ -27,10 +27,12 @@ for (i in parameter){
 }
 effects_ratio <- data.frame(gap_ratio = parameter, num_protein = unqiue_protein_filter_0.05)
 
+
 ggplot(data=effects_ratio, aes(x=gap_ratio, y=num_protein)) +
-  geom_bar(stat="identity", fill="steelblue") +
+  geom_bar(stat="identity", fill="steelblue2") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
+  labs(x="Gap frequency", y="Number of proteins")+
   theme(axis.text=element_text(size=20, family="Arial"),
         axis.title=element_text(size=24, family="Arial"),
         legend.text = element_text(size=20, family="Arial"))

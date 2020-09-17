@@ -72,8 +72,14 @@ ggplot(geneGEM01,aes(x=FCC_type, y=dN_dS, fill=FCC_type)) + geom_boxplot() +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) #+
 g1 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "A.no effect"]
-g2 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "C.0.001-0.01"]
+g2 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "B.0-0.001"]
+g3 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "C.0.001-0.01"]
+g4 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "D.0.01-0.05"]
+
 t.test(g1,g2)
+t.test(g1,g3)
+t.test(g1,g4)
+
 
 
 #correlation analysis between protein abundence and nsSNP number

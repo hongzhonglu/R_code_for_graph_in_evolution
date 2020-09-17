@@ -130,7 +130,7 @@ interest_pathway <- c("Citrate cycle (TCA cycle)","Glycolysis / Gluconeogenesis"
                       "Purine metabolism", "Pyrimidine metabolism")
 dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway, ]
 
-dn_ds_summary2 <- group_by(dn_ds_metabolic_pathway1, pathway) %>% summarize(m = mean(dN_dS))
+dn_ds_summary2 <- group_by(dn_ds_metabolic_pathway1, pathway) %>% summarize(m = median(dN_dS))
 dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = TRUE),]
 
 dn_ds_metabolic_pathway1$pathway <-factor(dn_ds_metabolic_pathway1$pathway, levels=dn_ds_summary2$pathway)
@@ -152,9 +152,18 @@ ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS, fill=pathway)) + geom_b
 
 
 G1 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Citrate cycle (TCA cycle)")
-G2 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Biosynthesis of antibiotics")
+G2<- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Pentose phosphate pathway")
+G3 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Biosynthesis of amino acids")
+G4 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Biosynthesis of antibiotics")
+G5 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Glycolysis / Gluconeogenesis")
+
+
+
 t.test(G1$dN_dS, G2$dN_dS)
+t.test(G1$dN_dS, G3$dN_dS)
+t.test(G1$dN_dS, G4$dN_dS)
+t.test(G1$dN_dS, G5$dN_dS)
 
-
+t.test(G2$dN_dS, G5$dN_dS)
 
 
