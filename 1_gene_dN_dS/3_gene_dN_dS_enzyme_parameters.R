@@ -22,6 +22,18 @@ gene_dn_ds_sce0 <- left_join(gene_dn_ds_sce, og_sce_mapping, by = c("OG" = "orth
 gene_dn_ds_sce0$locus <- str_replace_all(gene_dn_ds_sce0$representative, "Saccharomyces_cerevisiae@", "")
 
 
+# choose the genes sets with highest dN/dS and lowest dN/dS
+dn_ds_order <- gene_dn_ds_sce0[order(gene_dn_ds_sce0$dN_dS), ]
+plot(density(dn_ds_order$dN_dS))
+sample_num <- 150
+lowest_dn_ds_group <- dn_ds_order[c(1:sample_num),]
+highest_dn_ds_group <- dn_ds_order[c((4459-sample_num+1):4459),]
+print(paste0(lowest_dn_ds_group$locus, collapse = ","))
+print(paste0(highest_dn_ds_group$locus, collapse = ","))
+
+
+
+
 # input the result for the kinetics sensitivity analysis
 kinetics_analysis <- read.table("protein_related_parameters/FCC of sce enzymes/KcatSensitivities_YEP.txt", header = TRUE, stringsAsFactors = FALSE)
 colnames(kinetics_analysis) <- c("locus", "glucose", "acetate", "ethanol", "glycerol", "sorbitol", "galactose", "ribose", "xylose")
