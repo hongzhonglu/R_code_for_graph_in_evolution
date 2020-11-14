@@ -1,5 +1,5 @@
 # These scripts are used to produce map related to evolution project
-# This result is based on one calculation
+# This result is based on the two parallel calculation
 # heat-tolerance as the main trait
 # Compare the model prediction and selection analysis
 # Compare the proteomics and selection analysis
@@ -17,7 +17,38 @@ library(readr)
 library(readxl)
 library(hongR)
 
-trait_heat_result <- read_excel("data/branch_site_heat/enzyme_need_analysis_for_heat_with_result.xlsx")
+# input the data from the first calculation
+trait_heat_result <- read_csv("/Users/luho/Documents/branch_site_heat/heat_result_all_update2.csv")
+
+# filter based on the select species and select clade
+interest_OG <- filter(trait_heat_result, Select_species>=10 & select_clade_all >=3)
+
+
+# input the data from second calculation
+trait_heat_result2 <- read_csv("/Users/luho/Documents/branch_site_heat_2nd/heat_result_all_update2.csv")
+trait_heat_result2$Select_species <- as.numeric(trait_heat_result2$Select_species)
+# filter based on the select species and select clade
+interest_OG2 <- trait_heat_result2[trait_heat_result2$Select_species >= 10 & trait_heat_result2$select_clade_all >=3,]
+interest_OG2 <- interest_OG2[!is.na(interest_OG2$OG),]
+
+
+# calculate the common
+common_OGs <- intersect(interest_OG$OG, interest_OG2$OG)
+fiter_result <- trait_heat_result[trait_heat_result$OG %in% common_OGs, ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 figure5e_all_enzymes_2020_04 <- read_csv("data/branch_site_heat/figure5e_all_enzymes_2020_04.csv")
 fccs_at_40 <- read_csv("data/branch_site_heat/fccs_at_40_100_models_figure5a_2020_04.csv")
 
@@ -31,19 +62,28 @@ trait_heat_result$number_select <- as.numeric(trait_heat_result$number_select)
 
 write.csv(trait_heat_result, "data/branch_site_heat/trait_heat_result_integrated.csv")
 
+
 # combine the result from fel and absrel
+# the fel_result is based on the site model
 fel_result_summary <- read_csv("data/branch_site_heat/fel_result_summary.csv")
 fel_result_summary$OG <- str_replace_all(fel_result_summary$OG,".csv","")
 heat_result_all_update2 <- read_excel("data/branch_site_heat/heat_result_all_update2.xlsx", sheet = "top_200_OGs")
 heat_result_all_update2 <- left_join(heat_result_all_update2, fel_result_summary, by = c("OG" = "OG"))
 write.csv(heat_result_all_update2, "data/branch_site_heat/combine_fel_absrel_heat.csv")
 
+
+
+
+
 # interesction of model and evolution analysis
 library(VennDiagram)
 gene_model <- figure5e_all_enzymes_2020_04$locus
-gene_evolution <- heat_result_all_update2$sce[!is.na(heat_result_all_update2$sce)]
+gene_evolution <- trait_heat_result$sce[trait_heat_result$OG %in% common_OGs]
+gene_evolution <- gene_evolution[!is.na(gene_evolution)]
 # get the intersection
 common_gene <- intersect(gene_model, gene_evolution)
+
+paste0(gene_evolution, collapse = ",")
 paste0(common_gene, collapse = ",")
 paste0(gene_model, collapse = ",")
 #plot the graph
