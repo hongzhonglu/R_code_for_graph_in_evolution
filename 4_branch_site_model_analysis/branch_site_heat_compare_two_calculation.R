@@ -112,3 +112,21 @@ VennDiagram::venn.diagram(x= list(Evolution = gene_evolution, Up_regulate=up_reg
 
 
 
+## compare the species number in the filtered OGs and the remaining reference OGs
+OG_df <- trait_heat_result[,c("OG")]
+OG_df$Type <- NA
+OG_df$Type[OG_df$OG %in% common_OGs] <- "Top selected"
+OG_df$Type[!(OG_df$OG %in% common_OGs)] <- "Reference"
+# input the species number for each OG
+ortholog_occurance <- read_tsv("data/ortholog_occurence_num_all.tsv")
+OG_df$Species_num <- getSingleReactionFormula(ortholog_occurance$species_num,ortholog_occurance$ID,OG_df$OG)
+OG_df$Species_num <- as.numeric(OG_df$Species_num)
+# plot a box graph
+ggplot(data=OG_df, aes(x=Type, y=Species_num)) +
+  geom_boxplot(fill="steelblue") +
+  #theme(axis.text.x = element_text(angle = 0, hjust = 1)) + 
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20, family="Arial"),
+        legend.text = element_text(size=20, family="Arial"))
