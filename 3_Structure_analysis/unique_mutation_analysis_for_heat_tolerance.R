@@ -20,6 +20,17 @@ site_type_unique_mutation0 <- splitAndCombine(site_type_unique_mutation$coordina
 colnames(site_type_unique_mutation0 ) <- c("coordinate", "site_type")
 site_type_unique_mutation1 <- site_type_unique_mutation0 %>% separate(site_type, c("gene", "none", "type", "others2"), sep = "@")
 site_type_unique_mutation1$type[str_detect(site_type_unique_mutation1$type, "interface")] <- "interface"
+
+
+# here based on the second independent calculation, we need to filter some genes which are not existing in the
+# second calculation
+
+# input the common gene
+filter_gene <- read.table("result/commom_select_gene_for_heat_in_two_independent_calculation.txt", header=TRUE, sep = "\t", stringsAsFactors = FALSE)
+site_type_unique_mutation1 <- site_type_unique_mutation1[site_type_unique_mutation1$gene %in% filter_gene$sce,]
+
+
+
 # unify the site_type
 print(unique(site_type_unique_mutation1$type))
 # change  "alpha-helix" , "3-10-helix" into  "Helix"
