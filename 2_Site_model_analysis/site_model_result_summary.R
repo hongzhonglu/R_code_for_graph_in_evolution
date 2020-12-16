@@ -60,7 +60,6 @@ ggplot(data=all_result0, aes(x=source, y=num)) +
 
 # insect analysis
 # here the cds aligned by guidance is used.
-
 VennDiagram::venn.diagram(x= list(fubar_guidance_prune = fubar_guidance_prune0$OG,
                                   fubar_guidance_unprune = fubar_guidance_unprune0$OG, fel_guidance_prune =fel_guidance_prune0$OG), 
                           filename = "result/site_model_results_using_different_method_combination3.png", height = 1000, width = 1000,resolution =300, imagetype="png", col="transparent",
