@@ -86,6 +86,9 @@ species <- rownames(df_og1)
 df_og1$species <- NA
 df_og1$species <-rownames(df_og1)
 df_og1$trait <- getSingleReactionFormula(yeast_species_refine$crabtree_effect, yeast_species_refine$old_species_id, df_og1$species)
+df_og1$trait <- str_replace_all(df_og1$trait, "No","Negative")
+df_og1$trait <- str_replace_all(df_og1$trait, "Yes","Positive")
+
 
 df1 <- df_og1[, 1:135]
 
@@ -112,8 +115,8 @@ snapshotPCA3d(file="ellipses.png") # save the 3D PCA map
 # calculate the average gene copy numbers
 # choose genes are significantly different in copies nummber between the crabtree positive and negative species
 # re-do the PCA analysis for two types of strains.
-df_og_crabtree <- df_og1[df_og1$trait=="Yes",]
-df_og_not_crabtree <- df_og1[df_og1$trait=="No",]
+df_og_crabtree <- df_og1[df_og1$trait=="Positive",]
+df_og_not_crabtree <- df_og1[df_og1$trait=="Negative",]
 df_og_compare <- data.frame(OG= unique(core_sce_og$v2))
 df_og_compare$ave_crabtree <- NA
 df_og_compare$ave_non_crabtree <- NA
@@ -143,7 +146,9 @@ autoplot(prcomp(df2), data = df_og1, colour = 'trait') +
         axis.title=element_text(size=20, family="Arial") ) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
-  theme(legend.text=element_text(size=15),
-        legend.title =element_text(size=15))
+  theme(legend.text=element_text(size=10),
+        legend.title =element_text(size=10)) +
+  theme(legend.position = c(0.85, 0.8))
+ggsave(out <- paste('result/','classification_between_crabtree_nagative_and_positive_based_gene_copy_number','.eps', sep = ""), width=5, height=5, dpi=600)
 
 
