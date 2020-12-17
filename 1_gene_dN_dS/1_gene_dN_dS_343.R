@@ -74,22 +74,23 @@ merge_dN_dS <- rbind.data.frame(B1, B2)
 ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
   xlim(0, 1) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  theme(legend.position = c(0.8, 0.2))
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  theme(legend.position = c(0.75, 0.2)) +
+  xlab("dN/dS") + ylab("Count") +
+  theme(legend.text=element_text(size=16, family="Arial"))
+ggsave(out <- paste('result/','dN_dS_for_all_OGs','.svg', sep = ""), width=8, height=6, dpi=600)
 
 # plot the dN/dS larger than 0.5
 B3 <- B1[B1$dN_dS>0.5, ]
 ggplot(B3, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
   xlim(0.5, 1.5) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+  theme(axis.text=element_text(size=30, family="Arial"),
+        axis.title=element_text(size=36, family="Arial") ) +
+  xlab("dN/dS") + ylab("Count")+
   theme(legend.position = "none")
-
-
-
-
-
-
+ggsave(out <- paste('result/','dN_dS_larger_than_one_distribution','.svg', sep = ""), width=5, height=5, dpi=600)
 
 
 
@@ -189,9 +190,40 @@ gene_dn_ds_all_new$group <- as.factor(gene_dn_ds_all_new$group)
 ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, color = group)) +
   geom_boxplot() +
   ylim(0,1) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+
+# other versions which chould be put in the main figures
+# mutiple color
+ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, fill=group))  + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + 
+  geom_boxplot() +
+  ylim(0,1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+
+# single color
+ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS))  + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + 
+  geom_boxplot(color="blue") +
+  ylim(0,1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+
+
+
 
 G1 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g1")
 G2 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g2")
@@ -199,10 +231,16 @@ G5 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g5")
 G6 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g6")
 G7 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g7")
 
+# t.test
 t.test(G1$dN_dS, G7$dN_dS)
 t.test(G2$dN_dS, G7$dN_dS)
 t.test(G6$dN_dS, G7$dN_dS)
 t.test(G5$dN_dS, G6$dN_dS)
+
+# wilcon.test
+wilcox.test(G6$dN_dS, G7$dN_dS, alternative = "two.sided")
+wilcox.test(G5$dN_dS, G6$dN_dS, alternative = "two.sided")
+
 # save the gene dn_ds_all_new for re-usage
 write.table(gene_dn_ds_all_new, "result/gene_dn_ds_all_new.txt", row.names = FALSE, sep = "\t")
 

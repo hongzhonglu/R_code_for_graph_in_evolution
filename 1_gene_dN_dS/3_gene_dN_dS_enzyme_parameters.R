@@ -73,24 +73,39 @@ geneGEM01$FCC_type[geneGEM01$glucose >0 & geneGEM01$glucose <= 0.001] <- "B.0-0.
 geneGEM01$FCC_type[geneGEM01$glucose >0.001 & geneGEM01$glucose <= 0.01] <- "C.0.001-0.01"
 geneGEM01$FCC_type[geneGEM01$glucose >0.01] <- "D.0.01-0.05"
 # plot
-ggplot(geneGEM01,aes(x=FCC_type, y=dN_dS, fill=FCC_type)) + geom_boxplot() +
-  xlab('') + ylab('dN_dS') +
-  theme_bw() +
+ggplot(geneGEM01,aes(x=FCC_type, y=dN_dS, fill=FCC_type)) + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  xlab('Flux control coefficient') + ylab('dN/dS') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position = "none") +
-  theme(axis.text=element_text(size=8, family="Arial"),
-        axis.title=element_text(size=12,family="Arial"),
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) #+
+  ggtitle('')
+
+ggsave(out <- paste('result/','Relation_between_FCCs_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+
+
+
+
+
 g1 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "A.no effect"]
 g2 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "B.0-0.001"]
 g3 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "C.0.001-0.01"]
 g4 <- geneGEM01$dN_dS[geneGEM01$FCC_type == "D.0.01-0.05"]
 
+# t.test
 t.test(g1,g2)
 t.test(g1,g3)
 t.test(g1,g4)
+
+# wilcon.test
+wilcox.test(g1,g2, alternative = "two.sided")
+wilcox.test(g1,g3, alternative = "two.sided")
+wilcox.test(g1,g4, alternative = "two.sided")
+
 
 
 

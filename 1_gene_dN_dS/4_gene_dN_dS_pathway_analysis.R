@@ -131,6 +131,7 @@ interest_pathway <- c("Citrate cycle (TCA cycle)","Glycolysis / Gluconeogenesis"
 dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway, ]
 
 dn_ds_summary2 <- group_by(dn_ds_metabolic_pathway1, pathway) %>% summarize(m = median(dN_dS))
+
 dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = TRUE),]
 
 dn_ds_metabolic_pathway1$pathway <-factor(dn_ds_metabolic_pathway1$pathway, levels=dn_ds_summary2$pathway)
@@ -138,17 +139,20 @@ dn_ds_metabolic_pathway1$pathway <-factor(dn_ds_metabolic_pathway1$pathway, leve
 
 
 # plot
-ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS, fill=pathway)) + geom_boxplot() +
-  xlab('') + ylab('dN_dS') +
-  theme_bw() +
+ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS, fill=pathway)) + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  xlab('') + ylab('dN/dS') +
+  #theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.position = "none") +
-  theme(axis.text=element_text(size=10, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(panel.background = element_rect(fill = "white", colour = "black"))  +
   coord_flip()
+ggsave(out <- paste('result/','dN_dS_distribution_from_different_pathway','.svg', sep = ""), width=8, height=6, dpi=600)
 
 
 G1 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Citrate cycle (TCA cycle)")
@@ -158,12 +162,21 @@ G4 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Bios
 G5 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Glycolysis / Gluconeogenesis")
 
 
-
+# t.test
 t.test(G1$dN_dS, G2$dN_dS)
 t.test(G1$dN_dS, G3$dN_dS)
 t.test(G1$dN_dS, G4$dN_dS)
 t.test(G1$dN_dS, G5$dN_dS)
 
-t.test(G2$dN_dS, G5$dN_dS)
+# wilcon.test
+wilcox.test(G1$dN_dS, G2$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G3$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G4$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G5$dN_dS, alternative = "two.sided")
+# By comparison, it could find differences between t.test and wilcon.test
+
+
+
+
 
 
