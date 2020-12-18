@@ -1,4 +1,5 @@
 # These scripts are used to produce map related to evolution project
+# here only the result from homolog pdb files is used, so how is about the experimental pdb files?
 # 2019.2.20
 # Hongzhong Lu
 
@@ -29,11 +30,11 @@ effects_ratio <- data.frame(gap_ratio = parameter, num_protein = unqiue_protein_
 
 
 ggplot(data=effects_ratio, aes(x=gap_ratio, y=num_protein)) +
-  geom_bar(stat="identity", fill="steelblue2") +
+  geom_bar(stat="identity", color="blue",fill="blue", alpha=0.3) +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
   labs(x="Gap frequency", y="Number of proteins")+
   theme(axis.text=element_text(size=20, family="Arial"),
         axis.title=element_text(size=24, family="Arial"),
         legend.text = element_text(size=20, family="Arial"))
-  
+ggsave(out <- paste('result/','Effect_of_gap_on_number_of_protein_with_significant_clusters','.svg', sep = ""), width=5, height=5, dpi=300)

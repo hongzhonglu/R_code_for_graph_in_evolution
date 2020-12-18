@@ -55,9 +55,10 @@ dn_ds_df0 <- left_join(dn_ds_df,site_type_df, c("type" = "site"))
 
 # plot
 dn_ds_df0 %>%
-  ggplot(aes(x=combine,y=dn_ds, fill=combine, alpha=0.5)) +
-    geom_boxplot(outlier.colour = "gray75", outlier.shape = 1) +
-    ylim(0, 1) +
+  ggplot(aes(x=combine,y=dn_ds, fill=combine)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot(outlier.colour = "gray75", outlier.shape = 1) +
+  ylim(0, 1) +
   theme_bw() +                                       # control background and border
   theme(axis.line = element_line(colour = "black"),  # control background and border
         panel.grid.major = element_blank(),          # control background and border   
@@ -67,15 +68,21 @@ dn_ds_df0 %>%
   
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=12,family="Arial"),
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  xlab("") + ylab("Site-wise dN/dS")
+ggsave(out <- paste('result/','dN_dS_distribution_based_function','.svg', sep = ""), width=15, height=5, dpi=300)
 
 
-  t.test(dn_ds_function[["Site"]], dn_ds_function[["all_site"]])
-  t.test(dn_ds_function[["Active site"]], dn_ds_function[["all_site"]])
-  t.test(dn_ds_function[["Binding site"]], dn_ds_function[["all_site"]])
-  
-  t.test(dn_ds_function[["Site"]], dn_ds_function[["Peptide"]])
-  
+
+# t.test
+t.test(dn_ds_function[["Active site"]], dn_ds_function[["all_site"]])
+t.test(dn_ds_function[["Site"]], dn_ds_function[["Peptide"]])
+
+  #t.test(dn_ds_function[["Site"]], dn_ds_function[["all_site"]])
+  #t.test(dn_ds_function[["Binding site"]], dn_ds_function[["all_site"]])
+# wilcon.test
+wilcox.test(dn_ds_function[["Active site"]], dn_ds_function[["all_site"]], alternative = "two.sided")
+wilcox.test(dn_ds_function[["Site"]], dn_ds_function[["Peptide"]], alternative = "two.sided")

@@ -178,4 +178,3 @@ og_panID_mapping0 <- og_panID_mapping[og_panID_mapping$ortho_id %in% Combine1, ]
 og_panID_sce <- og_panID_mapping0[str_detect(og_panID_mapping0$representative, "Saccharomyces_cerevisiae"),]
 og_panID_sce$representative <- str_replace_all(og_panID_sce$representative,"Saccharomyces_cerevisiae@", "")
 print(paste0(og_panID_sce$representative, collapse = ",")) # for DAVID
-

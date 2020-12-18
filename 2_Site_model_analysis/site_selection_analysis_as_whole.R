@@ -97,15 +97,17 @@ df$range0 <-factor(df$range0, levels=df$range0)
 
 
 ggplot(data=df, aes(x=range0, y=num_log)) +
-  geom_bar(stat="identity", fill="lightblue") +
+  geom_bar(stat="identity", color="blue",fill="blue", alpha=0.3) +
   xlab("dN/dS") + 
   ylab("log10 (Count)") + 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
-  theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=16, family="Arial"),
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20, family="Arial"),
         legend.text = element_text(size=20, family="Arial")) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
+ggsave(out <- paste('result/','all_site_level_dN_dS_distribution','.svg', sep = ""), width=12, height=6, dpi=600)
+
 
 
 
@@ -121,6 +123,7 @@ ggplot(data=df, aes(x=range0, y=num)) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
 
 
+##################### not used ################
 library(plotrix)
 x <- c(1:5, 6.9, 7)
 y <- 2^x
@@ -137,9 +140,3 @@ axis(2, at=from)
 twogrp <- df$num
 gap.barplot(twogrp,gap=c(5500,6000),xlab="Index",
             ylab="Group values",main="Barplot with gap")
-
-
-
-
-
-
