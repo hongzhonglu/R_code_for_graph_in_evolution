@@ -42,70 +42,89 @@ t.test(g1, g2) # yield p value 0.00001
 
 # plot
 yeast_fermentation_filter %>%
-  ggplot(aes(x=crabtree,y=`Growth rate*: (1/h)`, fill=crabtree, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  theme(legend.position = "none") +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
-
-
-yeast_fermentation_filter %>%
-  ggplot(aes(x=crabtree,y=`EtOH/Biomass/h((mmol/gDW,h))`, fill=crabtree, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  theme(legend.position = "none") +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
-
-
-
-yeast_fermentation_filter %>%
-  ggplot(aes(x=crabtree,y=`Glc/Biomass/h((mmol/gDW,h))`, fill=crabtree, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  theme(legend.position = "none") +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
-
-
-
-yeast_fermentation_filter %>%
-  ggplot(aes(x=crabtree,y=`Yield: EtOH/glc(g/g)`, fill=crabtree, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  theme(legend.position = "none") +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
-
-
-
-yeast_fermentation_filter %>%
-  ggplot(aes(x=crabtree,y=`Yield: Biomass/Glc`, fill=crabtree, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
+  ggplot(aes(x=crabtree,y=`Growth rate*: (1/h)`, fill=crabtree)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme(legend.position = c(0.85, 0.2)) +
   theme(axis.text=element_text(size=20, family="Arial"),
-        axis.title=element_text(size=20,family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  theme(legend.position = "none") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  xlab("Crabtree") + ylab("Growth rate (1/h)")
+
+
+
+
+yeast_fermentation_filter %>%
+  ggplot(aes(x=crabtree,y=`Glc/Biomass/h((mmol/gDW,h))`, fill=crabtree)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  theme(legend.position = "none") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  xlab("Crabtree") + ylab("qS (mM/gDW.h)")
+
+
+
+yeast_fermentation_filter %>%
+  ggplot(aes(x=crabtree,y=`Yield: EtOH/glc(g/g)`, fill=crabtree)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  theme(legend.position = "none") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  xlab("Crabtree") + ylab("Yethanol/S (g/g)")
+
+
+yeast_fermentation_filter %>%
+  ggplot(aes(x=crabtree,y=`Yield: Biomass/Glc`, fill=crabtree)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
         legend.text = element_text(size=18, family="Arial")) +
   ggtitle('') +
   theme(legend.position = "none") +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  xlab("Crabtree") + ylab("YX/S(C mol/C mol)")
 
 
+
+
+
+
+
+
+
+
+
+
+# not used sub figure
+yeast_fermentation_filter %>%
+  ggplot(aes(x=crabtree,y=`EtOH/Biomass/h((mmol/gDW,h))`, fill=crabtree)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  theme(legend.position = "none") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  xlab("Crabtree") + ylab("qEthanol (mM/gDW.h)")

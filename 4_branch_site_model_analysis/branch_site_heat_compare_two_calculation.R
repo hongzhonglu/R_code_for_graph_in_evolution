@@ -34,8 +34,8 @@ interest_OG2 <- interest_OG2[!is.na(interest_OG2$OG),]
 
 # calculate the common
 common_OGs <- intersect(interest_OG$OG, interest_OG2$OG)
-fiter_result <- trait_heat_result[trait_heat_result$OG %in% common_OGs, ]
-write.table(fiter_result, "result/commom_select_gene_for_heat_in_two_independent_calculation.txt", row.names = FALSE, sep = "\t")
+filter_result <- trait_heat_result[trait_heat_result$OG %in% common_OGs, ]
+write.table(filter_result, "result/commom_select_gene_for_heat_in_two_independent_calculation.txt", row.names = FALSE, sep = "\t")
 
 
 
