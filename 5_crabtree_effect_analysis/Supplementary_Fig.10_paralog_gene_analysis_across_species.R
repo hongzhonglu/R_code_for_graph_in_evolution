@@ -1,4 +1,4 @@
-# These scripts are used to produce map related to evolution project
+# These scripts are used to produce supplementary figure 9 for the evolution project
 # 2020.4.15
 # Hongzhong Lu
 
@@ -296,12 +296,13 @@ for (i in seq_along(all_file)) {
 # Here with the glucose as an example
 
 #complex
-test <- GPs_redesign_yeast[GPs_redesign_yeast$IDnew=="r_0886", 1:ncol(GPs_redesign_yeast)]
-test <- test[1,] #r_0886 YMR205C
-test <- test[2,] #r_0886 YGR240C
+#test <- GPs_redesign_yeast[GPs_redesign_yeast$IDnew=="r_0886", 1:ncol(GPs_redesign_yeast)]
+#test <- test[1,] #r_0886 YMR205C
+#test <- test[2,] #r_0886 YGR240C
 
 #isoenzyme
-test <- GPs_redesign_yeast[GPs_redesign_yeast$IDnew=="r_1050", 1:ncol(GPs_redesign_yeast)]
+test <- GPs_redesign_yeast[GPs_redesign_yeast$IDnew=="r_1166", 1:ncol(GPs_redesign_yeast)]
+#r_1166 glucose transporter reaction
 #r_0450 FBA1
 #r_0486 TDH
 #r_0892 PGK1
@@ -349,17 +350,18 @@ yeast_species_classification0$protein_homolog_number <- getSingleReactionFormula
 yeast_species_classification0$protein_homolog_number <- as.numeric(yeast_species_classification0$protein_homolog_number)
 
 
-# explore the duplication of glucose transportor and Crabtree effect
+# explore the relation between the duplication of glucose transportor and Crabtree effect
 yeast_species_classification1 <- yeast_species_classification0[!is.na(yeast_species_classification0$crabtree_effect), ]
 yeast_species_classification1$crabtree_effect <- as.factor(yeast_species_classification1$crabtree_effect)
 # plot
 yeast_species_classification1 %>%
-  ggplot(aes(x=crabtree_effect,y=protein_homolog_number, fill=crabtree_effect, alpha=0.5)) +
-  geom_boxplot(alpha = 0.1) +
+  ggplot(aes(x=crabtree_effect,y=protein_homolog_number, fill=crabtree_effect)) +
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme(legend.position = c(0.85, 0.2)) +
-  theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=12,family="Arial"),
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
   theme(legend.position = "none") +
@@ -369,8 +371,13 @@ g1 <- yeast_species_classification1$protein_homolog_number[yeast_species_classif
 g2 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="No"]
 t.test(g1,g2)
 
+# wilcon.test
+wilcox.test(g1,g2, alternative = "two.sided")
+
+
 
 # plot2
+# explore the relation between the duplication of glucose transportor and whole genome duplication
 yeast_species_classification0 %>%
   ggplot(aes(x=WGD,y=protein_homolog_number, fill=WGD, alpha=0.5)) +
   geom_boxplot(alpha = 0.1) +
