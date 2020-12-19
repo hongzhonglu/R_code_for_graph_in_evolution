@@ -33,11 +33,31 @@ yeast_fermentation_filter$crabtree <- as.factor(yeast_fermentation_filter$crabtr
 yeast_fermentation_filter <- yeast_fermentation_filter[!duplicated(yeast_fermentation_filter$Model_name),]
 yeast_fermentation_filter$`Yield: Biomass/Glc`
 
+
+# statistical analysis
 g1 <- yeast_fermentation_filter$`Yield: Biomass/Glc`[yeast_fermentation_filter$crabtree=="Yes"]
 g2 <- yeast_fermentation_filter$`Yield: Biomass/Glc`[yeast_fermentation_filter$crabtree=="No"]
+t.test(g1, g2) 
+wilcox.test(g1,g2, alternative = "two.sided")
 
-t.test(g1, g2) # gowth p value 0.054
-t.test(g1, g2) # yield p value 0.00001
+m1 <- yeast_fermentation_filter$`Growth rate*: (1/h)`[yeast_fermentation_filter$crabtree=="Yes"]
+m2 <- yeast_fermentation_filter$`Growth rate*: (1/h)`[yeast_fermentation_filter$crabtree=="No"]
+t.test(m1, m2) # gowth p value 0.054
+wilcox.test(m1,m2, alternative = "two.sided")
+
+n1 <- yeast_fermentation_filter$`Glc/Biomass/h((mmol/gDW,h))`[yeast_fermentation_filter$crabtree=="Yes"]
+n2 <- yeast_fermentation_filter$`Glc/Biomass/h((mmol/gDW,h))`[yeast_fermentation_filter$crabtree=="No"]
+t.test(n1, n2) 
+wilcox.test(n1,n2, alternative = "two.sided")
+
+e1 <- yeast_fermentation_filter$`EtOH/Biomass/h((mmol/gDW,h))`[yeast_fermentation_filter$crabtree=="Yes"]
+e2 <- yeast_fermentation_filter$`EtOH/Biomass/h((mmol/gDW,h))`[yeast_fermentation_filter$crabtree=="No"]
+t.test(e1,e2) 
+wilcox.test(e1,e2, alternative = "two.sided")
+
+
+
+
 
 
 # plot
