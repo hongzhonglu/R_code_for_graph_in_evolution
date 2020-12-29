@@ -74,7 +74,7 @@ yeast_fermentation_filter %>%
   theme(legend.position = "none") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   xlab("Crabtree") + ylab("Growth rate (1/h)")
-
+# output size 5 x 5 
 
 
 

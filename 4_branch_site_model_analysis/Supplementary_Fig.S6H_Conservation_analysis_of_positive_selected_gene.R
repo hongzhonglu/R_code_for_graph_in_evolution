@@ -48,6 +48,8 @@ ggplot(OG_input_heat, aes(x=type, y=species_num, fill=type)) +
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) #+
+# output size 5 x 5
+
 
 # wilcon.test
 g1 <- OG_input_heat$species_num[OG_input_heat$type=="Top selected"]

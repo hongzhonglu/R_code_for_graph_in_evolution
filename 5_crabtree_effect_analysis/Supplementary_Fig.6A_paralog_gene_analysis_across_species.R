@@ -365,7 +365,11 @@ yeast_species_classification1 %>%
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
   theme(legend.position = "none") +
+  labs(x=" ",y ="Glucose transporter number") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1))
+# output size 5 x 5 
+
+
 
 g1 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="Yes"]
 g2 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="No"]

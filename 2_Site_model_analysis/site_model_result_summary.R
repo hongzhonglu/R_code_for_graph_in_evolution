@@ -96,7 +96,7 @@ ggplot(gene_dn_ds_all_new,aes(x=Type, y=dN_dS, fill=Type)) + geom_boxplot() +
   theme(legend.position = "none") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   ylab("dN/dS")
-
+# ouput size 4.89 x 6.30
 t.test(gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Positive_selection"], gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Negative_selection"])
 wilcox.test(gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Positive_selection"], gene_dn_ds_all_new$dN_dS[gene_dn_ds_all_new$Type=="Negative_selection"], alternative = "two.sided")
 
@@ -159,6 +159,21 @@ ggplot(subsystem_filter0, aes(x=subsystem, y=num)) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   coord_flip()
+
+# new version of figure
+ggplot(subsystem_filter0, aes(x=subsystem, y=num)) +
+  geom_bar(stat = "identity", fill = "#FF6666") +
+  xlab('') + ylab('Number of genes') + 
+  theme_bw() +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=10, family="Arial"),
+        axis.title=element_text(size=12,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
+
+# for the output 6.59 x 5.01
 
 
 

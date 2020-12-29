@@ -31,7 +31,7 @@ write.table(sce_gene_OG_map_check, "result/sce_gene_OG_map_check.txt", row.names
 ortholog <- read_tsv("data/ortholog_occurence_num_all.tsv")
 
 ggplot(sce_gene_summary, aes(other_strain_number)) + stat_ecdf() +
-  xlab('Occurence number') + ylab('Percentage') +
+  xlab('Occurrence number') + ylab('Percentage') +
   theme_bw() + 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
@@ -40,4 +40,4 @@ ggplot(sce_gene_summary, aes(other_strain_number)) + stat_ecdf() +
         axis.title=element_text(size=24,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('')
-
+# output 6 x 5
