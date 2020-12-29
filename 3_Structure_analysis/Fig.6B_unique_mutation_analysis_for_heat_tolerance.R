@@ -58,3 +58,4 @@ ggplot(data=result_summary, aes(x=Type, y=Count)) +
   theme(axis.text=element_text(size=16, family="Arial"),
         axis.title=element_text(size=20, family="Arial"),
         legend.text = element_text(size=20, family="Arial"))
+# output size 5 x 5 inches

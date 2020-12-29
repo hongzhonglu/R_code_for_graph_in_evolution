@@ -38,11 +38,58 @@ filter_result <- trait_heat_result[trait_heat_result$OG %in% common_OGs, ]
 write.table(filter_result, "result/commom_select_gene_for_heat_in_two_independent_calculation.txt", row.names = FALSE, sep = "\t")
 
 
+# plot a heatmap based on the species number under different combination of clade and species with positive selection
+selection_analysis <- trait_heat_result[, c("OG","select_clade_all", "Select_species")]
+selection_analysis <- filter(selection_analysis, Select_species>=6 & select_clade_all >=2)
+# change the data format
+selection_analysis$combine <- paste(selection_analysis$select_clade_all, selection_analysis$Select_species,sep="&")
+selection_analysis_table <- as.data.frame(table(selection_analysis$combine),stringsAsFactors = FALSE)
+# build a matrix
+ss <- matrix(, nrow = 3, ncol = 12)
+for(i in 1:3){
+  for(j in 1:12){
+  i0 <- i + 1
+  j0 <- j + 5
+  search_index <- paste(i0, j0, sep = "&")
+  print(search_index)
+  value <- selection_analysis_table$Freq[which(selection_analysis_table$Var1==search_index)]
+  if(length(value)){
+    ss[i,j] <- value} 
+  else{
+    ss[i,j] <- 0
+  }
+  }
+}
+rownames(ss) <- paste(2:4,"_clades", sep = "")
+colnames(ss) <- paste(6:17,"_species", sep = "")
 
 
+# heatmap for Figure 6B
+library(superheat)
+require(scales)
+library(pheatmap)
+library(RColorBrewer)
+library(grid)
 
+ss_df <- as.data.frame(ss)
+ss_df <- ss_df[order(row.names(ss_df),decreasing = TRUE), ]
+#ss_df <- ss_df[, order(colnames(ss_df),decreasing = FALSE)]
+new_col_name <- paste(17:6, "_species", sep = "")
+ss_df <- ss_df[, new_col_name]
+pheatmap(ss_df,
+         method = c("pearson"),
+         clustering_method = "complete",
+         treeheight_row = 40,
+         treeheight_col = 40,
+         cluster_row = FALSE,
+         cluster_col = FALSE,
+         show_rownames = T,
+         show_colnames = T,
+         legend = T,
+         fontsize = 14,
+         color = colorRampPalette(c("white", "SandyBrown", "firebrick3"))(100))
 
-
+# when output as pdf, the best size 5.25 x 2.26 inches
 
 
 

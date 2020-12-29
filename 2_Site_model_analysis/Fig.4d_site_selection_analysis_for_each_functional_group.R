@@ -75,7 +75,7 @@ dn_ds_df0 %>%
   xlab("") + ylab("Site-wise dN/dS")
 ggsave(out <- paste('result/','dN_dS_distribution_based_function','.svg', sep = ""), width=15, height=5, dpi=300)
 
-
+paste0(unique(dn_ds_df0$combine),collapse = ";")
 
 # t.test
 t.test(dn_ds_function[["Active site"]], dn_ds_function[["all_site"]])

@@ -195,7 +195,7 @@ ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, color = group)) +
   theme(axis.text=element_text(size=20, family="Arial"),
         axis.title=element_text(size=24, family="Arial") ) +
   xlab("Orthologs with species number") + ylab("dN/dS")
-ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.pdf', sep = ""), width=8, height=6, dpi=600)
 
 # other versions which chould be put in the main figures
 # mutiple color
@@ -208,7 +208,7 @@ ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, fill=group))  +
   theme(axis.text=element_text(size=20, family="Arial"),
         axis.title=element_text(size=24, family="Arial") ) +
   xlab("Orthologs with species number") + ylab("dN/dS")
-ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.eps', sep = ""), width=8, height=6, dpi=600)
 
 # single color
 ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS))  + 
