@@ -146,9 +146,9 @@ autoplot(prcomp(df2), data = df_og1, colour = 'trait') +
         axis.title=element_text(size=20, family="Arial") ) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
-  theme(legend.text=element_text(size=10),
-        legend.title =element_text(size=10)) +
-  theme(legend.position = c(0.85, 0.8))
-ggsave(out <- paste('result/','classification_between_crabtree_nagative_and_positive_based_gene_copy_number','.eps', sep = ""), width=5, height=5, dpi=600)
+  theme(legend.text=element_text(size=16),
+        legend.title =element_text(size=18)) +
+  theme(legend.position = c(0.8, 0.8))
+ggsave(out <- paste('result/','classification_between_crabtree_nagative_and_positive_based_gene_copy_number','.eps', sep = ""), width=5, height=4, dpi=600)
 
 
