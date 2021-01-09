@@ -152,3 +152,68 @@ autoplot(prcomp(df2), data = df_og1, colour = 'trait') +
 ggsave(out <- paste('result/','classification_between_crabtree_nagative_and_positive_based_gene_copy_number','.eps', sep = ""), width=5, height=4, dpi=600)
 
 
+
+
+
+
+# one small tasks
+# species classification based on FCC
+panEnzymes_gCC <- read_excel("panEnzymes_gCC.xlsx")
+fcc_inf2 <- panEnzymes_gCC[, c(6:325)]
+row.names(fcc_inf2) <- panEnzymes_gCC$species
+# filter based on whether fcc is zero
+gene_all <- colnames(fcc_inf2)
+zero_num <- c()
+for (x in gene_all){
+  print(x)
+  fcc_value0 <- fcc_inf2[, x]
+  number_zero <- length(which(fcc_value0[[x]] == 0))
+  zero_num <- c(zero_num, number_zero)
+}
+
+df_filter <- data.frame(gene = gene_all, zero_num = zero_num, stringsAsFactors = FALSE)
+
+
+gene_select <- df_filter$gene[df_filter$zero_num>=14]
+fcc_inf20 <- fcc_inf2[, gene_select]
+# plot
+autoplot(prcomp(fcc_inf2), data = panEnzymes_gCC, colour = 'clade') +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=20, family="Arial") ) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(legend.text=element_text(size=16),
+        legend.title =element_text(size=18)) #+
+  #theme(legend.position = c(0.8, 0.8))
+
+# plot
+autoplot(prcomp(fcc_inf2), data = panEnzymes_gCC, colour = 'crabtree') +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=20, family="Arial") ) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(legend.text=element_text(size=16),
+        legend.title =element_text(size=18)) #+
+#theme(legend.position = c(0.8, 0.8))
+
+# plot
+autoplot(prcomp(fcc_inf2), data = panEnzymes_gCC, colour = 'wgd') +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=20, family="Arial") ) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(legend.text=element_text(size=16),
+        legend.title =element_text(size=18)) #+
+#theme(legend.position = c(0.8, 0.8))
+
+# plot
+autoplot(prcomp(fcc_inf2), data = panEnzymes_gCC, colour = 'heat_tolerance') +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=20, family="Arial") ) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(legend.text=element_text(size=16),
+        legend.title =element_text(size=18)) #+
+#theme(legend.position = c(0.8, 0.8))
+
+
