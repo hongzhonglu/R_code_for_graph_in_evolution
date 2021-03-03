@@ -334,3 +334,87 @@ violins(
   ylab = "dN/dS", # y-axis label
   xlab = "Group of gene" # x-axis label
 )
+
+
+
+### analysis based on rxn info
+
+
+# combine model information with dN/dS
+gene_core_rxn <- read.table("data/model_info/corerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_core_rxn$V1 <- str_trim(gene_core_rxn$V1, side = "both")
+gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_core_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_core_rxn$V1)
+gene_core_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_core_rxn$OG )
+gene_core_rxn <- gene_core_rxn[!(gene_core_rxn$dN_dS=="NA"),]
+gene_core_rxn$dN_dS <- as.numeric(gene_core_rxn$dN_dS)
+gene_core_rxn$type <- "1.core metabolic"
+
+
+
+gene_accessory_rxn <- read.table("data/model_info/accerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_accessory_rxn$V1 <- str_trim(gene_accessory_rxn$V1, side = "both")
+gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_accessory_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_accessory_rxn$V1)
+gene_accessory_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_accessory_rxn$OG )
+gene_accessory_rxn <- gene_accessory_rxn[!(gene_accessory_rxn$dN_dS=="NA"),]
+gene_accessory_rxn$dN_dS <- as.numeric(gene_accessory_rxn$dN_dS)
+gene_accessory_rxn$type <- "2.accessory metabolic"
+
+
+
+
+gene_pan_rxn <- read.table("data/model_info/panid_panrxn.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_pan_rxn$V1 <- str_trim(gene_pan_rxn$V1, side = "both")
+gene_pan_rxn$V1[!str_detect(gene_pan_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_pan_rxn$V1[!str_detect(gene_pan_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_pan_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_pan_rxn$V1)
+gene_pan_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_pan_rxn$OG )
+gene_pan_rxn <- gene_pan_rxn[!(gene_pan_rxn$dN_dS=="NA"),]
+gene_pan_rxn$dN_dS <- as.numeric(gene_pan_rxn$dN_dS)
+gene_pan_rxn$type <- "3.pan metabolic"
+
+
+
+merge_dN_dS2 <- rbind.data.frame(gene_core_rxn, gene_accessory_rxn, gene_pan_rxn)
+ggplot(merge_dN_dS2, aes(x = type, y = dN_dS, fill = type)) + geom_boxplot() +
+  ylim(0, 0.5) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +
+  theme(axis.text = element_text(size = 14), axis.title = element_text(size =14)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+g1 <- gene_core_rxn$dN_dS
+g2 <- gene_accessory_rxn$dN_dS
+g3 <- gene_pan_rxn$dN_dS
+
+wilcox.test(g1,g3, alternative = "two.sided")
+
+
+B1 <- select(gene_dn_ds_all_new, OG, dN_dS)
+M2 <- select(gene_pan_rxn, OG, dN_dS)
+B1$group <- "All_orthologs"
+M2$group <- "Metabolic_ortholog"
+merge_dN_dS <- rbind.data.frame(B1, M2)
+ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
+  xlim(0, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  theme(legend.position = c(0.75, 0.2)) +
+  xlab("dN/dS") + ylab("Count") +
+  theme(legend.text=element_text(size=14, family="Arial"))
+
+ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_density(alpha = 0.5) +
+  xlim(0, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  theme(legend.position = c(0.75, 0.2)) +
+  xlab("dN/dS") + ylab("Density") +
+  theme(legend.text=element_text(size=14, family="Arial"))
