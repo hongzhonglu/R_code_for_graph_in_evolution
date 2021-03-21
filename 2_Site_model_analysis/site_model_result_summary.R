@@ -73,66 +73,6 @@ Combine1 <- intersect(Combine0, fel_guidance_prune0$OG)
 
 
 
-'
-maybe not used
-# combine model information with dN/dS
-gene_core_rxn <- read.table("data/model_info/corerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
-gene_core_rxn$V1 <- str_trim(gene_core_rxn$V1, side = "both")
-gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")], sep = "")
-# find OG id
-og_pan <- read_tsv("data/representatives.tsv")
-gene_core_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_core_rxn$V1)
-gene_core_rxn$type <- "1.core metabolic"
-
-
-
-gene_accessory_rxn <- read.table("data/model_info/accerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
-gene_accessory_rxn$V1 <- str_trim(gene_accessory_rxn$V1, side = "both")
-gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")], sep = "")
-# find OG id
-og_pan <- read_tsv("data/representatives.tsv")
-gene_accessory_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_accessory_rxn$V1)
-gene_accessory_rxn$type <- "2.accessory metabolic"
-
-
-# add the species number informattion
-gene_core_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_core_rxn$OG)
-gene_core_rxn$species <- as.numeric(gene_core_rxn$species)
-gene_accessory_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_accessory_rxn$OG)
-gene_accessory_rxn$species <- as.numeric(gene_accessory_rxn$species)
-merge_dN_dS_species00 <- rbind.data.frame(gene_core_rxn, gene_accessory_rxn)
-# connect the OG with positive selected sites with rxns and species conservation
-# conbine1_info_with_dn_ds is from [1_gene_dN_dS_343.R]
-conbine1_info_with_dn_ds <- merge_dN_dS_species[merge_dN_dS_species$OG %in% Combine1,]
-conbine1_info_all <- merge_dN_dS_species00[merge_dN_dS_species00$OG %in% Combine1,]
-
-ggplot(conbine1_info_with_dn_ds,aes(x=type, y=dN_dS, fill=type)) + geom_boxplot() +
-  ylim(0,0.5) +
-  theme(panel.background = element_rect(fill = "white", colour = "black", size = 1)) +
-  theme(legend.position = c(0.2, 0.8)) +
-  theme(axis.text=element_text(size=20, family="Arial"),
-        axis.title=element_text(size=24, family="Arial"),
-        legend.text = element_text(size = 13, family = "Arial")) +  ggtitle('') +
-  theme(legend.position = "none") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  ylab("dN/dS")
-# ouput size 4.89 x 6.30
-wilcox.test(conbine1_info_with_dn_ds$dN_dS[conbine1_info_with_dn_ds$type=="1.core metabolic"], conbine1_info_with_dn_ds$dN_dS[conbine1_info_with_dn_ds$type=="2.accessory metabolic"], alternative = "two.sided")
-'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #####################################################################################
 # further analysis these OGs with positive selected sites
 gene_dn_ds_all_new <- read.table("result/gene_dn_ds_all_new.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
