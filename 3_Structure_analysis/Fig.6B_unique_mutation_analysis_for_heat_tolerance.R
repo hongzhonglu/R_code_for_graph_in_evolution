@@ -39,6 +39,7 @@ site_type_unique_mutation1$type[str_detect(site_type_unique_mutation1$type, "ext
 site_type_unique_mutation1$type[str_detect(site_type_unique_mutation1$type, "alpha-helix")] <- "Helix"
 site_type_unique_mutation1$type[str_detect(site_type_unique_mutation1$type, "3-10-helix")] <- "Helix"
 # remove the duplicate row
+site_type_unique_mutation1$coordinate <- str_trim(site_type_unique_mutation1$coordinate, side = "both")
 site_type_unique_mutation1$combine <- paste(site_type_unique_mutation1$coordinate, site_type_unique_mutation1$gene, site_type_unique_mutation1$type, sep = "_")
 site_type_unique_mutation2 <- site_type_unique_mutation1[!duplicated(site_type_unique_mutation1$combine),]
 
@@ -59,3 +60,12 @@ ggplot(data=result_summary, aes(x=Type, y=Count)) +
         axis.title=element_text(size=20, family="Arial"),
         legend.text = element_text(size=20, family="Arial"))
 # output size 5 x 5 inches
+
+
+
+# one small task: calculate total unique mutation and OGs related to heat-tolerance
+# the OGs is based on the two independent calculation while unique mutation is based on the blast analysis
+unique_mutation_analysis_result <- read_excel("data/unique_mutation_analysis_result.xlsx")
+unique_mutation_analysis_result1 <- unique_mutation_analysis_result[unique_mutation_analysis_result$OG %in% filter_gene$OG,]
+print(nrow(unique_mutation_analysis_result1)) # total gene in 141 selected genes
+print(sum(unique_mutation_analysis_result1$num)) # total unique mutation in 22 OGs
