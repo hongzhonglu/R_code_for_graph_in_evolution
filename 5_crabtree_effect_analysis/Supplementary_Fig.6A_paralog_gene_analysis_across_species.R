@@ -353,6 +353,11 @@ yeast_species_classification0$protein_homolog_number <- as.numeric(yeast_species
 # explore the relation between the duplication of glucose transportor and Crabtree effect
 yeast_species_classification1 <- yeast_species_classification0[!is.na(yeast_species_classification0$crabtree_effect), ]
 yeast_species_classification1$crabtree_effect <- as.factor(yeast_species_classification1$crabtree_effect)
+
+# here for Schizosaccharomyces pombe, based on its detail genome annotation, it has four glucose
+# transporter from https://www.pombase.org/gene/SPBC4B4.08
+yeast_species_classification1$protein_homolog_number[yeast_species_classification1$`Species name`=="Schizosaccharomyces pombe"] <- 4
+
 # plot
 yeast_species_classification1 %>%
   ggplot(aes(x=crabtree_effect,y=protein_homolog_number, fill=crabtree_effect)) +
@@ -378,6 +383,35 @@ t.test(g1,g2)
 # wilcon.test
 wilcox.test(g1,g2, alternative = "two.sided")
 
+# new figure considering the relation between WGD, crabree effect and glucose transporter
+yeast_species_classification1$WGD <- as.factor(yeast_species_classification1$WGD)
+yeast_species_classification1$crabtree_effect <- as.factor(yeast_species_classification1$crabtree_effect)
+pd = position_dodge(width = 0.75)
+p <- ggplot(yeast_species_classification1, aes(x=WGD, y=protein_homolog_number, fill=crabtree_effect)) + 
+  stat_boxplot(geom="errorbar", position=pd, width=0.2) +# add caps +
+  geom_boxplot()+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  labs(x="With WGD?",y ="Glucose transporter number") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1))
+# output size 5 x 5 
+
+ggsave(p, filename = "result/glucose_transporter_related_crabtree_and_WGD.eps", device = cairo_pdf, 
+       width = 5, height = 5, units = "in")
+
+g1 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="No" & yeast_species_classification1$WGD=="No"]
+g2 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="Yes" & yeast_species_classification1$WGD=="No"]
+g3 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="Yes" & yeast_species_classification1$WGD=="Yes"]
+
+
+# wilcon.test
+wilcox.test(g1,g2, alternative = "two.sided")
+wilcox.test(g2,g3, alternative = "two.sided")
+
+
 
 
 # plot2
@@ -397,5 +431,25 @@ yeast_species_classification0 %>%
 w1 <- yeast_species_classification0$protein_homolog_number[yeast_species_classification0$WGD=="Yes"]
 w2 <- yeast_species_classification0$protein_homolog_number[yeast_species_classification0$WGD=="No"]
 t.test(w1,w2)
+
+
+# other small tasks
+# URA1 analysis
+URA1_crabtree <- read_excel("data/URA1_crabtree.xlsx")
+
+
+URA1_crabtree$WGD <- getSingleReactionFormula(yeast_species_classification$WGD,yeast_species_classification$old_species_id,URA1_crabtree$species)
+write.table(URA1_crabtree, "result/URA1_crabtree_analysis.txt", row.names = FALSE, sep = "\t")
+
+
+
+URA1_crabtree <- URA1_crabtree[URA1_crabtree$`crabtree positive`!="NaN", ]
+
+URA1_crabtree_non_WGD <- URA1_crabtree[URA1_crabtree$WGD=="No",]
+URA1_crabtree_non_WGD2 <- URA1_crabtree_non_WGD [URA1_crabtree_non_WGD$`crabtree positive`=="1", ]
+
+URA1_crabtree_WGD <- URA1_crabtree[URA1_crabtree$WGD=="Yes",]
+URA1_crabtree_WGD$ura1_HGT <- as.factor(URA1_crabtree_WGD$ura1_HGT)
+URA1_crabtree_WGD$`crabtree positive` <- as.factor(URA1_crabtree_WGD$`crabtree positive` )
 
 
