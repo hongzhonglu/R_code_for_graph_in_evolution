@@ -346,6 +346,7 @@ gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")] <- paste("Saccharomyces_cer
 # find OG id
 og_pan <- read_tsv("data/representatives.tsv")
 gene_core_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_core_rxn$V1)
+print(length(intersect(gene_core_rxn$OG, gene_dn_ds_all_new$OG)))
 gene_core_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_core_rxn$OG )
 gene_core_rxn <- gene_core_rxn[!(gene_core_rxn$dN_dS=="NA"),]
 gene_core_rxn$dN_dS <- as.numeric(gene_core_rxn$dN_dS)
@@ -393,6 +394,10 @@ g2 <- gene_accessory_rxn$dN_dS
 g3 <- gene_pan_rxn$dN_dS
 
 wilcox.test(g1,g3, alternative = "two.sided")
+wilcox.test(g1,g2, alternative = "two.sided")
+wilcox.test(g2,g3, alternative = "two.sided")
+
+
 
 
 B1 <- select(gene_dn_ds_all_new, OG, dN_dS)
@@ -411,17 +416,15 @@ ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_density(alpha = 0.5) +
   xlab("dN/dS") + ylab("Density") +
   theme(legend.text=element_text(size=14, family="Arial"))
 
+
 # add the species number informattion
 gene_core_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_core_rxn$OG)
 gene_core_rxn$species <- as.numeric(gene_core_rxn$species)
 
-
 gene_accessory_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_accessory_rxn$OG)
 gene_accessory_rxn$species <- as.numeric(gene_accessory_rxn$species)
 
-
 merge_dN_dS_species <- rbind.data.frame(gene_core_rxn, gene_accessory_rxn)
-
 
 
 # grou1
@@ -478,7 +481,9 @@ wilcox.test(merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="1.core metabo
 wilcox.test(merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="1.core metabolic"], merge_dN_dS_species3$dN_dS[merge_dN_dS_species3$type=="2.accessory metabolic"], alternative = "two.sided")
 
 
+
 '
+# the rxn and GPR mapping in the pan-GEM
 library(readxl)
 rxnMatrix_model <- read_excel("data/model_info/rxnMatrix_model.xlsx", 
                               col_names = FALSE)
@@ -493,5 +498,4 @@ rxnMatrix_model01$panID <- str_trim(rxnMatrix_model01$panID, side = "both")
 rxnMatrix_model01$rxnID <- str_trim(rxnMatrix_model01$rxnID, side = "both")
 rxnMatrix_model01$combine <- paste(rxnMatrix_model01$panID, rxnMatrix_model01$rxnID, sep = "&&")
 rxnMatrix_model02 <- rxnMatrix_model01[!duplicated(rxnMatrix_model01$combine),]
-og_rxn_num <- as.data.frame(table(rxnMatrix_model02$panID), stringsAsFactors = FALSE)
-'
+og_rxn_num <- as.data.frame(table(rxnMatrix_model02$panID), stringsAsFactors = FALSE)'
