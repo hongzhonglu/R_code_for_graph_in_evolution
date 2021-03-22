@@ -411,7 +411,8 @@ ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_density(alpha = 0.5) +
   xlim(0, 1) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
   theme(axis.text=element_text(size=20, family="Arial"),
-        axis.title=element_text(size=24, family="Arial") ) +
+        axis.title=element_text(size=24, family="Arial"),
+        legend.text = element_text(size=16, family="Arial")) +
   theme(legend.position = c(0.75, 0.3)) +
   xlab("dN/dS") + ylab("Density") +
   theme(legend.text=element_text(size=14, family="Arial"))
@@ -457,7 +458,7 @@ ggplot(merge_dN_dS_species, aes(x=group, y=dN_dS, fill=type)) +
   theme(legend.position = c(0.3,0.9)) +
   theme(axis.text=element_text(size=16, family="Arial"),
         axis.title=element_text(size=20,family="Arial"),
-        legend.text = element_text(size=18, family="Arial")) +
+        legend.text = element_text(size=16, family="Arial")) +
   ggtitle('')
 
 # statitical analysis

@@ -201,11 +201,13 @@ select_gene_pathway_select$group <- "Gene"
 ggplot(select_gene_pathway_select, aes(x=group, y=species)) + 
   geom_boxplot(color="blue") +
   ylim(0,400)+
-  geom_jitter(shape=25, position=position_jitter(0.2)) +
+  geom_jitter(shape=21, colour = "red", fill = "white", size = 2.5, stroke = 1, position=position_jitter(0.2)) +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
-  theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=12,family="Arial"),
-        legend.text = element_text(size=16, family="Arial"))
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20,family="Arial"),
+        legend.text = element_text(size=16, family="Arial")) +
+  xlab("") +
+  ylab("Species number")
 
 
 
