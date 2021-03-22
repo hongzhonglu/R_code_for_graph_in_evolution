@@ -399,7 +399,7 @@ p <- ggplot(yeast_species_classification1, aes(x=WGD, y=protein_homolog_number, 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1))
 # output size 5 x 5 
 
-ggsave(p, filename = "result/glucose_transporter_related_crabtree_and_WGD.eps", device = cairo_pdf, 
+ggsave(p, filename = "result/glucose_transporter_related_crabtree_and_WGD.pdf", device = cairo_pdf, 
        width = 5, height = 5, units = "in")
 
 g1 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="No" & yeast_species_classification1$WGD=="No"]
