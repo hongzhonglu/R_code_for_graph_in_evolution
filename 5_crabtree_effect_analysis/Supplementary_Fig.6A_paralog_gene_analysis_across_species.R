@@ -386,8 +386,8 @@ wilcox.test(g1,g2, alternative = "two.sided")
 # new figure considering the relation between WGD, crabree effect and glucose transporter
 yeast_species_classification1$WGD <- as.factor(yeast_species_classification1$WGD)
 yeast_species_classification1$crabtree_effect <- as.factor(yeast_species_classification1$crabtree_effect)
-pd = position_dodge(width = 0.75)
-p <- ggplot(yeast_species_classification1, aes(x=WGD, y=protein_homolog_number, fill=crabtree_effect)) + 
+
+ggplot(yeast_species_classification1, aes(x=WGD, y=protein_homolog_number, fill=crabtree_effect)) + 
   stat_boxplot(geom="errorbar", position=pd, width=0.2) +# add caps +
   geom_boxplot()+
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
@@ -398,9 +398,6 @@ p <- ggplot(yeast_species_classification1, aes(x=WGD, y=protein_homolog_number, 
   labs(x="With WGD?",y ="Glucose transporter number") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1))
 # output size 5 x 5 
-
-ggsave(p, filename = "result/glucose_transporter_related_crabtree_and_WGD.pdf", device = cairo_pdf, 
-       width = 5, height = 5, units = "in")
 
 g1 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="No" & yeast_species_classification1$WGD=="No"]
 g2 <- yeast_species_classification1$protein_homolog_number[yeast_species_classification1$crabtree_effect=="Yes" & yeast_species_classification1$WGD=="No"]
