@@ -118,6 +118,8 @@ select_gene <- og_panID_mapping[og_panID_mapping$ortho_id %in% Combine1,]
 panID_KO <- read.table("kegg/ko_annotation_of_all_OG.txt", header = TRUE, sep = "\t")
 select_gene$KO <- getSingleReactionFormula(panID_KO$ko, panID_KO$query, select_gene$representative)
 
+
+
 # get the pathway
 KO_pathway <- read.table("kegg/ko_pathway.txt", sep = "\t", stringsAsFactors = FALSE)
 pathway <- read.table("kegg/pathway_list_kegg.txt", sep = "\t", stringsAsFactors = FALSE)
@@ -138,7 +140,7 @@ select_gene_pathway1$pathway <- str_replace_all(select_gene_pathway1$pathway, " 
 
 # here we only choose the pathway with most genes
 subsystem <- as.data.frame(table(select_gene_pathway1$pathway), stringsAsFactors = FALSE)
-subsystem_filter <- subsystem[subsystem$Freq>=4,]
+subsystem_filter <- subsystem[subsystem$Freq>=1,]
 colnames(subsystem_filter) <- c("subsystem","num")
 
 # set the factor level by the mean value of occur number
@@ -162,7 +164,8 @@ ggplot(subsystem_filter0, aes(x=subsystem, y=num)) +
   coord_flip()
 
 # new version of figure
-ggplot(subsystem_filter0, aes(x=subsystem, y=num)) +
+subsystem_filter_over_4_genes <- filter(subsystem_filter0, num >=4)
+ggplot(subsystem_filter_over_4_genes, aes(x=subsystem, y=num)) +
   geom_bar(stat = "identity", fill = "#FF6666") +
   xlab('') + ylab('Number of genes') + 
   theme_bw() +
@@ -173,6 +176,7 @@ ggplot(subsystem_filter0, aes(x=subsystem, y=num)) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1))
+
 
 # for the output 6.59 x 5.01
 # only choose metabolic pathway related??
@@ -192,9 +196,38 @@ ggplot(subsystem_filter1, aes(x=subsystem, y=num)) +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   coord_flip()
 
+# update this pathway
+more_pathways <- c("Citrate cycle (TCA cycle)","Glycolysis / Gluconeogenesis",
+                      "Pentose phosphate pathway", "Oxidative phosphorylation",
+                      "Biosynthesis of unsaturated fatty acids","Biosynthesis of amino acids",
+                      "Biosynthesis of antibiotics",
+                      "Biosynthesis of secondary metabolites",
+                      "Purine metabolism", "Pyrimidine metabolism")
+
+
+# for the output 6.59 x 5.01
+# only choose metabolic pathway related??
+subsystem_interest2 <- unique(c(subsystem_interest, more_pathways))
+
+subsystem_filter1 <- subsystem_filter0[subsystem_filter0$subsystem %in% subsystem_interest2, ]
+ggplot(subsystem_filter1, aes(x=subsystem, y=num)) +
+  geom_bar(stat = "identity", fill = "#FF6666") +
+  xlab('') + ylab('Number of genes') +
+  ylim(0, 20) +
+  theme_bw() +
+  theme(legend.position = c(0.85, 0.2)) +
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=12,family="Arial"),
+        legend.text = element_text(size=16, family="Arial")) +
+  ggtitle('') +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  coord_flip()
+
+
+
 # find the species number
 ortholog <- read_tsv("data/ortholog_occurence_num_all.tsv")
-select_gene_pathway_select <- select_gene_pathway1[select_gene_pathway1$pathway %in% subsystem_interest, ]
+select_gene_pathway_select <- select_gene_pathway1[select_gene_pathway1$pathway %in% subsystem_interest2, ]
 select_gene_pathway_select$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,select_gene_pathway_select$v2)
 select_gene_pathway_select$species <- as.numeric(select_gene_pathway_select$species)
 select_gene_pathway_select$group <- "Gene"
@@ -239,3 +272,104 @@ og_panID_mapping0 <- og_panID_mapping[og_panID_mapping$ortho_id %in% Combine1, ]
 og_panID_sce <- og_panID_mapping0[str_detect(og_panID_mapping0$representative, "Saccharomyces_cerevisiae"),]
 og_panID_sce$representative <- str_replace_all(og_panID_sce$representative,"Saccharomyces_cerevisiae@", "")
 print(paste0(og_panID_sce$representative, collapse = ",")) # for DAVID
+
+
+
+
+
+
+
+#####################################################################
+# P value analysis for all OGs based on Hypergeometric test (phyper)
+#####################################################################
+
+# one example to show the process
+# pop size : 5260
+# sample size : 131
+# Number of items in the pop that are classified as successes : 1998
+# Number of items in the sample that are classified as successes : 62
+pop_size <- 5260
+sample_size <- 131
+num_size_pop <- 1998
+num_size_sample <- 62
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+
+
+# summary all genes belong to different subpathways
+all_gene <- og_panID_mapping[og_panID_mapping$ortho_id %in% OGs_input_intersect,]
+# get the KO id
+panID_KO <- read.table("kegg/ko_annotation_of_all_OG.txt", header = TRUE, sep = "\t")
+all_gene$KO <- getSingleReactionFormula(panID_KO$ko, panID_KO$query, all_gene$representative)
+# get the pathway
+KO_pathway <- read.table("kegg/ko_pathway.txt", sep = "\t", stringsAsFactors = FALSE)
+pathway <- read.table("kegg/pathway_list_kegg.txt", sep = "\t", stringsAsFactors = FALSE)
+KO_pathway <- filter(KO_pathway,str_detect(KO_pathway$V1, "map"))
+KO_pathway$V2 <- str_replace_all(KO_pathway$V2,"ko:","")
+
+all_gene$pathwayID <- getMultipleReactionFormula(KO_pathway$V1,KO_pathway$V2, all_gene$KO)
+all_gene_pathway0 <- all_gene[!is.na(all_gene$pathwayID),]
+all_gene_pathway1 <- splitAndCombine(all_gene_pathway0$pathwayID,all_gene_pathway0$ortho_id,";")
+all_gene_pathway1$pathway <- getSingleReactionFormula(pathway$V2, pathway$V1, all_gene_pathway1$v1)
+
+
+all_gene_pathway1$pathway[all_gene_pathway1$pathway=="NA"] <- NA
+all_gene_pathway1$pathway <- str_replace_all(all_gene_pathway1$pathway, " - fly", "") %>% str_replace_all(.," - other", "") %>%
+  str_replace_all(.," - yeast", "") %>% str_replace_all(.," - Caulobacter", "") %>% str_replace_all(.," - animal", "")
+
+# here we only choose the pathway with most genes
+subsystem <- as.data.frame(table(all_gene_pathway1$pathway), stringsAsFactors = FALSE)
+subsystem_filter <- subsystem[subsystem$Freq>=4,]
+colnames(subsystem_filter) <- c("subsystem","num")
+
+# set the factor level by the mean value of occur number
+#Factor <-Result0 %>% group_by(pathway) %>% summarise(median=mean(Occur_num))
+subsystem_filter <- subsystem_filter[order(subsystem_filter$num),]
+subsystem_filter$subsystem <-factor(subsystem_filter$subsystem, levels=subsystem_filter$subsystem)
+# remove two wrong
+subsystem_filter_all <- filter(subsystem_filter, !str_detect(subsystem_filter$subsystem, "disease"))
+# remove the metabolic pathways
+subsystem_filter_all <- filter(subsystem_filter_all, !str_detect(subsystem_filter_all$subsystem, "Metabolic pathways"))
+
+
+
+# get the intersection of three kind of OGs input
+OGs_input_intersect <- intersect(fubar_guidance_prune$OG,intersect(fubar_guidance_unprune$OG,fel_guidance_prune$OG))
+
+# for MAPK pathways
+pop_size <- length(OGs_input_intersect)
+sample_size <- length(Combine1)
+num_size_pop <- 213
+num_size_sample <- 19
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+
+
+# Biosynthesis of secondary metabolites
+pop_size <- length(OGs_input_intersect)
+sample_size <- length(Combine1)
+num_size_pop <- 332
+num_size_sample <- 15
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+
+
+# Ribosome
+pop_size <- length(OGs_input_intersect)
+sample_size <- length(Combine1)
+num_size_pop <- 106
+num_size_sample <- 16
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+
+
+# carbo metabolism
+pop_size <- length(OGs_input_intersect)
+sample_size <- length(Combine1)
+num_size_pop <- 108
+num_size_sample <- 6
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+
+# EMP
+pop_size <- length(OGs_input_intersect)
+sample_size <- length(Combine1)
+num_size_pop <- 47
+num_size_sample <- 5
+phyper(num_size_sample-1, num_size_pop, pop_size-num_size_pop, sample_size, lower.tail=FALSE)
+

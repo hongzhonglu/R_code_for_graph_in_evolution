@@ -128,31 +128,35 @@ interest_pathway <- c("Citrate cycle (TCA cycle)","Glycolysis / Gluconeogenesis"
                       "Biosynthesis of antibiotics",
                       "Biosynthesis of secondary metabolites",
                       "Purine metabolism", "Pyrimidine metabolism")
-dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway, ]
+more_pathway <- c("Biosynthesis of secondary metabolites", "Pyrimidine metabolism", "Biosynthesis of amino acids","Purine metabolism","Carbon metabolism","Glycolysis / Gluconeogenesis","Oxidative phosphorylation")
+
+interest_pathway2 <- unique(c(interest_pathway, more_pathway ))
+
+
+dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway2, ]
 
 dn_ds_summary2 <- group_by(dn_ds_metabolic_pathway1, pathway) %>% summarize(m = median(dN_dS))
 
-dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = TRUE),]
+dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = FALSE),]
 
 dn_ds_metabolic_pathway1$pathway <-factor(dn_ds_metabolic_pathway1$pathway, levels=dn_ds_summary2$pathway)
 
 
 
 # plot
-ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS, fill=pathway)) + 
+ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS)) + 
   stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
-  geom_boxplot() +
+  geom_boxplot(fill = "#FF6666") +
   xlab('') + ylab('dN/dS') +
   #theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.position = "none") +
-  theme(axis.text=element_text(size=16, family="Arial"),
-        axis.title=element_text(size=24,family="Arial"),
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=16,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
   theme(panel.background = element_rect(fill = "white", colour = "black"))  +
   coord_flip()
-ggsave(out <- paste('result/','dN_dS_distribution_from_different_pathway','.svg', sep = ""), width=8, height=6, dpi=600)
 
 
 G1 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Citrate cycle (TCA cycle)")
