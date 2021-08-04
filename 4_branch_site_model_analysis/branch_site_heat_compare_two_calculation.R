@@ -4,7 +4,7 @@
 # Compare the model prediction and selection analysis
 # Compare the proteomics and selection analysis
 # This result is based on the one calculation
-# 2020.04.15
+# 2021.07.23 updated on the new MAC
 # Hongzhong Lu
 
 
@@ -18,14 +18,14 @@ library(readxl)
 library(hongR)
 
 # input the data from the first calculation
-trait_heat_result <- read_csv("/Users/luho/Documents/branch_site_heat/heat_result_all_update2.csv")
+trait_heat_result <- read_csv("/Users/xluhon/Documents/branch_site_heat/heat_result_all_update2.csv")
 
 # filter based on the select species and select clade
 interest_OG <- filter(trait_heat_result, Select_species>=10 & select_clade_all >=3)
 
 
 # input the data from second calculation
-trait_heat_result2 <- read_csv("/Users/luho/Documents/branch_site_heat_2nd/heat_result_all_update2.csv")
+trait_heat_result2 <- read_csv("/Users/xluhon/Documents/branch_site_heat_2nd/heat_result_all_update2.csv")
 trait_heat_result2$Select_species <- as.numeric(trait_heat_result2$Select_species)
 # filter based on the select species and select clade
 interest_OG2 <- trait_heat_result2[trait_heat_result2$Select_species >= 10 & trait_heat_result2$select_clade_all >=3,]
@@ -159,6 +159,10 @@ VennDiagram::venn.diagram(x= list(Evolution = gene_evolution, Up_regulate=up_reg
 
 
 
+
+
+
+
 ## compare the species number in the filtered OGs and the remaining reference OGs
 OG_df <- trait_heat_result[,c("OG")]
 OG_df$Type <- NA
@@ -177,3 +181,42 @@ ggplot(data=OG_df, aes(x=Type, y=Species_num)) +
   theme(axis.text=element_text(size=16, family="Arial"),
         axis.title=element_text(size=20, family="Arial"),
         legend.text = element_text(size=20, family="Arial"))
+
+
+##################################################
+# combine the result from experimental data
+##################################################
+gene_in_vivo <- read_excel("data/Ogataea_polymorpha_gene_for_heat_tolerance.xlsx")
+sce_ortholog <- gene_in_vivo$`Systematic name of Saccharomyces cerevisiae ortholog`
+
+
+# find the common gene between evolution and experimental data
+common_evolution_and_validation <- intersect(sce_ortholog, gene_evolution)
+
+
+
+
+
+
+
+
+# Note: the followed script is not used!
+# analyze the evolution rate difference between these verified genes
+Ogataea_polymorpha_dN_dS <- read_csv("data/Ogataea_polymorpha_dN_dS.csv")
+Ogataea_polymorpha_dN_dS$OG <- str_replace_all(Ogataea_polymorpha_dN_dS$OG,"_yn00.csv","")
+
+
+sce_gene_summary <- read_excel("data/sce_gene_summary.xlsx")
+sce_gene_summary$sce_gene <- str_replace_all(sce_gene_summary$sce_gene, "Saccharomyces_cerevisiae@","") %>%
+  str_replace_all(.,"\\'", "") %>%  str_replace_all(.,"\\[", "") %>% str_replace_all(.,"\\]", "") 
+sce_gene_summary0 <- sce_gene_summary[, c("OrthologID", "sce_gene")]
+sce_gene_summary1 <- splitAndCombine(sce_gene_summary0$sce_gene,sce_gene_summary0$OrthologID,",")
+colnames(sce_gene_summary1) <- c("sce_gene","OGid")
+sce_gene_summary1$sce_gene <- str_trim(sce_gene_summary1$sce_gene, side = "both")
+
+
+
+
+
+
+
