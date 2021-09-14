@@ -78,6 +78,7 @@ ggplot(data=effects_ratio2, aes(x=gap_ratio, y=num_protein)) +
         legend.text = element_text(size=20, family="Arial"))
 ggsave(out <- paste('result/','Effect_of_gap_on_number_of_protein_with_significant_clusters','.svg', sep = ""), width=5, height=5, dpi=300)
 # output  5 x 5
+write.csv(effects_ratio2, "result/dataset_for_Fig.4G.csv")
 
 
 

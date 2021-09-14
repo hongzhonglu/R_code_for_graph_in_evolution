@@ -223,6 +223,7 @@ ggplot(subsystem_filter1, aes(x=subsystem, y=num)) +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
   coord_flip()
 
+write.csv(subsystem_filter1, "result/dataset_for_site_model_Figure_4C.csv")
 
 
 # find the species number

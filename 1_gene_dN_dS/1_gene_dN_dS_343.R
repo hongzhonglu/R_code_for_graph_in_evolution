@@ -417,6 +417,10 @@ ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_density(alpha = 0.5) +
   xlab("dN/dS") + ylab("Density") +
   theme(legend.text=element_text(size=14, family="Arial"))
 
+write.csv(merge_dN_dS, "result/dataset_for_new_Fig.3A.csv")
+
+
+
 
 # add the species number informattion
 gene_core_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_core_rxn$OG)

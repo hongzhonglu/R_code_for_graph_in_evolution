@@ -285,6 +285,8 @@ ggplot(three_species, aes(x=FCC_type, y=dN_dS, fill=species)) +
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('')
 
+write.csv(three_species, "result/dataset_for_new_Fig.3C.csv")
+
 
 
 

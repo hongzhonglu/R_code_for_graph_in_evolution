@@ -90,6 +90,7 @@ pheatmap(ss_df,
          color = colorRampPalette(c("white", "SandyBrown", "firebrick3"))(100))
 
 # when output as pdf, the best size 5.25 x 2.26 inches
+write.csv(ss_df, "result/dataset_for_heat_map_of_positive_selected_gene_related_to_heat_tolerance.csv")
 
 
 

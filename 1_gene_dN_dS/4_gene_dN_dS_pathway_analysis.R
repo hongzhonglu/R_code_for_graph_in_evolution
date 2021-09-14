@@ -158,6 +158,9 @@ ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS)) +
   theme(panel.background = element_rect(fill = "white", colour = "black"))  +
   coord_flip()
 
+write.csv(dn_ds_metabolic_pathway1, "result/dataset_for_new_Fig.3B.csv")
+
+
 
 G1 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Citrate cycle (TCA cycle)")
 G2<- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Pentose phosphate pathway")

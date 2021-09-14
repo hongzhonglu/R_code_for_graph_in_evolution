@@ -1,0 +1,1135 @@
+"","v1","v2","pathway","dN_dS"
+"5","path:map01110","OG1516","Biosynthesis of secondary metabolites",0.035
+"6","path:map01230","OG1516","Biosynthesis of amino acids",0.035
+"11","path:map00020","OG4173","Citrate cycle (TCA cycle)",0.1323
+"17","path:map01110","OG4173","Biosynthesis of secondary metabolites",0.1323
+"19","path:map01130","OG4173","Biosynthesis of antibiotics",0.1323
+"20","path:map01200","OG4173","Carbon metabolism",0.1323
+"32","path:map01040","OG12195","Biosynthesis of unsaturated fatty acids",0.2492
+"34","path:map01130","OG12195","Biosynthesis of antibiotics",0.2492
+"82","path:map00030","OG7091","Pentose phosphate pathway",0.3224
+"84","path:map01110","OG7091","Biosynthesis of secondary metabolites",0.3224
+"86","path:map01130","OG7091","Biosynthesis of antibiotics",0.3224
+"87","path:map01200","OG7091","Carbon metabolism",0.3224
+"88","path:map01230","OG7091","Biosynthesis of amino acids",0.3224
+"185","path:map00010","OG8262","Glycolysis / Gluconeogenesis",0.06545
+"200","path:map01110","OG8262","Biosynthesis of secondary metabolites",0.06545
+"202","path:map01130","OG8262","Biosynthesis of antibiotics",0.06545
+"205","path:map00190","OG7803","Oxidative phosphorylation",0.2349
+"213","path:map00190","OG4198","Oxidative phosphorylation",0.2263
+"222","path:map01200","OG2495","Carbon metabolism",0.08335
+"225","path:map00230","OG2828","Purine metabolism",0.0701
+"226","path:map00240","OG2828","Pyrimidine metabolism",0.0701
+"234","path:map01110","OG2465","Biosynthesis of secondary metabolites",0.0838
+"235","path:map01130","OG2465","Biosynthesis of antibiotics",0.0838
+"241","path:map01110","OG3001","Biosynthesis of secondary metabolites",0.2232
+"244","path:map00190","OG2006","Oxidative phosphorylation",0.186
+"268","path:map01110","OG5495","Biosynthesis of secondary metabolites",0.1517
+"270","path:map01130","OG5495","Biosynthesis of antibiotics",0.1517
+"271","path:map01200","OG5495","Carbon metabolism",0.1517
+"273","path:map01230","OG5495","Biosynthesis of amino acids",0.1517
+"279","path:map00230","OG3189","Purine metabolism",0.1168
+"280","path:map00240","OG3189","Pyrimidine metabolism",0.1168
+"297","path:map01110","OG1375","Biosynthesis of secondary metabolites",0.0747
+"298","path:map01130","OG1375","Biosynthesis of antibiotics",0.0747
+"299","path:map01200","OG1375","Carbon metabolism",0.0747
+"300","path:map01230","OG1375","Biosynthesis of amino acids",0.0747
+"315","path:map01130","OG3115","Biosynthesis of antibiotics",0.1375
+"326","path:map00230","OG2681","Purine metabolism",0.1826
+"327","path:map00240","OG2681","Pyrimidine metabolism",0.1826
+"331","path:map00190","OG4375","Oxidative phosphorylation",0.0511
+"341","path:map01110","OG1525","Biosynthesis of secondary metabolites",0.06365
+"342","path:map01130","OG1525","Biosynthesis of antibiotics",0.06365
+"344","path:map01230","OG1525","Biosynthesis of amino acids",0.06365
+"353","path:map00190","OG4423","Oxidative phosphorylation",0.03655
+"361","path:map00190","OG4346","Oxidative phosphorylation",0.228
+"366","path:map01110","OG16304","Biosynthesis of secondary metabolites",0.30725
+"385","path:map00190","OG4316","Oxidative phosphorylation",0.2262
+"398","path:map00240","OG3702","Pyrimidine metabolism",0.117
+"409","path:map01110","OG1617","Biosynthesis of secondary metabolites",0.11685
+"410","path:map01130","OG1617","Biosynthesis of antibiotics",0.11685
+"411","path:map01230","OG1617","Biosynthesis of amino acids",0.11685
+"432","path:map00230","OG3531","Purine metabolism",0.177
+"437","path:map00230","OG3304","Purine metabolism",0.10835
+"461","path:map00010","OG7559","Glycolysis / Gluconeogenesis",0.17
+"476","path:map01110","OG7559","Biosynthesis of secondary metabolites",0.17
+"478","path:map01130","OG7559","Biosynthesis of antibiotics",0.17
+"550","path:map00240","OG1227","Pyrimidine metabolism",0.1099
+"565","path:map00230","OG8784","Purine metabolism",0.1581
+"566","path:map00240","OG8784","Pyrimidine metabolism",0.1581
+"594","path:map01110","OG2498","Biosynthesis of secondary metabolites",0.1309
+"595","path:map01130","OG2498","Biosynthesis of antibiotics",0.1309
+"613","path:map01110","OG1650","Biosynthesis of secondary metabolites",0.09685
+"615","path:map01130","OG1650","Biosynthesis of antibiotics",0.09685
+"616","path:map01200","OG1650","Carbon metabolism",0.09685
+"618","path:map01230","OG1650","Biosynthesis of amino acids",0.09685
+"628","path:map00230","OG4213","Purine metabolism",0.2871
+"629","path:map00240","OG4213","Pyrimidine metabolism",0.2871
+"637","path:map01110","OG2783","Biosynthesis of secondary metabolites",0.162
+"645","path:map01110","OG2629","Biosynthesis of secondary metabolites",0.1407
+"646","path:map01130","OG2629","Biosynthesis of antibiotics",0.1407
+"649","path:map01110","OG3413","Biosynthesis of secondary metabolites",0.2295
+"650","path:map01130","OG3413","Biosynthesis of antibiotics",0.2295
+"651","path:map01230","OG3413","Biosynthesis of amino acids",0.2295
+"670","path:map01110","OG1944","Biosynthesis of secondary metabolites",0.0692
+"672","path:map01130","OG1944","Biosynthesis of antibiotics",0.0692
+"673","path:map01200","OG1944","Carbon metabolism",0.0692
+"674","path:map01230","OG1944","Biosynthesis of amino acids",0.0692
+"678","path:map00010","OG1208","Glycolysis / Gluconeogenesis",0.11385
+"686","path:map01110","OG1208","Biosynthesis of secondary metabolites",0.11385
+"688","path:map01130","OG1208","Biosynthesis of antibiotics",0.11385
+"689","path:map01200","OG1208","Carbon metabolism",0.11385
+"696","path:map00190","OG6974","Oxidative phosphorylation",0.0829
+"711","path:map00020","OG1275","Citrate cycle (TCA cycle)",0.058
+"712","path:map00190","OG1275","Oxidative phosphorylation",0.058
+"714","path:map01110","OG1275","Biosynthesis of secondary metabolites",0.058
+"716","path:map01130","OG1275","Biosynthesis of antibiotics",0.058
+"717","path:map01200","OG1275","Carbon metabolism",0.058
+"723","path:map00020","OG1313","Citrate cycle (TCA cycle)",0.0684
+"728","path:map01200","OG1313","Carbon metabolism",0.0684
+"729","path:map01230","OG1313","Biosynthesis of amino acids",0.0684
+"741","path:map01200","OG2246","Carbon metabolism",0.1521
+"751","path:map00030","OG2588","Pentose phosphate pathway",0.0822
+"752","path:map00230","OG2588","Purine metabolism",0.0822
+"754","path:map01110","OG2588","Biosynthesis of secondary metabolites",0.0822
+"756","path:map01130","OG2588","Biosynthesis of antibiotics",0.0822
+"757","path:map01200","OG2588","Carbon metabolism",0.0822
+"758","path:map01230","OG2588","Biosynthesis of amino acids",0.0822
+"776","path:map01110","OG3557","Biosynthesis of secondary metabolites",0.10745
+"777","path:map01230","OG3557","Biosynthesis of amino acids",0.10745
+"784","path:map01110","OG2123","Biosynthesis of secondary metabolites",0.0966
+"803","path:map01110","OG1451","Biosynthesis of secondary metabolites",0.1136
+"804","path:map01130","OG1451","Biosynthesis of antibiotics",0.1136
+"805","path:map01230","OG1451","Biosynthesis of amino acids",0.1136
+"806","path:map00190","OG4649","Oxidative phosphorylation",0.15
+"839","path:map00230","OG2847","Purine metabolism",0.0785
+"840","path:map00240","OG2847","Pyrimidine metabolism",0.0785
+"853","path:map01130","OG10184","Biosynthesis of antibiotics",0.06245
+"854","path:map01230","OG10184","Biosynthesis of amino acids",0.06245
+"855","path:map00240","OG11340","Pyrimidine metabolism",0.153
+"866","path:map01110","OG8891","Biosynthesis of secondary metabolites",0.3251
+"868","path:map01130","OG8891","Biosynthesis of antibiotics",0.3251
+"869","path:map01230","OG8891","Biosynthesis of amino acids",0.3251
+"998","path:map01110","OG1214","Biosynthesis of secondary metabolites",0.1186
+"1005","path:map01110","OG1589","Biosynthesis of secondary metabolites",0.0865
+"1007","path:map01130","OG1589","Biosynthesis of antibiotics",0.0865
+"1008","path:map01230","OG1589","Biosynthesis of amino acids",0.0865
+"1013","path:map01110","OG6233","Biosynthesis of secondary metabolites",0.1098
+"1017","path:map00230","OG14184","Purine metabolism",0.1507
+"1039","path:map01110","OG9375","Biosynthesis of secondary metabolites",0.2447
+"1040","path:map01130","OG9375","Biosynthesis of antibiotics",0.2447
+"1045","path:map01130","OG2852","Biosynthesis of antibiotics",0.1224
+"1063","path:map01200","OG1264","Carbon metabolism",0.1299
+"1065","path:map01230","OG1264","Biosynthesis of amino acids",0.1299
+"1079","path:map01110","OG3069","Biosynthesis of secondary metabolites",0.0985
+"1083","path:map01040","OG4959","Biosynthesis of unsaturated fatty acids",0.1501
+"1085","path:map01110","OG4959","Biosynthesis of secondary metabolites",0.1501
+"1104","path:map01130","OG3006","Biosynthesis of antibiotics",0.06015
+"1108","path:map00190","OG2004","Oxidative phosphorylation",0.0892
+"1185","path:map00020","OG2677","Citrate cycle (TCA cycle)",0.08785
+"1187","path:map01110","OG2677","Biosynthesis of secondary metabolites",0.08785
+"1189","path:map01130","OG2677","Biosynthesis of antibiotics",0.08785
+"1190","path:map01200","OG2677","Carbon metabolism",0.08785
+"1192","path:map01230","OG2677","Biosynthesis of amino acids",0.08785
+"1218","path:map01110","OG9791","Biosynthesis of secondary metabolites",0.19815
+"1247","path:map00230","OG7933","Purine metabolism",0.0555
+"1251","path:map00230","OG2384","Purine metabolism",0.1453
+"1262","path:map01110","OG3679","Biosynthesis of secondary metabolites",0.2027
+"1263","path:map01130","OG3679","Biosynthesis of antibiotics",0.2027
+"1269","path:map01110","OG13243","Biosynthesis of secondary metabolites",0.15185
+"1271","path:map00230","OG1720","Purine metabolism",0.1423
+"1272","path:map00240","OG1720","Pyrimidine metabolism",0.1423
+"1320","path:map01110","OG4580","Biosynthesis of secondary metabolites",0.10195
+"1322","path:map01130","OG4580","Biosynthesis of antibiotics",0.10195
+"1326","path:map00190","OG4552","Oxidative phosphorylation",0.2412
+"1338","path:map00030","OG1333","Pentose phosphate pathway",0.0763
+"1341","path:map01110","OG1333","Biosynthesis of secondary metabolites",0.0763
+"1343","path:map01130","OG1333","Biosynthesis of antibiotics",0.0763
+"1344","path:map01200","OG1333","Carbon metabolism",0.0763
+"1364","path:map01110","OG1170","Biosynthesis of secondary metabolites",0.0799
+"1366","path:map01200","OG1170","Carbon metabolism",0.0799
+"1410","path:map01110","OG2099","Biosynthesis of secondary metabolites",0.1006
+"1412","path:map01200","OG2099","Carbon metabolism",0.1006
+"1415","path:map01110","OG1355","Biosynthesis of secondary metabolites",0.0841
+"1416","path:map01130","OG1355","Biosynthesis of antibiotics",0.0841
+"1440","path:map01130","OG9129","Biosynthesis of antibiotics",0.1772
+"1450","path:map01130","OG4581","Biosynthesis of antibiotics",0.1396
+"1451","path:map01200","OG4581","Carbon metabolism",0.1396
+"1452","path:map01230","OG4581","Biosynthesis of amino acids",0.1396
+"1460","path:map00010","OG1424","Glycolysis / Gluconeogenesis",0.0993
+"1463","path:map01110","OG1424","Biosynthesis of secondary metabolites",0.0993
+"1465","path:map01130","OG1424","Biosynthesis of antibiotics",0.0993
+"1466","path:map01200","OG1424","Carbon metabolism",0.0993
+"1467","path:map01230","OG1424","Biosynthesis of amino acids",0.0993
+"1498","path:map01110","OG2864","Biosynthesis of secondary metabolites",0.1536
+"1538","path:map01110","OG15632","Biosynthesis of secondary metabolites",0.17455
+"1539","path:map01130","OG15632","Biosynthesis of antibiotics",0.17455
+"1543","path:map01110","OG7605","Biosynthesis of secondary metabolites",0.15155
+"1544","path:map01130","OG7605","Biosynthesis of antibiotics",0.15155
+"1548","path:map01110","OG1115","Biosynthesis of secondary metabolites",0.0705
+"1550","path:map01230","OG1115","Biosynthesis of amino acids",0.0705
+"1553","path:map00020","OG1924","Citrate cycle (TCA cycle)",0.0831
+"1556","path:map01110","OG1924","Biosynthesis of secondary metabolites",0.0831
+"1558","path:map01130","OG1924","Biosynthesis of antibiotics",0.0831
+"1559","path:map01200","OG1924","Carbon metabolism",0.0831
+"1704","path:map00010","OG6005","Glycolysis / Gluconeogenesis",0.0726
+"1708","path:map01110","OG6005","Biosynthesis of secondary metabolites",0.0726
+"1710","path:map01130","OG6005","Biosynthesis of antibiotics",0.0726
+"1711","path:map01200","OG6005","Carbon metabolism",0.0726
+"1712","path:map01230","OG6005","Biosynthesis of amino acids",0.0726
+"1718","path:map01110","OG13982","Biosynthesis of secondary metabolites",0.12715
+"1720","path:map01230","OG13982","Biosynthesis of amino acids",0.12715
+"1726","path:map01110","OG1388","Biosynthesis of secondary metabolites",0.0655
+"1727","path:map01130","OG1388","Biosynthesis of antibiotics",0.0655
+"1729","path:map01230","OG1388","Biosynthesis of amino acids",0.0655
+"1764","path:map00190","OG10505","Oxidative phosphorylation",0.0816
+"1774","path:map00030","OG2411","Pentose phosphate pathway",0.112
+"1776","path:map01110","OG2411","Biosynthesis of secondary metabolites",0.112
+"1778","path:map01130","OG2411","Biosynthesis of antibiotics",0.112
+"1779","path:map01200","OG2411","Carbon metabolism",0.112
+"1784","path:map01110","OG3018","Biosynthesis of secondary metabolites",0.2216
+"1785","path:map01230","OG3018","Biosynthesis of amino acids",0.2216
+"1788","path:map01110","OG2369","Biosynthesis of secondary metabolites",0.15745
+"1800","path:map00240","OG2654","Pyrimidine metabolism",0.16
+"1821","path:map01130","OG1111","Biosynthesis of antibiotics",0.045
+"1823","path:map01230","OG1111","Biosynthesis of amino acids",0.045
+"1844","path:map00230","OG2030","Purine metabolism",0.2106
+"1845","path:map00240","OG2030","Pyrimidine metabolism",0.2106
+"1853","path:map00230","OG2788","Purine metabolism",0.0701
+"1867","path:map01110","OG6844","Biosynthesis of secondary metabolites",0.1874
+"1874","path:map01110","OG1935","Biosynthesis of secondary metabolites",0.1176
+"1875","path:map01130","OG1935","Biosynthesis of antibiotics",0.1176
+"1876","path:map01230","OG1935","Biosynthesis of amino acids",0.1176
+"1901","path:map00240","OG13684","Pyrimidine metabolism",0.2512
+"1910","path:map01230","OG1537","Biosynthesis of amino acids",0.0508
+"1921","path:map01110","OG2684","Biosynthesis of secondary metabolites",0.1259
+"1983","path:map01110","OG1390","Biosynthesis of secondary metabolites",0.07665
+"1984","path:map01130","OG1390","Biosynthesis of antibiotics",0.07665
+"1985","path:map01230","OG1390","Biosynthesis of amino acids",0.07665
+"1991","path:map01110","OG3639","Biosynthesis of secondary metabolites",0.1579
+"1992","path:map01130","OG3639","Biosynthesis of antibiotics",0.1579
+"1996","path:map01040","OG5530","Biosynthesis of unsaturated fatty acids",0.055
+"1998","path:map01130","OG5530","Biosynthesis of antibiotics",0.055
+"2003","path:map00230","OG1911","Purine metabolism",0.0859
+"2004","path:map00240","OG1911","Pyrimidine metabolism",0.0859
+"2022","path:map00010","OG13755","Glycolysis / Gluconeogenesis",0.2205
+"2030","path:map01110","OG13755","Biosynthesis of secondary metabolites",0.2205
+"2032","path:map01130","OG13755","Biosynthesis of antibiotics",0.2205
+"2033","path:map01200","OG13755","Carbon metabolism",0.2205
+"2044","path:map01110","OG10767","Biosynthesis of secondary metabolites",0.317
+"2053","path:map00190","OG4445","Oxidative phosphorylation",0.1797
+"2066","path:map00190","OG3208","Oxidative phosphorylation",0.1491
+"2078","path:map00190","OG3487","Oxidative phosphorylation",0.122
+"2097","path:map01110","OG1569","Biosynthesis of secondary metabolites",0.0758
+"2098","path:map01130","OG1569","Biosynthesis of antibiotics",0.0758
+"2100","path:map01230","OG1569","Biosynthesis of amino acids",0.0758
+"2101","path:map00240","OG6598","Pyrimidine metabolism",0.35065
+"2111","path:map00190","OG4487","Oxidative phosphorylation",0.1094
+"2143","path:map01110","OG4564","Biosynthesis of secondary metabolites",0.16765
+"2144","path:map01130","OG4564","Biosynthesis of antibiotics",0.16765
+"2146","path:map01230","OG4564","Biosynthesis of amino acids",0.16765
+"2164","path:map01110","OG1714","Biosynthesis of secondary metabolites",0.0771
+"2165","path:map01130","OG1714","Biosynthesis of antibiotics",0.0771
+"2166","path:map01230","OG1714","Biosynthesis of amino acids",0.0771
+"2188","path:map01130","OG4761","Biosynthesis of antibiotics",0.3658
+"2193","path:map00230","OG3190","Purine metabolism",0.1249
+"2194","path:map00240","OG3190","Pyrimidine metabolism",0.1249
+"2204","path:map01110","OG10457","Biosynthesis of secondary metabolites",0.2099
+"2205","path:map01230","OG10457","Biosynthesis of amino acids",0.2099
+"2212","path:map01040","OG5631","Biosynthesis of unsaturated fatty acids",0.2177
+"2214","path:map01130","OG5631","Biosynthesis of antibiotics",0.2177
+"2216","path:map00230","OG3209","Purine metabolism",0.224
+"2217","path:map00240","OG3209","Pyrimidine metabolism",0.224
+"2226","path:map00030","OG1764","Pentose phosphate pathway",0.155
+"2229","path:map01110","OG1764","Biosynthesis of secondary metabolites",0.155
+"2231","path:map01130","OG1764","Biosynthesis of antibiotics",0.155
+"2232","path:map01200","OG1764","Carbon metabolism",0.155
+"2233","path:map01230","OG1764","Biosynthesis of amino acids",0.155
+"2238","path:map00190","OG3378","Oxidative phosphorylation",0.20125
+"2240","path:map00190","OG1533","Oxidative phosphorylation",0.0798
+"2250","path:map00190","OG3505","Oxidative phosphorylation",0.191
+"2260","path:map00190","OG4469","Oxidative phosphorylation",0.1285
+"2269","path:map00030","OG14588","Pentose phosphate pathway",0.1933
+"2271","path:map01110","OG14588","Biosynthesis of secondary metabolites",0.1933
+"2272","path:map01130","OG14588","Biosynthesis of antibiotics",0.1933
+"2281","path:map00190","OG4744","Oxidative phosphorylation",0.1933
+"2324","path:map01200","OG5612","Carbon metabolism",0.1979
+"2332","path:map01110","OG2348","Biosynthesis of secondary metabolites",0.0461
+"2335","path:map00190","OG1656","Oxidative phosphorylation",0.0426
+"2350","path:map00230","OG3192","Purine metabolism",0.1305
+"2351","path:map00240","OG3192","Pyrimidine metabolism",0.1305
+"2366","path:map00230","OG1987","Purine metabolism",0.03685
+"2367","path:map00240","OG1987","Pyrimidine metabolism",0.03685
+"2376","path:map00230","OG7117","Purine metabolism",0.2961
+"2377","path:map00240","OG7117","Pyrimidine metabolism",0.2961
+"2407","path:map00190","OG3958","Oxidative phosphorylation",0.27905
+"2423","path:map01110","OG1883","Biosynthesis of secondary metabolites",0.0901
+"2425","path:map01130","OG1883","Biosynthesis of antibiotics",0.0901
+"2427","path:map01230","OG1883","Biosynthesis of amino acids",0.0901
+"2428","path:map00230","OG2029","Purine metabolism",0.3363
+"2429","path:map00240","OG2029","Pyrimidine metabolism",0.3363
+"2441","path:map01130","OG9894","Biosynthesis of antibiotics",0.3011
+"2448","path:map01110","OG1565","Biosynthesis of secondary metabolites",0.0317
+"2449","path:map01130","OG1565","Biosynthesis of antibiotics",0.0317
+"2450","path:map00230","OG8720","Purine metabolism",0.0759
+"2452","path:map01110","OG8720","Biosynthesis of secondary metabolites",0.0759
+"2453","path:map01130","OG8720","Biosynthesis of antibiotics",0.0759
+"2463","path:map01110","OG1788","Biosynthesis of secondary metabolites",0.1045
+"2464","path:map01130","OG1788","Biosynthesis of antibiotics",0.1045
+"2465","path:map01200","OG1788","Carbon metabolism",0.1045
+"2466","path:map01230","OG1788","Biosynthesis of amino acids",0.1045
+"2472","path:map01200","OG1406","Carbon metabolism",0.1383
+"2490","path:map00190","OG4360","Oxidative phosphorylation",0.2177
+"2505","path:map01110","OG1915","Biosynthesis of secondary metabolites",0.0598
+"2540","path:map00230","OG2814","Purine metabolism",0.2493
+"2541","path:map00240","OG2814","Pyrimidine metabolism",0.2493
+"2557","path:map00190","OG3747","Oxidative phosphorylation",0.1979
+"2563","path:map00230","OG2018","Purine metabolism",0.0636
+"2564","path:map00240","OG2018","Pyrimidine metabolism",0.0636
+"2574","path:map01110","OG4372","Biosynthesis of secondary metabolites",0.0712
+"2585","path:map01110","OG1710","Biosynthesis of secondary metabolites",0.0621
+"2587","path:map01130","OG1710","Biosynthesis of antibiotics",0.0621
+"2594","path:map01110","OG2173","Biosynthesis of secondary metabolites",0.1907
+"2595","path:map01130","OG2173","Biosynthesis of antibiotics",0.1907
+"2597","path:map01230","OG2173","Biosynthesis of amino acids",0.1907
+"2616","path:map01130","OG8448","Biosynthesis of antibiotics",0.17445
+"2623","path:map00240","OG1500","Pyrimidine metabolism",0.0555
+"2625","path:map00030","OG9144","Pentose phosphate pathway",0.0788
+"2645","path:map00190","OG4447","Oxidative phosphorylation",0.0396
+"2668","path:map00190","OG2248","Oxidative phosphorylation",0.0513
+"2678","path:map00190","OG2132","Oxidative phosphorylation",0.1287
+"2686","path:map01110","OG2394","Biosynthesis of secondary metabolites",0.07355
+"2694","path:map01110","OG3837","Biosynthesis of secondary metabolites",0.0735
+"2695","path:map01230","OG3837","Biosynthesis of amino acids",0.0735
+"2704","path:map00010","OG6499","Glycolysis / Gluconeogenesis",0.08525
+"2705","path:map00030","OG6499","Pentose phosphate pathway",0.08525
+"2710","path:map01110","OG6499","Biosynthesis of secondary metabolites",0.08525
+"2712","path:map01130","OG6499","Biosynthesis of antibiotics",0.08525
+"2713","path:map01200","OG6499","Carbon metabolism",0.08525
+"2714","path:map01230","OG6499","Biosynthesis of amino acids",0.08525
+"2750","path:map00010","OG1521","Glycolysis / Gluconeogenesis",0.1017
+"2760","path:map01110","OG1521","Biosynthesis of secondary metabolites",0.1017
+"2762","path:map01130","OG1521","Biosynthesis of antibiotics",0.1017
+"2763","path:map01200","OG1521","Carbon metabolism",0.1017
+"2778","path:map00190","OG3794","Oxidative phosphorylation",0.1698
+"2789","path:map01110","OG2228","Biosynthesis of secondary metabolites",0.1698
+"2811","path:map00190","OG3923","Oxidative phosphorylation",0.1522
+"2830","path:map01110","OG3074","Biosynthesis of secondary metabolites",0.0377
+"2832","path:map00020","OG11949","Citrate cycle (TCA cycle)",0.031
+"2835","path:map01110","OG11949","Biosynthesis of secondary metabolites",0.031
+"2837","path:map01130","OG11949","Biosynthesis of antibiotics",0.031
+"2838","path:map01200","OG11949","Carbon metabolism",0.031
+"2840","path:map01230","OG11949","Biosynthesis of amino acids",0.031
+"2841","path:map00230","OG3400","Purine metabolism",0.0712
+"2842","path:map00240","OG3400","Pyrimidine metabolism",0.0712
+"2881","path:map01110","OG9123","Biosynthesis of secondary metabolites",0.2268
+"2887","path:map00010","OG7311","Glycolysis / Gluconeogenesis",0.2739
+"2890","path:map01110","OG7311","Biosynthesis of secondary metabolites",0.2739
+"2892","path:map01130","OG7311","Biosynthesis of antibiotics",0.2739
+"2897","path:map01130","OG3978","Biosynthesis of antibiotics",0.0899
+"2898","path:map01230","OG3978","Biosynthesis of amino acids",0.0899
+"2912","path:map01110","OG7555","Biosynthesis of secondary metabolites",0.1576
+"2913","path:map01130","OG7555","Biosynthesis of antibiotics",0.1576
+"2915","path:map01230","OG7555","Biosynthesis of amino acids",0.1576
+"2916","path:map00230","OG3113","Purine metabolism",0.2038
+"2917","path:map00240","OG3113","Pyrimidine metabolism",0.2038
+"2981","path:map00010","OG1629","Glycolysis / Gluconeogenesis",0.0982
+"2982","path:map00020","OG1629","Citrate cycle (TCA cycle)",0.0982
+"2989","path:map01110","OG1629","Biosynthesis of secondary metabolites",0.0982
+"2991","path:map01130","OG1629","Biosynthesis of antibiotics",0.0982
+"2992","path:map01200","OG1629","Carbon metabolism",0.0982
+"2994","path:map00010","OG1145","Glycolysis / Gluconeogenesis",0.09955
+"2997","path:map01110","OG1145","Biosynthesis of secondary metabolites",0.09955
+"2999","path:map01130","OG1145","Biosynthesis of antibiotics",0.09955
+"3000","path:map01200","OG1145","Carbon metabolism",0.09955
+"3001","path:map01230","OG1145","Biosynthesis of amino acids",0.09955
+"3005","path:map00240","OG3279","Pyrimidine metabolism",0.1246
+"3013","path:map01110","OG3108","Biosynthesis of secondary metabolites",0.1032
+"3014","path:map01130","OG3108","Biosynthesis of antibiotics",0.1032
+"3015","path:map01230","OG3108","Biosynthesis of amino acids",0.1032
+"3016","path:map00230","OG2053","Purine metabolism",0.09475
+"3018","path:map01110","OG2053","Biosynthesis of secondary metabolites",0.09475
+"3023","path:map01110","OG3120","Biosynthesis of secondary metabolites",0.1027
+"3025","path:map01230","OG3120","Biosynthesis of amino acids",0.1027
+"3072","path:map01110","OG2537","Biosynthesis of secondary metabolites",0.08255
+"3083","path:map00230","OG1487","Purine metabolism",0.0405
+"3084","path:map00240","OG1487","Pyrimidine metabolism",0.0405
+"3090","path:map00230","OG1568","Purine metabolism",0.0494
+"3091","path:map00240","OG1568","Pyrimidine metabolism",0.0494
+"3102","path:map01110","OG6635","Biosynthesis of secondary metabolites",0.05575
+"3103","path:map01130","OG6635","Biosynthesis of antibiotics",0.05575
+"3104","path:map01230","OG6635","Biosynthesis of amino acids",0.05575
+"3109","path:map01110","OG5464","Biosynthesis of secondary metabolites",0.0949
+"3110","path:map01130","OG5464","Biosynthesis of antibiotics",0.0949
+"3111","path:map01230","OG5464","Biosynthesis of amino acids",0.0949
+"3112","path:map00030","OG13838","Pentose phosphate pathway",0.0937
+"3114","path:map01110","OG13838","Biosynthesis of secondary metabolites",0.0937
+"3116","path:map01130","OG13838","Biosynthesis of antibiotics",0.0937
+"3117","path:map01200","OG13838","Carbon metabolism",0.0937
+"3118","path:map01230","OG13838","Biosynthesis of amino acids",0.0937
+"3121","path:map01110","OG4665","Biosynthesis of secondary metabolites",0.09575
+"3122","path:map01130","OG4665","Biosynthesis of antibiotics",0.09575
+"3123","path:map01230","OG4665","Biosynthesis of amino acids",0.09575
+"3134","path:map01130","OG2353","Biosynthesis of antibiotics",0.1039
+"3144","path:map00240","OG1905","Pyrimidine metabolism",0.1161
+"3171","path:map01110","OG1625","Biosynthesis of secondary metabolites",0.0136
+"3190","path:map01110","OG4437","Biosynthesis of secondary metabolites",0.1287
+"3211","path:map01130","OG4160","Biosynthesis of antibiotics",0.1834
+"3213","path:map00190","OG4770","Oxidative phosphorylation",0.166
+"3232","path:map00190","OG4617","Oxidative phosphorylation",0.0904
+"3288","path:map00190","OG4444","Oxidative phosphorylation",0.0523
+"3309","path:map01110","OG3840","Biosynthesis of secondary metabolites",0.0982
+"3311","path:map01130","OG3840","Biosynthesis of antibiotics",0.0982
+"3312","path:map01200","OG3840","Carbon metabolism",0.0982
+"3313","path:map01230","OG3840","Biosynthesis of amino acids",0.0982
+"3370","path:map01110","OG4645","Biosynthesis of secondary metabolites",0.155
+"3382","path:map01110","OG11605","Biosynthesis of secondary metabolites",0.3966
+"3388","path:map01110","OG4171","Biosynthesis of secondary metabolites",0.163
+"3389","path:map01130","OG4171","Biosynthesis of antibiotics",0.163
+"3390","path:map01200","OG4171","Carbon metabolism",0.163
+"3395","path:map01130","OG1433","Biosynthesis of antibiotics",0.0801
+"3396","path:map01200","OG1433","Carbon metabolism",0.0801
+"3397","path:map01230","OG1433","Biosynthesis of amino acids",0.0801
+"3413","path:map01130","OG4016","Biosynthesis of antibiotics",0.1156
+"3414","path:map01230","OG4016","Biosynthesis of amino acids",0.1156
+"3449","path:map01110","OG7235","Biosynthesis of secondary metabolites",0.1393
+"3451","path:map01130","OG7235","Biosynthesis of antibiotics",0.1393
+"3452","path:map01200","OG7235","Carbon metabolism",0.1393
+"3453","path:map01230","OG7235","Biosynthesis of amino acids",0.1393
+"3457","path:map00190","OG5131","Oxidative phosphorylation",0.2038
+"3476","path:map00190","OG2701","Oxidative phosphorylation",0.2343
+"3488","path:map00230","OG5729","Purine metabolism",0.0915
+"3492","path:map01110","OG5729","Biosynthesis of secondary metabolites",0.0915
+"3504","path:map01110","OG13754","Biosynthesis of secondary metabolites",0.15515
+"3505","path:map00230","OG5118","Purine metabolism",0.1833
+"3508","path:map01110","OG5118","Biosynthesis of secondary metabolites",0.1833
+"3509","path:map01130","OG5118","Biosynthesis of antibiotics",0.1833
+"3517","path:map00230","OG1825","Purine metabolism",0.1127
+"3519","path:map01110","OG1825","Biosynthesis of secondary metabolites",0.1127
+"3520","path:map01130","OG1825","Biosynthesis of antibiotics",0.1127
+"3522","path:map00010","OG2321","Glycolysis / Gluconeogenesis",0.1656
+"3524","path:map01110","OG2321","Biosynthesis of secondary metabolites",0.1656
+"3526","path:map01130","OG2321","Biosynthesis of antibiotics",0.1656
+"3534","path:map01040","OG14739","Biosynthesis of unsaturated fatty acids",0.1449
+"3536","path:map01130","OG14739","Biosynthesis of antibiotics",0.1449
+"3540","path:map00190","OG2402","Oxidative phosphorylation",0.2057
+"3552","path:map01110","OG1621","Biosynthesis of secondary metabolites",0.1144
+"3553","path:map01130","OG1621","Biosynthesis of antibiotics",0.1144
+"3554","path:map01230","OG1621","Biosynthesis of amino acids",0.1144
+"3572","path:map01130","OG3551","Biosynthesis of antibiotics",0.1008
+"3610","path:map01110","OG2235","Biosynthesis of secondary metabolites",0.19315
+"3612","path:map00190","OG6136","Oxidative phosphorylation",0.0798
+"3640","path:map01110","OG2651","Biosynthesis of secondary metabolites",0.1058
+"3642","path:map01130","OG2651","Biosynthesis of antibiotics",0.1058
+"3643","path:map01200","OG2651","Carbon metabolism",0.1058
+"3644","path:map01230","OG2651","Biosynthesis of amino acids",0.1058
+"3655","path:map01110","OG13874","Biosynthesis of secondary metabolites",0.1322
+"3658","path:map00020","OG6574","Citrate cycle (TCA cycle)",0.17485
+"3664","path:map01110","OG6574","Biosynthesis of secondary metabolites",0.17485
+"3666","path:map01130","OG6574","Biosynthesis of antibiotics",0.17485
+"3667","path:map01200","OG6574","Carbon metabolism",0.17485
+"3683","path:map00010","OG12955","Glycolysis / Gluconeogenesis",0.2832
+"3692","path:map01110","OG12955","Biosynthesis of secondary metabolites",0.2832
+"3694","path:map01130","OG12955","Biosynthesis of antibiotics",0.2832
+"3699","path:map01110","OG1446","Biosynthesis of secondary metabolites",0.0626
+"3719","path:map00010","OG5134","Glycolysis / Gluconeogenesis",0.09165
+"3728","path:map01110","OG5134","Biosynthesis of secondary metabolites",0.09165
+"3730","path:map01130","OG5134","Biosynthesis of antibiotics",0.09165
+"3760","path:map01110","OG1377","Biosynthesis of secondary metabolites",0.1037
+"3761","path:map01130","OG1377","Biosynthesis of antibiotics",0.1037
+"3763","path:map01230","OG1377","Biosynthesis of amino acids",0.1037
+"3764","path:map00230","OG17683","Purine metabolism",0.1282
+"3774","path:map00010","OG1193","Glycolysis / Gluconeogenesis",0.0746
+"3777","path:map01110","OG1193","Biosynthesis of secondary metabolites",0.0746
+"3779","path:map01130","OG1193","Biosynthesis of antibiotics",0.0746
+"3780","path:map01200","OG1193","Carbon metabolism",0.0746
+"3781","path:map01230","OG1193","Biosynthesis of amino acids",0.0746
+"3801","path:map01110","OG4061","Biosynthesis of secondary metabolites",0.1932
+"3802","path:map01130","OG4061","Biosynthesis of antibiotics",0.1932
+"3822","path:map01110","OG3445","Biosynthesis of secondary metabolites",0.1706
+"3823","path:map01130","OG3445","Biosynthesis of antibiotics",0.1706
+"3831","path:map00190","OG7988","Oxidative phosphorylation",0.0951
+"3848","path:map00190","OG4619","Oxidative phosphorylation",0.1692
+"3871","path:map01110","OG1897","Biosynthesis of secondary metabolites",0.1318
+"3873","path:map01130","OG1897","Biosynthesis of antibiotics",0.1318
+"3874","path:map01200","OG1897","Carbon metabolism",0.1318
+"3879","path:map01110","OG2854","Biosynthesis of secondary metabolites",0.1242
+"3880","path:map01130","OG2854","Biosynthesis of antibiotics",0.1242
+"3882","path:map01230","OG2854","Biosynthesis of amino acids",0.1242
+"3883","path:map00010","OG16044","Glycolysis / Gluconeogenesis",0.208
+"3898","path:map01110","OG16044","Biosynthesis of secondary metabolites",0.208
+"3900","path:map01130","OG16044","Biosynthesis of antibiotics",0.208
+"3990","path:map01110","OG3786","Biosynthesis of secondary metabolites",0.2205
+"3993","path:map01110","OG3874","Biosynthesis of secondary metabolites",0.2185
+"3994","path:map01130","OG3874","Biosynthesis of antibiotics",0.2185
+"3995","path:map01230","OG3874","Biosynthesis of amino acids",0.2185
+"4032","path:map00010","OG1299","Glycolysis / Gluconeogenesis",0.1723
+"4033","path:map00230","OG1299","Purine metabolism",0.1723
+"4036","path:map01110","OG1299","Biosynthesis of secondary metabolites",0.1723
+"4038","path:map01130","OG1299","Biosynthesis of antibiotics",0.1723
+"4039","path:map01200","OG1299","Carbon metabolism",0.1723
+"4040","path:map01230","OG1299","Biosynthesis of amino acids",0.1723
+"4051","path:map00230","OG2458","Purine metabolism",0.1291
+"4053","path:map01110","OG2458","Biosynthesis of secondary metabolites",0.1291
+"4054","path:map01130","OG2458","Biosynthesis of antibiotics",0.1291
+"4104","path:map00010","OG5541","Glycolysis / Gluconeogenesis",0.1189
+"4109","path:map01110","OG5541","Biosynthesis of secondary metabolites",0.1189
+"4111","path:map01130","OG5541","Biosynthesis of antibiotics",0.1189
+"4114","path:map00240","OG3689","Pyrimidine metabolism",0.2003
+"4153","path:map00230","OG1622","Purine metabolism",0.0299
+"4155","path:map01110","OG1622","Biosynthesis of secondary metabolites",0.0299
+"4156","path:map01130","OG1622","Biosynthesis of antibiotics",0.0299
+"4161","path:map00230","OG6909","Purine metabolism",0.183
+"4162","path:map00240","OG6909","Pyrimidine metabolism",0.183
+"4177","path:map00010","OG2794","Glycolysis / Gluconeogenesis",0.0924
+"4181","path:map01110","OG2794","Biosynthesis of secondary metabolites",0.0924
+"4183","path:map01130","OG2794","Biosynthesis of antibiotics",0.0924
+"4184","path:map01200","OG2794","Carbon metabolism",0.0924
+"4185","path:map01230","OG2794","Biosynthesis of amino acids",0.0924
+"4188","path:map00010","OG1411","Glycolysis / Gluconeogenesis",0.18275
+"4203","path:map01110","OG1411","Biosynthesis of secondary metabolites",0.18275
+"4205","path:map01130","OG1411","Biosynthesis of antibiotics",0.18275
+"4221","path:map00020","OG2704","Citrate cycle (TCA cycle)",0.0475
+"4222","path:map00190","OG2704","Oxidative phosphorylation",0.0475
+"4224","path:map01110","OG2704","Biosynthesis of secondary metabolites",0.0475
+"4226","path:map01130","OG2704","Biosynthesis of antibiotics",0.0475
+"4227","path:map01200","OG2704","Carbon metabolism",0.0475
+"4242","path:map00190","OG7984","Oxidative phosphorylation",0.2202
+"4254","path:map01110","OG4042","Biosynthesis of secondary metabolites",0.0534
+"4264","path:map00010","OG11065","Glycolysis / Gluconeogenesis",0.0647
+"4266","path:map01110","OG11065","Biosynthesis of secondary metabolites",0.0647
+"4267","path:map01130","OG11065","Biosynthesis of antibiotics",0.0647
+"4277","path:map01130","OG1744","Biosynthesis of antibiotics",0.0411
+"4278","path:map01230","OG1744","Biosynthesis of amino acids",0.0411
+"4279","path:map00010","OG3645","Glycolysis / Gluconeogenesis",0.3174
+"4287","path:map01110","OG3645","Biosynthesis of secondary metabolites",0.3174
+"4289","path:map01130","OG3645","Biosynthesis of antibiotics",0.3174
+"4290","path:map01200","OG3645","Carbon metabolism",0.3174
+"4304","path:map00020","OG1287","Citrate cycle (TCA cycle)",0.1315
+"4305","path:map00190","OG1287","Oxidative phosphorylation",0.1315
+"4307","path:map01110","OG1287","Biosynthesis of secondary metabolites",0.1315
+"4309","path:map01130","OG1287","Biosynthesis of antibiotics",0.1315
+"4310","path:map01200","OG1287","Carbon metabolism",0.1315
+"4327","path:map01110","OG2028","Biosynthesis of secondary metabolites",0.0742
+"4328","path:map01130","OG2028","Biosynthesis of antibiotics",0.0742
+"4329","path:map01230","OG2028","Biosynthesis of amino acids",0.0742
+"4418","path:map01110","OG8520","Biosynthesis of secondary metabolites",0.15795
+"4419","path:map01130","OG8520","Biosynthesis of antibiotics",0.15795
+"4451","path:map01110","OG1210","Biosynthesis of secondary metabolites",0.1089
+"4452","path:map01130","OG1210","Biosynthesis of antibiotics",0.1089
+"4454","path:map01230","OG1210","Biosynthesis of amino acids",0.1089
+"4457","path:map00010","OG5722","Glycolysis / Gluconeogenesis",0.32395
+"4463","path:map01110","OG5722","Biosynthesis of secondary metabolites",0.32395
+"4465","path:map01130","OG5722","Biosynthesis of antibiotics",0.32395
+"4495","path:map01130","OG2116","Biosynthesis of antibiotics",0.1313
+"4499","path:map01130","OG1434","Biosynthesis of antibiotics",0.0704
+"4500","path:map00030","OG2161","Pentose phosphate pathway",0.115
+"4504","path:map01110","OG2161","Biosynthesis of secondary metabolites",0.115
+"4506","path:map01130","OG2161","Biosynthesis of antibiotics",0.115
+"4507","path:map01200","OG2161","Carbon metabolism",0.115
+"4508","path:map01230","OG2161","Biosynthesis of amino acids",0.115
+"4538","path:map01110","OG6253","Biosynthesis of secondary metabolites",0.0322
+"4539","path:map01130","OG6253","Biosynthesis of antibiotics",0.0322
+"4540","path:map01200","OG6253","Carbon metabolism",0.0322
+"4548","path:map00230","OG4003","Purine metabolism",0.095
+"4566","path:map00230","OG3207","Purine metabolism",0.1598
+"4567","path:map00240","OG3207","Pyrimidine metabolism",0.1598
+"4570","path:map01110","OG3207","Biosynthesis of secondary metabolites",0.1598
+"4593","path:map01110","OG16066","Biosynthesis of secondary metabolites",0.1441
+"4594","path:map01130","OG16066","Biosynthesis of antibiotics",0.1441
+"4601","path:map00030","OG4079","Pentose phosphate pathway",0.1973
+"4603","path:map01110","OG4079","Biosynthesis of secondary metabolites",0.1973
+"4605","path:map01130","OG4079","Biosynthesis of antibiotics",0.1973
+"4606","path:map01200","OG4079","Carbon metabolism",0.1973
+"4609","path:map01110","OG1767","Biosynthesis of secondary metabolites",0.0841
+"4611","path:map00190","OG1802","Oxidative phosphorylation",0.05
+"4646","path:map00230","OG4398","Purine metabolism",0.0944
+"4648","path:map01110","OG4398","Biosynthesis of secondary metabolites",0.0944
+"4661","path:map00190","OG4856","Oxidative phosphorylation",0.1558
+"4669","path:map00190","OG4150","Oxidative phosphorylation",0.2826
+"4687","path:map01130","OG11143","Biosynthesis of antibiotics",0.1562
+"4706","path:map00240","OG2290","Pyrimidine metabolism",0.0972
+"4718","path:map00190","OG1449","Oxidative phosphorylation",0.0448
+"4734","path:map01110","OG4010","Biosynthesis of secondary metabolites",0.1213
+"4775","path:map00190","OG4521","Oxidative phosphorylation",0.1763
+"4797","path:map00010","OG2038","Glycolysis / Gluconeogenesis",0.105
+"4798","path:map00030","OG2038","Pentose phosphate pathway",0.105
+"4802","path:map01110","OG2038","Biosynthesis of secondary metabolites",0.105
+"4804","path:map01130","OG2038","Biosynthesis of antibiotics",0.105
+"4805","path:map01200","OG2038","Carbon metabolism",0.105
+"4837","path:map01110","OG2930","Biosynthesis of secondary metabolites",0.086
+"4839","path:map01230","OG2930","Biosynthesis of amino acids",0.086
+"4845","path:map01110","OG2218","Biosynthesis of secondary metabolites",0.097
+"4846","path:map01130","OG2218","Biosynthesis of antibiotics",0.097
+"4854","path:map01110","OG5916","Biosynthesis of secondary metabolites",0.2491
+"4855","path:map01130","OG5916","Biosynthesis of antibiotics",0.2491
+"4856","path:map01230","OG5916","Biosynthesis of amino acids",0.2491
+"4858","path:map00010","OG8235","Glycolysis / Gluconeogenesis",0.2832
+"4867","path:map01110","OG8235","Biosynthesis of secondary metabolites",0.2832
+"4869","path:map01130","OG8235","Biosynthesis of antibiotics",0.2832
+"4871","path:map00190","OG14021","Oxidative phosphorylation",0.14115
+"4882","path:map01110","OG1445","Biosynthesis of secondary metabolites",0.062
+"4883","path:map01130","OG1445","Biosynthesis of antibiotics",0.062
+"4885","path:map01230","OG1445","Biosynthesis of amino acids",0.062
+"4926","path:map00240","OG9549","Pyrimidine metabolism",0.1448
+"4945","path:map00240","OG5226","Pyrimidine metabolism",0.0564
+"4959","path:map01110","OG2156","Biosynthesis of secondary metabolites",0.0983
+"4960","path:map01130","OG2156","Biosynthesis of antibiotics",0.0983
+"4972","path:map00190","OG2332","Oxidative phosphorylation",0.0185
+"4986","path:map01130","OG1596","Biosynthesis of antibiotics",0.0596
+"4992","path:map00020","OG5327","Citrate cycle (TCA cycle)",0.1074
+"4995","path:map01110","OG5327","Biosynthesis of secondary metabolites",0.1074
+"4997","path:map01130","OG5327","Biosynthesis of antibiotics",0.1074
+"4998","path:map01200","OG5327","Carbon metabolism",0.1074
+"5000","path:map01230","OG5327","Biosynthesis of amino acids",0.1074
+"5003","path:map00190","OG5314","Oxidative phosphorylation",0.1171
+"5014","path:map01110","OG10463","Biosynthesis of secondary metabolites",0.33905
+"5016","path:map01130","OG10463","Biosynthesis of antibiotics",0.33905
+"5017","path:map01230","OG10463","Biosynthesis of amino acids",0.33905
+"5025","path:map01110","OG2903","Biosynthesis of secondary metabolites",0.13145
+"5031","path:map01110","OG12690","Biosynthesis of secondary metabolites",0.25715
+"5032","path:map01130","OG12690","Biosynthesis of antibiotics",0.25715
+"5033","path:map01230","OG12690","Biosynthesis of amino acids",0.25715
+"5036","path:map00010","OG9143","Glycolysis / Gluconeogenesis",0.2699
+"5041","path:map01110","OG9143","Biosynthesis of secondary metabolites",0.2699
+"5043","path:map01130","OG9143","Biosynthesis of antibiotics",0.2699
+"5044","path:map01200","OG9143","Carbon metabolism",0.2699
+"5045","path:map01230","OG9143","Biosynthesis of amino acids",0.2699
+"5046","path:map00230","OG2391","Purine metabolism",0.1157
+"5047","path:map00240","OG2391","Pyrimidine metabolism",0.1157
+"5055","path:map01040","OG4250","Biosynthesis of unsaturated fatty acids",0.1924
+"5057","path:map01130","OG4250","Biosynthesis of antibiotics",0.1924
+"5077","path:map01040","OG16266","Biosynthesis of unsaturated fatty acids",0.0371
+"5079","path:map01110","OG16266","Biosynthesis of secondary metabolites",0.0371
+"5162","path:map01110","OG7606","Biosynthesis of secondary metabolites",0.10935
+"5163","path:map01130","OG7606","Biosynthesis of antibiotics",0.10935
+"5164","path:map00230","OG8428","Purine metabolism",0.13135
+"5165","path:map00240","OG8428","Pyrimidine metabolism",0.13135
+"5181","path:map01110","OG13597","Biosynthesis of secondary metabolites",0.1921
+"5182","path:map01130","OG13597","Biosynthesis of antibiotics",0.1921
+"5183","path:map01230","OG13597","Biosynthesis of amino acids",0.1921
+"5196","path:map00240","OG1674","Pyrimidine metabolism",0.0921
+"5218","path:map00240","OG2129","Pyrimidine metabolism",0.0418
+"5237","path:map01110","OG2061","Biosynthesis of secondary metabolites",0.09305
+"5251","path:map01130","OG1671","Biosynthesis of antibiotics",0.047
+"5267","path:map00230","OG3043","Purine metabolism",0.1464
+"5270","path:map01110","OG3043","Biosynthesis of secondary metabolites",0.1464
+"5271","path:map01130","OG3043","Biosynthesis of antibiotics",0.1464
+"5273","path:map00190","OG10913","Oxidative phosphorylation",0.1515
+"5290","path:map00230","OG2365","Purine metabolism",0.1191
+"5296","path:map01130","OG2365","Biosynthesis of antibiotics",0.1191
+"5302","path:map01110","OG2200","Biosynthesis of secondary metabolites",0.1028
+"5303","path:map01130","OG2200","Biosynthesis of antibiotics",0.1028
+"5305","path:map01230","OG2200","Biosynthesis of amino acids",0.1028
+"5313","path:map00230","OG2282","Purine metabolism",0.1323
+"5325","path:map01110","OG2936","Biosynthesis of secondary metabolites",0.1311
+"5326","path:map01130","OG2936","Biosynthesis of antibiotics",0.1311
+"5327","path:map01230","OG2936","Biosynthesis of amino acids",0.1311
+"5337","path:map01110","OG2062","Biosynthesis of secondary metabolites",0.1047
+"5345","path:map01130","OG3443","Biosynthesis of antibiotics",0.1717
+"5346","path:map01200","OG3443","Carbon metabolism",0.1717
+"5347","path:map01230","OG3443","Biosynthesis of amino acids",0.1717
+"5373","path:map01110","OG2032","Biosynthesis of secondary metabolites",0.0842
+"5374","path:map01130","OG2032","Biosynthesis of antibiotics",0.0842
+"5375","path:map01230","OG2032","Biosynthesis of amino acids",0.0842
+"5385","path:map00010","OG1815","Glycolysis / Gluconeogenesis",0.04375
+"5386","path:map00030","OG1815","Pentose phosphate pathway",0.04375
+"5391","path:map01110","OG1815","Biosynthesis of secondary metabolites",0.04375
+"5393","path:map01130","OG1815","Biosynthesis of antibiotics",0.04375
+"5394","path:map01200","OG1815","Carbon metabolism",0.04375
+"5415","path:map01130","OG2746","Biosynthesis of antibiotics",0.0887
+"5417","path:map01230","OG2746","Biosynthesis of amino acids",0.0887
+"5422","path:map01110","OG2057","Biosynthesis of secondary metabolites",0.1138
+"5460","path:map01110","OG3856","Biosynthesis of secondary metabolites",0.2076
+"5466","path:map01110","OG2552","Biosynthesis of secondary metabolites",0.1693
+"5467","path:map01130","OG2552","Biosynthesis of antibiotics",0.1693
+"5468","path:map01230","OG2552","Biosynthesis of amino acids",0.1693
+"5493","path:map01110","OG1904","Biosynthesis of secondary metabolites",0.0857
+"5494","path:map01130","OG1904","Biosynthesis of antibiotics",0.0857
+"5518","path:map00230","OG2740","Purine metabolism",0.0776
+"5521","path:map01110","OG2740","Biosynthesis of secondary metabolites",0.0776
+"5522","path:map01130","OG2740","Biosynthesis of antibiotics",0.0776
+"5531","path:map01110","OG1512","Biosynthesis of secondary metabolites",0.1038
+"5558","path:map01110","OG5031","Biosynthesis of secondary metabolites",0.3965
+"5564","path:map01110","OG1360","Biosynthesis of secondary metabolites",0.14045
+"5565","path:map01130","OG1360","Biosynthesis of antibiotics",0.14045
+"5639","path:map01110","OG1603","Biosynthesis of secondary metabolites",0.0969
+"5641","path:map01230","OG1603","Biosynthesis of amino acids",0.0969
+"5684","path:map01110","OG5170","Biosynthesis of secondary metabolites",0.13115
+"5686","path:map01200","OG5170","Carbon metabolism",0.13115
+"5704","path:map00240","OG3612","Pyrimidine metabolism",0.0494
+"5715","path:map01110","OG1966","Biosynthesis of secondary metabolites",0.1578
+"5774","path:map00230","OG1322","Purine metabolism",0.0571
+"5777","path:map01110","OG1322","Biosynthesis of secondary metabolites",0.0571
+"5778","path:map01130","OG1322","Biosynthesis of antibiotics",0.0571
+"5780","path:map00030","OG17416","Pentose phosphate pathway",0.0884
+"5782","path:map01110","OG17416","Biosynthesis of secondary metabolites",0.0884
+"5784","path:map01130","OG17416","Biosynthesis of antibiotics",0.0884
+"5785","path:map01200","OG17416","Carbon metabolism",0.0884
+"5786","path:map01230","OG17416","Biosynthesis of amino acids",0.0884
+"5787","path:map00190","OG4768","Oxidative phosphorylation",0.1602
+"5793","path:map01110","OG6842","Biosynthesis of secondary metabolites",0.0859
+"5817","path:map00190","OG2714","Oxidative phosphorylation",0.0473
+"5885","path:map01110","OG3774","Biosynthesis of secondary metabolites",0.1052
+"5886","path:map01130","OG3774","Biosynthesis of antibiotics",0.1052
+"5981","path:map01110","OG7271","Biosynthesis of secondary metabolites",0.1057
+"5982","path:map01130","OG7271","Biosynthesis of antibiotics",0.1057
+"5984","path:map01230","OG7271","Biosynthesis of amino acids",0.1057
+"6000","path:map01110","OG2752","Biosynthesis of secondary metabolites",0.0984
+"6001","path:map01130","OG2752","Biosynthesis of antibiotics",0.0984
+"6002","path:map01230","OG2752","Biosynthesis of amino acids",0.0984
+"6020","path:map00230","OG2273","Purine metabolism",0.0477
+"6021","path:map00240","OG2273","Pyrimidine metabolism",0.0477
+"6042","path:map00190","OG6595","Oxidative phosphorylation",0.1445
+"6064","path:map00010","OG10864","Glycolysis / Gluconeogenesis",0.14775
+"6066","path:map01110","OG10864","Biosynthesis of secondary metabolites",0.14775
+"6068","path:map01130","OG10864","Biosynthesis of antibiotics",0.14775
+"6074","path:map01110","OG1659","Biosynthesis of secondary metabolites",0.0352
+"6082","path:map00230","OG6530","Purine metabolism",0.2154
+"6083","path:map00240","OG6530","Pyrimidine metabolism",0.2154
+"6101","path:map00190","OG13918","Oxidative phosphorylation",0.17
+"6107","path:map00190","OG3546","Oxidative phosphorylation",0.0594
+"6132","path:map01110","OG13539","Biosynthesis of secondary metabolites",0.42
+"6143","path:map01110","OG2956","Biosynthesis of secondary metabolites",0.1007
+"6154","path:map00230","OG9293","Purine metabolism",0.2318
+"6163","path:map00190","OG4767","Oxidative phosphorylation",0.07755
+"6178","path:map00030","OG3991","Pentose phosphate pathway",0.2033
+"6180","path:map01110","OG3991","Biosynthesis of secondary metabolites",0.2033
+"6182","path:map01130","OG3991","Biosynthesis of antibiotics",0.2033
+"6183","path:map01200","OG3991","Carbon metabolism",0.2033
+"6187","path:map01110","OG1471","Biosynthesis of secondary metabolites",0.1399
+"6213","path:map01110","OG6003","Biosynthesis of secondary metabolites",0.0343
+"6232","path:map01130","OG6290","Biosynthesis of antibiotics",0.2885
+"6242","path:map00190","OG4555","Oxidative phosphorylation",0.1998
+"6272","path:map00020","OG1835","Citrate cycle (TCA cycle)",0.1273
+"6278","path:map01110","OG1835","Biosynthesis of secondary metabolites",0.1273
+"6280","path:map01130","OG1835","Biosynthesis of antibiotics",0.1273
+"6281","path:map01200","OG1835","Carbon metabolism",0.1273
+"6286","path:map01110","OG3065","Biosynthesis of secondary metabolites",0.1877
+"6287","path:map01130","OG3065","Biosynthesis of antibiotics",0.1877
+"6288","path:map01230","OG3065","Biosynthesis of amino acids",0.1877
+"6321","path:map01110","OG1695","Biosynthesis of secondary metabolites",0.1121
+"6328","path:map00230","OG1774","Purine metabolism",0.0842
+"6330","path:map01110","OG1774","Biosynthesis of secondary metabolites",0.0842
+"6331","path:map01130","OG1774","Biosynthesis of antibiotics",0.0842
+"6343","path:map00020","OG2112","Citrate cycle (TCA cycle)",0.2211
+"6344","path:map00190","OG2112","Oxidative phosphorylation",0.2211
+"6346","path:map01110","OG2112","Biosynthesis of secondary metabolites",0.2211
+"6348","path:map01130","OG2112","Biosynthesis of antibiotics",0.2211
+"6349","path:map01200","OG2112","Carbon metabolism",0.2211
+"6364","path:map01110","OG2227","Biosynthesis of secondary metabolites",0.0931
+"6365","path:map01130","OG2227","Biosynthesis of antibiotics",0.0931
+"6366","path:map01200","OG2227","Carbon metabolism",0.0931
+"6370","path:map01040","OG5636","Biosynthesis of unsaturated fatty acids",0.454
+"6372","path:map01130","OG5636","Biosynthesis of antibiotics",0.454
+"6374","path:map00020","OG1696","Citrate cycle (TCA cycle)",0.066
+"6377","path:map01110","OG1696","Biosynthesis of secondary metabolites",0.066
+"6379","path:map01130","OG1696","Biosynthesis of antibiotics",0.066
+"6380","path:map01200","OG1696","Carbon metabolism",0.066
+"6381","path:map00230","OG2837","Purine metabolism",0.0881
+"6407","path:map01110","OG2357","Biosynthesis of secondary metabolites",0.1015
+"6408","path:map01230","OG2357","Biosynthesis of amino acids",0.1015
+"6426","path:map00230","OG8515","Purine metabolism",0.3218
+"6427","path:map00240","OG8515","Pyrimidine metabolism",0.3218
+"6430","path:map01110","OG8515","Biosynthesis of secondary metabolites",0.3218
+"6436","path:map01110","OG1665","Biosynthesis of secondary metabolites",0.0765
+"6438","path:map01130","OG1665","Biosynthesis of antibiotics",0.0765
+"6440","path:map01230","OG1665","Biosynthesis of amino acids",0.0765
+"6446","path:map00190","OG4751","Oxidative phosphorylation",0.1554
+"6459","path:map01110","OG2098","Biosynthesis of secondary metabolites",0.0996
+"6460","path:map01130","OG2098","Biosynthesis of antibiotics",0.0996
+"6474","path:map01110","OG3525","Biosynthesis of secondary metabolites",0.2323
+"6476","path:map01130","OG3525","Biosynthesis of antibiotics",0.2323
+"6477","path:map01200","OG3525","Carbon metabolism",0.2323
+"6479","path:map01230","OG3525","Biosynthesis of amino acids",0.2323
+"6481","path:map00020","OG1416","Citrate cycle (TCA cycle)",0.0727
+"6484","path:map01110","OG1416","Biosynthesis of secondary metabolites",0.0727
+"6486","path:map01130","OG1416","Biosynthesis of antibiotics",0.0727
+"6487","path:map01200","OG1416","Carbon metabolism",0.0727
+"6489","path:map01230","OG1416","Biosynthesis of amino acids",0.0727
+"6493","path:map01110","OG5680","Biosynthesis of secondary metabolites",0.0977
+"6494","path:map01130","OG5680","Biosynthesis of antibiotics",0.0977
+"6495","path:map01230","OG5680","Biosynthesis of amino acids",0.0977
+"6548","path:map01110","OG3470","Biosynthesis of secondary metabolites",0.1438
+"6549","path:map01130","OG3470","Biosynthesis of antibiotics",0.1438
+"6550","path:map01200","OG3470","Carbon metabolism",0.1438
+"6559","path:map01110","OG2960","Biosynthesis of secondary metabolites",0.1304
+"6576","path:map01040","OG1364","Biosynthesis of unsaturated fatty acids",0.1013
+"6578","path:map01110","OG1364","Biosynthesis of secondary metabolites",0.1013
+"6579","path:map01130","OG1364","Biosynthesis of antibiotics",0.1013
+"6599","path:map00230","OG1975","Purine metabolism",0.1099
+"6601","path:map00230","OG5752","Purine metabolism",0.3087
+"6602","path:map00240","OG5752","Pyrimidine metabolism",0.3087
+"6619","path:map01110","OG11453","Biosynthesis of secondary metabolites",0.2424
+"6620","path:map01130","OG11453","Biosynthesis of antibiotics",0.2424
+"6642","path:map00010","OG1329","Glycolysis / Gluconeogenesis",0.07865
+"6650","path:map01110","OG1329","Biosynthesis of secondary metabolites",0.07865
+"6652","path:map01130","OG1329","Biosynthesis of antibiotics",0.07865
+"6653","path:map01200","OG1329","Carbon metabolism",0.07865
+"6669","path:map00190","OG4801","Oxidative phosphorylation",0.1773
+"6703","path:map00230","OG3037","Purine metabolism",0.0604
+"6704","path:map00240","OG3037","Pyrimidine metabolism",0.0604
+"6718","path:map00230","OG12531","Purine metabolism",0.35
+"6719","path:map00240","OG12531","Pyrimidine metabolism",0.35
+"6725","path:map00020","OG4605","Citrate cycle (TCA cycle)",0.1711
+"6731","path:map01110","OG4605","Biosynthesis of secondary metabolites",0.1711
+"6733","path:map01130","OG4605","Biosynthesis of antibiotics",0.1711
+"6734","path:map01200","OG4605","Carbon metabolism",0.1711
+"6738","path:map01110","OG2678","Biosynthesis of secondary metabolites",0.1918
+"6739","path:map01130","OG2678","Biosynthesis of antibiotics",0.1918
+"6839","path:map00030","OG16237","Pentose phosphate pathway",0.0713
+"6841","path:map01110","OG16237","Biosynthesis of secondary metabolites",0.0713
+"6843","path:map01130","OG16237","Biosynthesis of antibiotics",0.0713
+"6844","path:map01200","OG16237","Carbon metabolism",0.0713
+"6845","path:map01230","OG16237","Biosynthesis of amino acids",0.0713
+"6858","path:map00190","OG2469","Oxidative phosphorylation",0.2089
+"6878","path:map00230","OG3683","Purine metabolism",0.1452
+"6881","path:map00230","OG2856","Purine metabolism",0.1776
+"6882","path:map00240","OG2856","Pyrimidine metabolism",0.1776
+"6946","path:map00010","OG11021","Glycolysis / Gluconeogenesis",0.1015
+"6949","path:map01110","OG11021","Biosynthesis of secondary metabolites",0.1015
+"6951","path:map01130","OG11021","Biosynthesis of antibiotics",0.1015
+"6954","path:map01110","OG2082","Biosynthesis of secondary metabolites",0.0806
+"6955","path:map01130","OG2082","Biosynthesis of antibiotics",0.0806
+"6956","path:map01230","OG2082","Biosynthesis of amino acids",0.0806
+"6962","path:map01110","OG18147","Biosynthesis of secondary metabolites",0.4243
+"6964","path:map01200","OG18147","Carbon metabolism",0.4243
+"6984","path:map01110","OG10060","Biosynthesis of secondary metabolites",0.16815
+"6994","path:map01110","OG3429","Biosynthesis of secondary metabolites",0.1773
+"6995","path:map01130","OG3429","Biosynthesis of antibiotics",0.1773
+"6996","path:map01200","OG3429","Carbon metabolism",0.1773
+"7023","path:map01130","OG1357","Biosynthesis of antibiotics",0.0599
+"7050","path:map01110","OG8446","Biosynthesis of secondary metabolites",0.23185
+"7051","path:map01130","OG8446","Biosynthesis of antibiotics",0.23185
+"7053","path:map01230","OG8446","Biosynthesis of amino acids",0.23185
+"7060","path:map01110","OG10738","Biosynthesis of secondary metabolites",0.0718
+"7062","path:map01130","OG10738","Biosynthesis of antibiotics",0.0718
+"7063","path:map01230","OG10738","Biosynthesis of amino acids",0.0718
+"7064","path:map00190","OG1842","Oxidative phosphorylation",0.1059
+"7107","path:map00190","OG4118","Oxidative phosphorylation",0.2672
+"7109","path:map00030","OG1488","Pentose phosphate pathway",0.0802
+"7112","path:map01110","OG1488","Biosynthesis of secondary metabolites",0.0802
+"7114","path:map01130","OG1488","Biosynthesis of antibiotics",0.0802
+"7115","path:map01200","OG1488","Carbon metabolism",0.0802
+"7120","path:map01110","OG2567","Biosynthesis of secondary metabolites",0.1938
+"7121","path:map01130","OG2567","Biosynthesis of antibiotics",0.1938
+"7125","path:map00230","OG4226","Purine metabolism",0.16505
+"7232","path:map01110","OG3506","Biosynthesis of secondary metabolites",0.1082
+"7242","path:map01110","OG5032","Biosynthesis of secondary metabolites",0.0574
+"7243","path:map01130","OG5032","Biosynthesis of antibiotics",0.0574
+"7244","path:map01200","OG5032","Carbon metabolism",0.0574
+"7251","path:map01110","OG1977","Biosynthesis of secondary metabolites",0.0769
+"7258","path:map00190","OG2820","Oxidative phosphorylation",0.3921
+"7278","path:map00230","OG8571","Purine metabolism",0.22
+"7279","path:map00240","OG8571","Pyrimidine metabolism",0.22
+"7291","path:map00240","OG2721","Pyrimidine metabolism",0.0711
+"7294","path:map00010","OG1302","Glycolysis / Gluconeogenesis",0.0665
+"7295","path:map00030","OG1302","Pentose phosphate pathway",0.0665
+"7297","path:map00230","OG1302","Purine metabolism",0.0665
+"7302","path:map01110","OG1302","Biosynthesis of secondary metabolites",0.0665
+"7304","path:map01130","OG1302","Biosynthesis of antibiotics",0.0665
+"7310","path:map01110","OG13622","Biosynthesis of secondary metabolites",0.1996
+"7311","path:map01130","OG13622","Biosynthesis of antibiotics",0.1996
+"7313","path:map01230","OG13622","Biosynthesis of amino acids",0.1996
+"7350","path:map01110","OG1813","Biosynthesis of secondary metabolites",0.139
+"7351","path:map01230","OG1813","Biosynthesis of amino acids",0.139
+"7352","path:map00230","OG2453","Purine metabolism",0.0976
+"7354","path:map01110","OG2453","Biosynthesis of secondary metabolites",0.0976
+"7355","path:map01130","OG2453","Biosynthesis of antibiotics",0.0976
+"7368","path:map01130","OG4266","Biosynthesis of antibiotics",0.15465
+"7378","path:map01110","OG8524","Biosynthesis of secondary metabolites",0.17395
+"7380","path:map01200","OG8524","Carbon metabolism",0.17395
+"7384","path:map00190","OG4785","Oxidative phosphorylation",0.16935
+"7605","path:map00010","OG1432","Glycolysis / Gluconeogenesis",0.0678
+"7606","path:map00030","OG1432","Pentose phosphate pathway",0.0678
+"7611","path:map01110","OG1432","Biosynthesis of secondary metabolites",0.0678
+"7613","path:map01130","OG1432","Biosynthesis of antibiotics",0.0678
+"7614","path:map01200","OG1432","Carbon metabolism",0.0678
+"7615","path:map01230","OG1432","Biosynthesis of amino acids",0.0678
+"7622","path:map01110","OG10614","Biosynthesis of secondary metabolites",0.109
+"7623","path:map01130","OG10614","Biosynthesis of antibiotics",0.109
+"7624","path:map01230","OG10614","Biosynthesis of amino acids",0.109
+"7641","path:map01110","OG17953","Biosynthesis of secondary metabolites",0.09675
+"7642","path:map01130","OG17953","Biosynthesis of antibiotics",0.09675
+"7644","path:map01230","OG17953","Biosynthesis of amino acids",0.09675
+"7651","path:map00030","OG17082","Pentose phosphate pathway",0.2739
+"7653","path:map01110","OG17082","Biosynthesis of secondary metabolites",0.2739
+"7655","path:map01130","OG17082","Biosynthesis of antibiotics",0.2739
+"7656","path:map01200","OG17082","Carbon metabolism",0.2739
+"7672","path:map01110","OG3676","Biosynthesis of secondary metabolites",0.1154
+"7673","path:map01130","OG3676","Biosynthesis of antibiotics",0.1154
+"7679","path:map01110","OG2577","Biosynthesis of secondary metabolites",0.0882
+"7680","path:map01130","OG2577","Biosynthesis of antibiotics",0.0882
+"7682","path:map01230","OG2577","Biosynthesis of amino acids",0.0882
+"7683","path:map00010","OG12630","Glycolysis / Gluconeogenesis",0.3534
+"7692","path:map01110","OG12630","Biosynthesis of secondary metabolites",0.3534
+"7694","path:map01130","OG12630","Biosynthesis of antibiotics",0.3534
+"7717","path:map01200","OG10650","Carbon metabolism",0.2345
+"7779","path:map00230","OG3160","Purine metabolism",0.0832
+"7780","path:map00240","OG3160","Pyrimidine metabolism",0.0832
+"7783","path:map00230","OG2148","Purine metabolism",0.0532
+"7786","path:map01110","OG2148","Biosynthesis of secondary metabolites",0.0532
+"7787","path:map01130","OG2148","Biosynthesis of antibiotics",0.0532
+"7788","path:map00010","OG2197","Glycolysis / Gluconeogenesis",0.1883
+"7793","path:map01110","OG2197","Biosynthesis of secondary metabolites",0.1883
+"7795","path:map01130","OG2197","Biosynthesis of antibiotics",0.1883
+"7796","path:map01200","OG2197","Carbon metabolism",0.1883
+"7797","path:map01230","OG2197","Biosynthesis of amino acids",0.1883
+"7810","path:map00030","OG1667","Pentose phosphate pathway",0.0941
+"7812","path:map01110","OG1667","Biosynthesis of secondary metabolites",0.0941
+"7814","path:map01130","OG1667","Biosynthesis of antibiotics",0.0941
+"7815","path:map01200","OG1667","Carbon metabolism",0.0941
+"7816","path:map01230","OG1667","Biosynthesis of amino acids",0.0941
+"7820","path:map01110","OG5296","Biosynthesis of secondary metabolites",0.2079
+"7821","path:map00240","OG7730","Pyrimidine metabolism",0.1766
+"7825","path:map00190","OG4068","Oxidative phosphorylation",0.1228
+"7861","path:map00010","OG16336","Glycolysis / Gluconeogenesis",0.3397
+"7870","path:map01110","OG16336","Biosynthesis of secondary metabolites",0.3397
+"7872","path:map01130","OG16336","Biosynthesis of antibiotics",0.3397
+"7890","path:map01130","OG3214","Biosynthesis of antibiotics",0.0971
+"7920","path:map00030","OG11517","Pentose phosphate pathway",0.1283
+"7924","path:map01110","OG11517","Biosynthesis of secondary metabolites",0.1283
+"7926","path:map01130","OG11517","Biosynthesis of antibiotics",0.1283
+"7927","path:map01200","OG11517","Carbon metabolism",0.1283
+"7928","path:map01230","OG11517","Biosynthesis of amino acids",0.1283
+"7947","path:map00010","OG10227","Glycolysis / Gluconeogenesis",0.1029
+"7951","path:map01110","OG10227","Biosynthesis of secondary metabolites",0.1029
+"7953","path:map01130","OG10227","Biosynthesis of antibiotics",0.1029
+"7954","path:map01200","OG10227","Carbon metabolism",0.1029
+"7955","path:map01230","OG10227","Biosynthesis of amino acids",0.1029
+"7961","path:map00010","OG8859","Glycolysis / Gluconeogenesis",0.0549
+"7964","path:map01110","OG8859","Biosynthesis of secondary metabolites",0.0549
+"7966","path:map01130","OG8859","Biosynthesis of antibiotics",0.0549
+"7967","path:map01200","OG8859","Carbon metabolism",0.0549
+"7968","path:map01230","OG8859","Biosynthesis of amino acids",0.0549
+"7971","path:map00010","OG12376","Glycolysis / Gluconeogenesis",0.1136
+"7980","path:map01110","OG12376","Biosynthesis of secondary metabolites",0.1136
+"7982","path:map01130","OG12376","Biosynthesis of antibiotics",0.1136
+"7995","path:map01110","OG1899","Biosynthesis of secondary metabolites",0.0834
+"8014","path:map01110","OG3098","Biosynthesis of secondary metabolites",0.15835
+"8019","path:map01110","OG2655","Biosynthesis of secondary metabolites",0.0342
+"8020","path:map01230","OG2655","Biosynthesis of amino acids",0.0342
+"8111","path:map01110","OG3877","Biosynthesis of secondary metabolites",0.1394
+"8135","path:map00190","OG2644","Oxidative phosphorylation",0.1798
+"8166","path:map00190","OG4532","Oxidative phosphorylation",0.0722
+"8178","path:map00230","OG2475","Purine metabolism",0.1437
+"8179","path:map00240","OG2475","Pyrimidine metabolism",0.1437
+"8198","path:map01110","OG3336","Biosynthesis of secondary metabolites",0.1558
+"8200","path:map01130","OG3336","Biosynthesis of antibiotics",0.1558
+"8201","path:map01200","OG3336","Carbon metabolism",0.1558
+"8208","path:map01110","OG1730","Biosynthesis of secondary metabolites",0.0869
+"8209","path:map01130","OG1730","Biosynthesis of antibiotics",0.0869
+"8218","path:map01110","OG4185","Biosynthesis of secondary metabolites",0.1377
+"8219","path:map00190","OG2635","Oxidative phosphorylation",0.0461
+"8228","path:map00020","OG1786","Citrate cycle (TCA cycle)",0.0607
+"8230","path:map01110","OG1786","Biosynthesis of secondary metabolites",0.0607
+"8232","path:map01130","OG1786","Biosynthesis of antibiotics",0.0607
+"8233","path:map01200","OG1786","Carbon metabolism",0.0607
+"8235","path:map01230","OG1786","Biosynthesis of amino acids",0.0607
+"8261","path:map00230","OG3002","Purine metabolism",0.1328
+"8262","path:map00240","OG3002","Pyrimidine metabolism",0.1328
+"8274","path:map00230","OG1779","Purine metabolism",0.0497
+"8287","path:map00230","OG3221","Purine metabolism",0.1244
+"8308","path:map00240","OG4396","Pyrimidine metabolism",0.11
+"8398","path:map00010","OG11555","Glycolysis / Gluconeogenesis",0.2063
+"8403","path:map01110","OG11555","Biosynthesis of secondary metabolites",0.2063
+"8405","path:map01130","OG11555","Biosynthesis of antibiotics",0.2063
+"8407","path:map00020","OG1218","Citrate cycle (TCA cycle)",0.0667
+"8411","path:map01110","OG1218","Biosynthesis of secondary metabolites",0.0667
+"8413","path:map01130","OG1218","Biosynthesis of antibiotics",0.0667
+"8414","path:map01200","OG1218","Carbon metabolism",0.0667
+"8420","path:map01110","OG2514","Biosynthesis of secondary metabolites",0.21855
+"8427","path:map01110","OG2906","Biosynthesis of secondary metabolites",0.1478
+"8428","path:map01130","OG2906","Biosynthesis of antibiotics",0.1478
+"8429","path:map01230","OG2906","Biosynthesis of amino acids",0.1478
+"8442","path:map00230","OG8565","Purine metabolism",0.2554
+"8445","path:map01110","OG8565","Biosynthesis of secondary metabolites",0.2554
+"8459","path:map01200","OG4536","Carbon metabolism",0.1478
+"8465","path:map01110","OG2841","Biosynthesis of secondary metabolites",0.0686
+"8472","path:map00230","OG3063","Purine metabolism",0.1233
+"8473","path:map00240","OG3063","Pyrimidine metabolism",0.1233
+"8476","path:map01110","OG3063","Biosynthesis of secondary metabolites",0.1233
+"8477","path:map01130","OG3063","Biosynthesis of antibiotics",0.1233
+"8483","path:map01110","OG1724","Biosynthesis of secondary metabolites",0.1
+"8484","path:map01130","OG1724","Biosynthesis of antibiotics",0.1
+"8485","path:map01230","OG1724","Biosynthesis of amino acids",0.1
+"8563","path:map00010","OG13920","Glycolysis / Gluconeogenesis",0.0455
+"8566","path:map01110","OG13920","Biosynthesis of secondary metabolites",0.0455
+"8568","path:map01130","OG13920","Biosynthesis of antibiotics",0.0455
+"8569","path:map01200","OG13920","Carbon metabolism",0.0455
+"8570","path:map01230","OG13920","Biosynthesis of amino acids",0.0455
+"8582","path:map00230","OG2086","Purine metabolism",0.0768
+"8606","path:map01110","OG5668","Biosynthesis of secondary metabolites",0.14165
+"8608","path:map01130","OG5668","Biosynthesis of antibiotics",0.14165
+"8609","path:map01200","OG5668","Carbon metabolism",0.14165
+"8617","path:map01040","OG1180","Biosynthesis of unsaturated fatty acids",0.164
+"8619","path:map01110","OG1180","Biosynthesis of secondary metabolites",0.164
+"8633","path:map00190","OG17051","Oxidative phosphorylation",0.1823
+"8650","path:map00190","OG3460","Oxidative phosphorylation",0.12
+"8653","path:map01110","OG3460","Biosynthesis of secondary metabolites",0.12
+"8702","path:map01110","OG1933","Biosynthesis of secondary metabolites",0.1484
+"8703","path:map01230","OG1933","Biosynthesis of amino acids",0.1484
+"8709","path:map01040","OG6053","Biosynthesis of unsaturated fatty acids",0.1217
+"8711","path:map01110","OG6053","Biosynthesis of secondary metabolites",0.1217
+"8712","path:map01130","OG6053","Biosynthesis of antibiotics",0.1217
+"8717","path:map00230","OG1819","Purine metabolism",0.0541
+"8720","path:map01110","OG1819","Biosynthesis of secondary metabolites",0.0541
+"8721","path:map01130","OG1819","Biosynthesis of antibiotics",0.0541
+"8729","path:map00010","OG1959","Glycolysis / Gluconeogenesis",0.0868
+"8730","path:map00020","OG1959","Citrate cycle (TCA cycle)",0.0868
+"8733","path:map01110","OG1959","Biosynthesis of secondary metabolites",0.0868
+"8735","path:map01130","OG1959","Biosynthesis of antibiotics",0.0868
+"8736","path:map01200","OG1959","Carbon metabolism",0.0868
+"8742","path:map00230","OG14545","Purine metabolism",0.23205
+"8770","path:map01110","OG1281","Biosynthesis of secondary metabolites",0.1898
+"8772","path:map00230","OG17166","Purine metabolism",0.0359
+"8780","path:map01110","OG1685","Biosynthesis of secondary metabolites",0.0551
+"8781","path:map01130","OG1685","Biosynthesis of antibiotics",0.0551
+"8798","path:map00240","OG2183","Pyrimidine metabolism",0.1601
+"8808","path:map01110","OG1273","Biosynthesis of secondary metabolites",0.2346
+"8811","path:map01110","OG2113","Biosynthesis of secondary metabolites",0.1253
+"8812","path:map01230","OG2113","Biosynthesis of amino acids",0.1253
+"8942","path:map00230","OG3961","Purine metabolism",0.15315
+"8948","path:map01110","OG1675","Biosynthesis of secondary metabolites",0.0681
+"8964","path:map00190","OG4352","Oxidative phosphorylation",0.1186
+"8988","path:map01110","OG10271","Biosynthesis of secondary metabolites",0.09205
+"8989","path:map01130","OG10271","Biosynthesis of antibiotics",0.09205
+"8991","path:map01230","OG10271","Biosynthesis of amino acids",0.09205
+"9028","path:map00230","OG3302","Purine metabolism",0.1268
+"9029","path:map00240","OG3302","Pyrimidine metabolism",0.1268
+"9041","path:map00020","OG2409","Citrate cycle (TCA cycle)",0.1325
+"9044","path:map01110","OG2409","Biosynthesis of secondary metabolites",0.1325
+"9046","path:map01130","OG2409","Biosynthesis of antibiotics",0.1325
+"9047","path:map01200","OG2409","Carbon metabolism",0.1325
+"9050","path:map01110","OG2645","Biosynthesis of secondary metabolites",0.1538
+"9051","path:map00010","OG2571","Glycolysis / Gluconeogenesis",0.1261
+"9052","path:map00030","OG2571","Pentose phosphate pathway",0.1261
+"9054","path:map00230","OG2571","Purine metabolism",0.1261
+"9059","path:map01110","OG2571","Biosynthesis of secondary metabolites",0.1261
+"9061","path:map01130","OG2571","Biosynthesis of antibiotics",0.1261
+"9072","path:map00190","OG4357","Oxidative phosphorylation",0.1884
+"9083","path:map00010","OG5046","Glycolysis / Gluconeogenesis",0.1814
+"9087","path:map01110","OG5046","Biosynthesis of secondary metabolites",0.1814
+"9089","path:map01130","OG5046","Biosynthesis of antibiotics",0.1814
+"9090","path:map01200","OG5046","Carbon metabolism",0.1814
+"9091","path:map01230","OG5046","Biosynthesis of amino acids",0.1814
+"9124","path:map00020","OG1585","Citrate cycle (TCA cycle)",0.0592
+"9128","path:map01110","OG1585","Biosynthesis of secondary metabolites",0.0592
+"9130","path:map01130","OG1585","Biosynthesis of antibiotics",0.0592
+"9131","path:map01200","OG1585","Carbon metabolism",0.0592
+"9143","path:map00020","OG6700","Citrate cycle (TCA cycle)",0.0527
+"9146","path:map01110","OG6700","Biosynthesis of secondary metabolites",0.0527
+"9148","path:map01130","OG6700","Biosynthesis of antibiotics",0.0527
+"9149","path:map00010","OG2071","Glycolysis / Gluconeogenesis",0.1258
+"9150","path:map00020","OG2071","Citrate cycle (TCA cycle)",0.1258
+"9153","path:map01110","OG2071","Biosynthesis of secondary metabolites",0.1258
+"9155","path:map01130","OG2071","Biosynthesis of antibiotics",0.1258
+"9156","path:map01200","OG2071","Carbon metabolism",0.1258
+"9164","path:map00230","OG3080","Purine metabolism",0.1106
+"9165","path:map00240","OG3080","Pyrimidine metabolism",0.1106
+"9172","path:map00190","OG3575","Oxidative phosphorylation",0.0787
+"9184","path:map01110","OG10425","Biosynthesis of secondary metabolites",0.3334
+"9185","path:map01130","OG10425","Biosynthesis of antibiotics",0.3334
+"9209","path:map01200","OG3047","Carbon metabolism",0.2212
+"9234","path:map00010","OG2807","Glycolysis / Gluconeogenesis",0.0721
+"9235","path:map00020","OG2807","Citrate cycle (TCA cycle)",0.0721
+"9238","path:map01110","OG2807","Biosynthesis of secondary metabolites",0.0721
+"9240","path:map01130","OG2807","Biosynthesis of antibiotics",0.0721
+"9241","path:map01200","OG2807","Carbon metabolism",0.0721
+"9267","path:map01110","OG1943","Biosynthesis of secondary metabolites",0.074
+"9268","path:map01130","OG1943","Biosynthesis of antibiotics",0.074
+"9269","path:map01230","OG1943","Biosynthesis of amino acids",0.074
+"9284","path:map01110","OG10935","Biosynthesis of secondary metabolites",0.1825
+"9285","path:map01130","OG10935","Biosynthesis of antibiotics",0.1825
+"9287","path:map01230","OG10935","Biosynthesis of amino acids",0.1825
+"9291","path:map00010","OG1881","Glycolysis / Gluconeogenesis",0.04755
+"9292","path:map00020","OG1881","Citrate cycle (TCA cycle)",0.04755
+"9296","path:map01110","OG1881","Biosynthesis of secondary metabolites",0.04755
+"9298","path:map01130","OG1881","Biosynthesis of antibiotics",0.04755
+"9299","path:map01200","OG1881","Carbon metabolism",0.04755
+"9301","path:map00010","OG16416","Glycolysis / Gluconeogenesis",0.1037
+"9304","path:map01110","OG16416","Biosynthesis of secondary metabolites",0.1037
+"9306","path:map01130","OG16416","Biosynthesis of antibiotics",0.1037
+"9307","path:map01200","OG16416","Carbon metabolism",0.1037
+"9308","path:map01230","OG16416","Biosynthesis of amino acids",0.1037
+"9315","path:map01110","OG2647","Biosynthesis of secondary metabolites",0.21635
+"9327","path:map01110","OG6142","Biosynthesis of secondary metabolites",0.1301
+"9329","path:map01130","OG6142","Biosynthesis of antibiotics",0.1301
+"9330","path:map01200","OG6142","Carbon metabolism",0.1301
+"9332","path:map00020","OG6408","Citrate cycle (TCA cycle)",0.0783
+"9335","path:map01110","OG6408","Biosynthesis of secondary metabolites",0.0783
+"9337","path:map01130","OG6408","Biosynthesis of antibiotics",0.0783
+"9338","path:map00190","OG5657","Oxidative phosphorylation",0.0899
+"9345","path:map01110","OG6784","Biosynthesis of secondary metabolites",0.08815
+"9346","path:map01130","OG6784","Biosynthesis of antibiotics",0.08815
+"9347","path:map01230","OG6784","Biosynthesis of amino acids",0.08815
+"9361","path:map00230","OG14977","Purine metabolism",0.3154
+"9362","path:map00240","OG14977","Pyrimidine metabolism",0.3154
+"9387","path:map01110","OG1880","Biosynthesis of secondary metabolites",0.1
+"9388","path:map01130","OG1880","Biosynthesis of antibiotics",0.1
+"9400","path:map00190","OG2367","Oxidative phosphorylation",0.0546
+"9426","path:map00030","OG2007","Pentose phosphate pathway",0.1183
+"9427","path:map00230","OG2007","Purine metabolism",0.1183
+"9429","path:map01110","OG2007","Biosynthesis of secondary metabolites",0.1183
+"9431","path:map01130","OG2007","Biosynthesis of antibiotics",0.1183
+"9432","path:map01200","OG2007","Carbon metabolism",0.1183
+"9433","path:map01230","OG2007","Biosynthesis of amino acids",0.1183
+"9448","path:map01110","OG7557","Biosynthesis of secondary metabolites",0.0969
+"9449","path:map01130","OG7557","Biosynthesis of antibiotics",0.0969
+"9450","path:map00030","OG2968","Pentose phosphate pathway",0.0461
+"9451","path:map00230","OG2968","Purine metabolism",0.0461
+"9453","path:map01110","OG2968","Biosynthesis of secondary metabolites",0.0461
+"9455","path:map01130","OG2968","Biosynthesis of antibiotics",0.0461
+"9456","path:map01200","OG2968","Carbon metabolism",0.0461
+"9457","path:map01230","OG2968","Biosynthesis of amino acids",0.0461
+"9460","path:map00230","OG4644","Purine metabolism",0.1674
+"9461","path:map00240","OG4644","Pyrimidine metabolism",0.1674
+"9464","path:map01110","OG4644","Biosynthesis of secondary metabolites",0.1674
+"9484","path:map00190","OG2101","Oxidative phosphorylation",0.1428
+"9487","path:map01110","OG2101","Biosynthesis of secondary metabolites",0.1428
+"9503","path:map01110","OG6742","Biosynthesis of secondary metabolites",0.12525
+"9505","path:map01130","OG6742","Biosynthesis of antibiotics",0.12525
+"9506","path:map01200","OG6742","Carbon metabolism",0.12525
+"9542","path:map00030","OG1556","Pentose phosphate pathway",0.0513
+"9543","path:map00230","OG1556","Purine metabolism",0.0513
+"9545","path:map01110","OG1556","Biosynthesis of secondary metabolites",0.0513
+"9547","path:map01130","OG1556","Biosynthesis of antibiotics",0.0513
+"9548","path:map01200","OG1556","Carbon metabolism",0.0513
+"9549","path:map01230","OG1556","Biosynthesis of amino acids",0.0513
+"9565","path:map01110","OG2238","Biosynthesis of secondary metabolites",0.176
+"9566","path:map01130","OG2238","Biosynthesis of antibiotics",0.176
+"9567","path:map01230","OG2238","Biosynthesis of amino acids",0.176
+"9569","path:map00230","OG3317","Purine metabolism",0.078
+"9570","path:map00240","OG3317","Pyrimidine metabolism",0.078
+"9582","path:map01200","OG16298","Carbon metabolism",0.0854
+"9603","path:map01110","OG5734","Biosynthesis of secondary metabolites",0.1128
+"9614","path:map00010","OG17660","Glycolysis / Gluconeogenesis",0.1473
+"9615","path:map00020","OG17660","Citrate cycle (TCA cycle)",0.1473
+"9622","path:map01110","OG17660","Biosynthesis of secondary metabolites",0.1473
+"9624","path:map01130","OG17660","Biosynthesis of antibiotics",0.1473
+"9625","path:map01200","OG17660","Carbon metabolism",0.1473
+"9630","path:map00240","OG12786","Pyrimidine metabolism",0.1473
+"9681","path:map01110","OG1687","Biosynthesis of secondary metabolites",0.084
+"9689","path:map00230","OG13229","Purine metabolism",0.17275
+"9690","path:map00240","OG13229","Pyrimidine metabolism",0.17275
+"9695","path:map00240","OG2056","Pyrimidine metabolism",0.133
+"9698","path:map00230","OG3603","Purine metabolism",0.2075
+"9699","path:map00240","OG3603","Pyrimidine metabolism",0.2075
+"9712","path:map00230","OG1737","Purine metabolism",0.07825
+"9713","path:map00240","OG1737","Pyrimidine metabolism",0.07825
+"9749","path:map01110","OG2347","Biosynthesis of secondary metabolites",0.1056
+"9750","path:map01130","OG2347","Biosynthesis of antibiotics",0.1056
+"9755","path:map01110","OG1810","Biosynthesis of secondary metabolites",0.1212
+"9757","path:map01130","OG1810","Biosynthesis of antibiotics",0.1212
+"9758","path:map01230","OG1810","Biosynthesis of amino acids",0.1212
+"9767","path:map00230","OG2299","Purine metabolism",0.1235
+"9768","path:map00240","OG2299","Pyrimidine metabolism",0.1235
+"9779","path:map01230","OG7554","Biosynthesis of amino acids",0.1289
+"9785","path:map00230","OG4203","Purine metabolism",0.2467
+"9786","path:map00240","OG4203","Pyrimidine metabolism",0.2467
+"9803","path:map00230","OG1863","Purine metabolism",0.2361
+"9804","path:map00240","OG1863","Pyrimidine metabolism",0.2361
+"9813","path:map01110","OG2882","Biosynthesis of secondary metabolites",0.2147
+"9815","path:map00230","OG2731","Purine metabolism",0.0795
+"9816","path:map00240","OG2731","Pyrimidine metabolism",0.0795
+"9836","path:map01130","OG6688","Biosynthesis of antibiotics",0.0824
