@@ -20,6 +20,8 @@ gene_dn_ds_sce <- gene_dn_ds_all_new[gene_dn_ds_all_new$OG %in% ortholog0$ID, ]
 og_sce_mapping <- read_tsv("data/representatives.tsv")
 gene_dn_ds_sce0 <- left_join(gene_dn_ds_sce, og_sce_mapping, by = c("OG" = "ortho_id"))
 gene_dn_ds_sce0$locus <- str_replace_all(gene_dn_ds_sce0$representative, "Saccharomyces_cerevisiae@", "")
+write.csv(gene_dn_ds_sce0, "result/dn_ds_sce.csv")
+
 
 
 # choose the top 5% of all genes with highest dN/dS and lowest dN/dS
