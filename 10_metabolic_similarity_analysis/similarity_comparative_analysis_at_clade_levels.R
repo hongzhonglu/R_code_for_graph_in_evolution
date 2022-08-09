@@ -63,6 +63,10 @@ ggplot(similarity_combine ,aes(x=clade1, y=similirity)) +
   #coord_flip()
 
 
-
-
+##################### statistical analysis
+m1 <- similarity_combine$similirity[similarity_combine$clade1=="a_inter_clade"]
+m2 <- similarity_combine$similirity[similarity_combine$clade1=="CUG-Ala"]
+t.test(m1, m2)
+wilcox.test(m1,m2, alternative = "two.sided")
+##################### statistical analysis
 

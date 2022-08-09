@@ -85,7 +85,7 @@ ggplot(similarity1, aes(x=distance, y=similirity) ) +
   theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
 ggsave(out <- paste('result/','biocyc_model_similarity_evolution_distance','.eps', sep = ""), width=5, height=4, dpi=600)
 
-
+cor.test(similarity1$distance, similarity1$similirity)
 
 
 
@@ -154,6 +154,7 @@ ggplot(similarity2, aes(x=similirity, y=trait_similarity) ) +
   theme(axis.text=element_text(size=12, family="Arial"), axis.title=element_text(size=16, family="Arial")) +
   theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
 ggsave(out <- paste('result/','biocyc_model_VS_trait_similarity','.eps', sep = ""), width=5, height=4, dpi=600)
+
 
 
 

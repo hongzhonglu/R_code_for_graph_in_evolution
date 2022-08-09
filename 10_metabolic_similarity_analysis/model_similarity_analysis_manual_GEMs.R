@@ -85,7 +85,7 @@ ggplot(similarity1, aes(x=distance, y=similirity) ) +
   theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
 ggsave(out <- paste('result/','manual_model_similarity_evolution_distance','.eps', sep = ""), width=5, height=4, dpi=600)
 
-
+cor.test(similarity1$distance, similarity1$similirity)
 
 
 

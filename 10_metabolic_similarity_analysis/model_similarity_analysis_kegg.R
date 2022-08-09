@@ -94,7 +94,7 @@ ggplot(similarity1, aes(x=distance, y=similirity) ) +
 ggsave(out <- paste('result/','kegg_model_similarity_evolution_distance','.eps', sep = ""), width=5, height=4, dpi=600)
 
 
-
+cor.test(similarity1$distance, similarity1$similirity)
 
 
 

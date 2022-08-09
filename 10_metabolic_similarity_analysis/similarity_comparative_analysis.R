@@ -108,3 +108,20 @@ ggsave(out <- paste('result/','model_similarity_comparison_from_different_source
 
 
 
+
+##################### statistical analysis
+m1 <- df3$similirity[df3$source=="RAVEN_kegg"]
+m2 <- df3$similirity[df3$source=="semi_auto_GEMs"]
+t.test(m1, m2)
+wilcox.test(m1,m2, alternative = "two.sided")
+##################### statistical analysis
+
+
+##################### statistical analysis
+m1 <- df3$similirity[df3$source=="RAVEN_kegg"]
+m2 <- df3$similirity[df3$source=="RAVEN_biocyc"]
+t.test(m1, m2)
+wilcox.test(m1,m2, alternative = "two.sided")
+##################### statistical analysis
+
+
