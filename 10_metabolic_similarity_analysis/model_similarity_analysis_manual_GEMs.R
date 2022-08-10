@@ -75,7 +75,7 @@ similarity_check <- similarity[similarity$s1_update=="NA",]
 ggplot(similarity1, aes(x=distance, y=similirity) ) +
   geom_hex(bins = 120) +
   scale_fill_continuous(type = "viridis") +
-  geom_smooth(method = "lm") +
+  geom_smooth(method = "gam") +
   theme_bw() +
   xlab("Evolutionary distance") +
   ylab("Model similarity") +
@@ -175,5 +175,100 @@ ggsave(out <- paste('result/','evolution_distance_VS_trait_similarity','.eps', s
 
 
 
+
+
+
+
+
+
+# check the genome similarity
+genome_similarity <- read.table('data_for_GEMs_similarity/genome_similirity_based_on_ortholog_gene_existence.txt', header = TRUE, stringsAsFactors = FALSE)
+
+genome_similarity$s1 <- str_replace_all(genome_similarity$s1, ".tsv", "")
+genome_similarity$s2 <- str_replace_all(genome_similarity$s2, ".tsv", "")
+
+library(reshape2)
+genome_similarity0 <- acast(genome_similarity, s1~s2, value.var="similirity")
+
+
+# filter
+strain_set <- colnames(genome_similarity0)
+similarity1 <- similarity1[similarity1$s1 %in% strain_set,]
+similarity1 <- similarity1[similarity1$s2 %in% strain_set,]
+
+
+# loop
+similarity1$genome_similarity <- NA
+for (i in 1:nrow(similarity1)){
+  print(i)
+  
+  row0 <- similarity1[i,]
+  x1 <- row0$s1[1]
+  x2 <- row0$s2[1]
+  
+  
+  # Note that print(b) fails since b doesn't exist
+  skip_to_next <- FALSE
+  tryCatch(evolution_distance0 <- genome_similarity0[x1, x2], error = function(e) { skip_to_next <<- TRUE})
+  
+  if(skip_to_next) {
+    evolution_distance0 <- genome_similarity0[x2, x1]
+  } 
+  
+  if (is.na(evolution_distance0)){
+    evolution_distance0 <- genome_similarity0[x2, x1]
+  }
+  
+  if(length(evolution_distance0) > 0) {
+    similarity1$genome_similarity[i] <- evolution_distance0
+  } 
+  else{
+    similarity1$genome_similarity[i] < NA
+    
+  }
+}
+
+
+
+
+
+
+
+ggplot(similarity1, aes(x=genome_similarity, y=similirity) ) +
+  geom_hex(bins = 120) +
+  scale_fill_continuous(type = "viridis") +
+  geom_smooth(method = "gam") +
+  theme_bw() +
+  xlab("Genome similarity") +
+  ylab("Model similarity") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=12, family="Arial"), axis.title=element_text(size=16, family="Arial")) +
+  theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
+ggsave(out <- paste('result/','Genome_VS_model_similarity_semi_auto_GEMs','.eps', sep = ""), width=5, height=4, dpi=600)
+
+
+cor.test(similarity1$genome_similarity, similarity1$similirity)
+
+
+
+similarity1$EVO_SCORE <- similarity1$genome_similarity / similarity1$distance
+similarity1$EVO_SCORE <- similarity1$genome_similarity *(12-similarity1$distance)
+
+ggplot(similarity1, aes(x=EVO_SCORE, y=similirity) ) +
+  geom_hex(bins = 120) +
+  scale_fill_continuous(type = "viridis") +
+  geom_smooth(method = "gam") +
+  theme_bw() +
+  xlab("EVO_SCORE") +
+  ylab("Model similarity") +
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=12, family="Arial"), axis.title=element_text(size=16, family="Arial")) +
+  theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
+ggsave(out <- paste('result/','EVO_SCORE_VS_model_similarity_semi_auto_GEMs','.eps', sep = ""), width=5, height=4, dpi=600)
+
+
+cor.test(similarity1$EVO_SCORE, similarity1$similirity)
 
 
