@@ -239,7 +239,7 @@ ggplot(similarity1, aes(x=genome_similarity, y=similirity) ) +
   scale_fill_continuous(type = "viridis") +
   geom_smooth(method = "gam") +
   theme_bw() +
-  xlab("Genome similarity") +
+  xlab("Genotype similarity") +
   ylab("Model similarity") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
@@ -337,7 +337,7 @@ ggplot(similarity1, aes(x=genome_similarity, y=trait_similarity) ) +
   scale_fill_continuous(type = "viridis") +
   geom_smooth(method = "gam") +
   theme_bw() +
-  xlab("Genome similarity") +
+  xlab("Genotype similarity") +
   ylab("Trait similarity") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
@@ -354,7 +354,7 @@ ggplot(similarity1, aes(x=genome_similarity, y=distance) ) +
   scale_fill_continuous(type = "viridis") +
   geom_smooth(method = "gam") +
   theme_bw() +
-  xlab("Genome similarity") +
+  xlab("Genotype similarity") +
   ylab("Evolutionary distance") +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
