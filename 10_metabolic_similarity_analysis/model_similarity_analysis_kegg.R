@@ -255,12 +255,20 @@ ggplot(similarity1, aes(x=genome_similarity, y=similirity) ) +
   theme(legend.title = element_text(size=16), legend.text = element_text(size=16))
 ggsave(out <- paste('result/','Genome_VS_model_similarity_kegg','.eps', sep = ""), width=5, height=4, dpi=600)
 
-
+#the model similarity based on draft-GEMs from RAVEN was more correlated with genotype similarity 
 cor.test(similarity1$genome_similarity, similarity1$similirity)
 
 
 
 
+
+
+
+
+
+
+
+#the following script is not used anymore
 #similarity1$EVO_SCORE <- similarity1$genome_similarity / similarity1$distance
 similarity1$EVO_SCORE <- similarity1$genome_similarity *(12-similarity1$distance)/12
 

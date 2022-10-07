@@ -84,77 +84,11 @@ for (i in 1:nrow(similarity1)){
 similarity2 <- similarity1[!is.na(similarity1$trait_similarity),]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# classify the clade information
-similarity$clade1 <- getSingleReactionFormula(species_id$`Major clade`,species_id$speceis_names_fig2,similarity$s1_update)
-similarity$clade2 <- getSingleReactionFormula(species_id$`Major clade`,species_id$speceis_names_fig2,similarity$s2_update)
-
-similarity00 <- similarity[similarity$clade1==similarity$clade2,]
-
-similarity01 <- similarity00[, c("similirity","clade1")]
-
-similarity02 <-  similarity[similarity$clade1 != similarity$clade2,]
-similarity02 <- similarity02[, c("similirity","clade1")]
-similarity02$clade1 <- "a_inter_clade"
-
-similarity_combine <- rbind(similarity01, similarity02)
-
-
-
-
-
-
-
-# plot density plot
-
-# plot
-ggplot(similarity_combine ,aes(x=clade1, y=similirity)) + 
-  stat_boxplot(geom ='errorbar', width = 0.1) + # add caps
-  geom_boxplot(fill = "#FF6666") +
-  xlab('') + ylab('Similarity') +
-  #theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  theme(legend.position = "none") +
-  theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=16,family="Arial"),
-        legend.text = element_text(size=10, family="Arial")) +
-  ggtitle('') +
-  geom_hline(yintercept=0.845, linetype="dashed", 
-             color = "blue", size=1) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) # +
-  #coord_flip()
-
-
-##################### statistical analysis
-m1 <- similarity_combine$similirity[similarity_combine$clade1=="a_inter_clade"]
-m2 <- similarity_combine$similirity[similarity_combine$clade1=="CUG-Ala"]
-t.test(m1, m2)
-wilcox.test(m1,m2, alternative = "two.sided")
-##################### statistical analysis
-
-
-
-
-
-
-
-
+# check 
+"Lipomycetaceae"
+df_check <- similarity2[similarity2$clade1=="Lipomycetaceae", ]
+df_check <- df_check[df_check$clade2=="Lipomycetaceae", ]
+plot(df_check$similirity, df_check$trait_similarity)
 
 
 
@@ -179,10 +113,13 @@ similarity_combine <- rbind(similarity01, similarity02)
 # plot density plot
 
 # plot
+similarity_combine = similarity_combine[similarity_combine$clade1 != "Sporopachydermia clade", ]
+
+
 ggplot(similarity_combine ,aes(x=clade1, y=trait_similarity)) + 
   stat_boxplot(geom ='errorbar', width = 0.1) + # add caps
   geom_boxplot(fill = "#FF6666") +
-  xlab('') + ylab('Similarity') +
+  xlab('') + ylab('Trait similarity') +
   #theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.position = "none") +
@@ -214,20 +151,42 @@ ggplot(similarity_combine ,aes(x=clade1, y=similirity)) +
 
 
 
-unique_calde <- unique(similarity_combine$clade1)
-unique_calde  <- unique_calde[unique_calde != "Sporopachydermia clade"]
+unique_clade <- unique(similarity_combine$clade1)
+unique_clade  <- unique_clade[unique_clade != "Sporopachydermia clade"]
 cor_all <- vector()
-for (xx in unique_calde){
+for (xx in unique_clade){
+  #xx <- "Lipomycetaceae"
   df <- similarity_combine[similarity_combine$clade1==xx,]
-  print(xx)
   ss <- cor.test(df$similirity, df$trait_similarity)
   yy <- unlist(ss['estimate'])
   cor_all <- c(cor_all,yy)
   
 }
 
-new_result <- data.frame(clade=unique_calde, cor=cor_all)
+new_result <- data.frame(clade=unique_clade, cor=cor_all, stringsAsFactors = FALSE)
 
+ggplot(data=new_result, aes(x=clade, y=cor)) +
+  geom_bar(stat="identity", colour="black", fill="white",width = 0.6) +
+  xlab('') + ylab('Pearson coefficient') +
+  #theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  theme(legend.position = "none") +
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=16,family="Arial"),
+        legend.text = element_text(size=10, family="Arial")) +
+  ggtitle('') +
+  geom_hline(yintercept=0.18, linetype="dashed", 
+             color = "blue", size=1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) # +
+
+
+
+##################### statistical analysis
+m1 <- similarity_combine$similirity[similarity_combine$clade1=="a_inter_clade"]
+m2 <- similarity_combine$similirity[similarity_combine$clade1=="CUG-Ala"]
+t.test(m1, m2)
+wilcox.test(m1,m2, alternative = "two.sided")
+##################### statistical analysis
 
 
 

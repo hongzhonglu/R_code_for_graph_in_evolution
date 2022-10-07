@@ -143,6 +143,7 @@ similarity2 <- similarity1[!is.na(similarity1$trait_similarity),]
 
 
 cor.test(similarity2$similirity, similarity2$trait_similarity)
+
 ggplot(similarity2, aes(x=similirity, y=trait_similarity) ) +
   geom_hex(bins = 120) +
   scale_fill_continuous(type = "viridis") +
@@ -160,6 +161,7 @@ ggsave(out <- paste('result/','biocyc_model_VS_trait_similarity','.eps', sep = "
 
 
 cor.test(similarity2$distance, similarity2$trait_similarity)
+
 ggplot(similarity2, aes(x=distance, y=trait_similarity) ) +
   geom_hex(bins = 120) +
   scale_fill_continuous(type = "viridis") +
@@ -367,6 +369,14 @@ cor.test(similarity1$genome_similarity, similarity1$distance)
 
 
 
+#fit quadratic regression model
+one_test <- lm(trait_similarity ~ genome_similarity + similirity, data=similarity1)
+#view model summary
+summary(one_test)
+# trait_similarity = 0.205210 + 0.304267*genome_similarity + 0.328545*similirity
+similarity1$predicted_trait <- 0.205210 + 0.304267*similarity1$genome_similarity + 0.328545*similarity1$similirity
+plot(similarity1$trait_similarity, similarity1$predicted_trait)
+cor.test(similarity1$trait_similarity, similarity1$predicted_trait)
 
 
 
