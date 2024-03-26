@@ -4,6 +4,7 @@
 # Hongzhong Lu
 
 library(readxl)
+library(readr)
 library(hongR)
 library(ggplot2)
 library(dplyr)
@@ -22,6 +23,11 @@ transport_gene0$pathwayID <- "Transport"
 transport_gene0$pathwayName <- "Transporter"
 
 sce_pathway_kegg <- rbind.data.frame(sce_pathway_kegg, transport_gene0)
+# save the gene dn_ds_all_new for re-usage
+write.table(sce_pathway_kegg, "result/sce_pathway_kegg_with_transporter.txt", row.names = FALSE, sep = "\t")
+
+
+
 
 
 # here we just mapping dN_dS onto the existing gene-pathway relation
