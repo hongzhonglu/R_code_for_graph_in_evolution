@@ -32,7 +32,7 @@ yeast_fermentation_filter$crabtree <- as.factor(yeast_fermentation_filter$crabtr
 # remove the duplicated species
 yeast_fermentation_filter <- yeast_fermentation_filter[!duplicated(yeast_fermentation_filter$Model_name),]
 yeast_fermentation_filter$`Yield: Biomass/Glc`
-
+write.table(yeast_fermentation_filter, "result/yeast_fermentation_filter.txt", sep = "\t")
 
 # statistical analysis
 g1 <- yeast_fermentation_filter$`Yield: Biomass/Glc`[yeast_fermentation_filter$crabtree=="Yes"]
