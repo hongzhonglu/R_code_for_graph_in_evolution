@@ -16,6 +16,9 @@ library(readxl)
 library(stringr)
 #devtools::install_github("tidyverse/readxl")
 
+
+
+yeast_species <- read_excel("data_for_tree/343taxa_speicies-name_clade-name_color-code.xlsx")
 # one small tasks
 ura1_hgt <- read.table("data_for_tree/ura1_HGT.txt", header=FALSE, stringsAsFactors = FALSE)
 ura1_hgt$V2 <- getSingleReactionFormula(yeast_species$`Major clade`, yeast_species$old_speceis_names, ura1_hgt$V1)

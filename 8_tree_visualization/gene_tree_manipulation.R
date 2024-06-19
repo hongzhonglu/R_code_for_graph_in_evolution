@@ -17,52 +17,6 @@ library(stringr)
 #devtools::install_github("tidyverse/readxl")
 
 
-??unroot
-
-s0 <- read.tree(file = "/Users/luho/Documents/PAML/data/OG5327_aligned_codon.tre", text = NULL, tree.names = NULL, skip = 0,
-          comment.char = "", keep.multi = FALSE)
-
-plot(s0)
-s1 <- unroot(s0)
-plot(s1)
-??write.nexus
-
-s1$node.label <- NULL # Erase the bootstrap values from the phylo object
-plot(s1)
-write.tree(s1, file = "/Users/luho/Documents/PAML/data/OG5327_aligned_codon2.tre")
-
-
-
-# label tree
-
-tree <- read.tree("/Users/luho/Documents/pan_genome/test_for_label/ECP_EDN_15.nw")
-plot(tree)
-d <- data.frame(label = tree$tip.label, stringsAsFactors = FALSE)
-d$label2 <- NA
-for (i in seq_along(d$label)){
-  print(i)
-  if(d$label[i]=="Human_ECP"){
-    d$label2[i] <- paste(d$label[i], "#1", sep = "")
-  } else if(d$label[i]=="Chimp_ECP"){
-    d$label2[i] <-  paste(d$label[i], "#1", sep = "")
-  } else if(d$label[i]=="Goril_ECP"){
-    d$label2[i] <- paste(d$label[i], "#1", sep = "")
-  } else{
-    d$label2[i] <-  paste(d$label[i], "#2", sep = "")
-  }
-  
-}
-## rename_taxa use 1st column as key and 2nd column as value by default                
-## rename_taxa(tree, d)
-rename_taxa(tree, d, label, label2)
-tree2 <- rename_taxa(tree, d, label, label2)
-plot(tree2)
-write.tree(tree2, file = "/Users/luho/Documents/pan_genome/test_for_label/test.tre")
-
-
-
-
-
 #####
 # a method to label tree
 #####
@@ -79,7 +33,7 @@ tr <- makeNodeLabel(tr, "u", nodeList = L)
 ### combining different methods:
 tr <- makeNodeLabel(tr, c("n", "u"), prefix = "#", nodeList = list(Hominid = c("Pan","Homo")))
 plot(tr, show.node.label = TRUE)
-write.tree(tr, file = "/Users/luho/Documents/pan_genome/test_for_label/test2.tre")
+#write.tree(tr, file = "/Users/luho/Documents/pan_genome/test_for_label/test2.tre")
 # node lables
 tr <- "((Pan_paniscus,Pan_troglodytes),((Homo_sapiens,Homo_erectus),Homo_abilis));"
 tr <- read.tree(text = tr)
@@ -89,9 +43,14 @@ all_tree <-subtrees(tr)
 
 
 
-##
 
-## more test
+
+
+
+
+
+
+######## more test
 #step 1 read data
 tr <- "(((Hylobates_EDN , (Orang_EDN , (Gorilla_EDN , (Chimp_EDN , Human_EDN )))), (Macaq_EDN , (Cercopith_EDN , (Macaq2_EDN , Papio_EDN )))), (Orang_ECP, ((Macaq_ECP, Macaq2_ECP), (Goril_ECP, Chimp_ECP, Human_ECP))));"
 interest_set0 <- c("Macaq_ECP", "Macaq2_ECP", "Goril_ECP", "Chimp_ECP", "Human_ECP")
@@ -120,12 +79,16 @@ node_inf2 <- gsub("BRANCH", " #1", node_inf)
 tr2[["node.label"]] <- node_inf2
 plot(tr2, show.node.label = TRUE)
 #save the node
-write.tree(tr2, file = "/Users/luho/Documents/pan_genome/test_for_label/test2.tre")
+#write.tree(tr2, file = "/Users/luho/Documents/pan_genome/test_for_label/test2.tre")
+
+
+
+
+
+
 
 
 ### tree visualization
-
-
 nwk <- system.file("extdata", "sample.nwk", package="treeio")
 tree <- read.tree(nwk)
 
@@ -244,6 +207,11 @@ plotTree(tree, node.numbers = T)
 ## first, rotate about node #50
 rt.50 <- rotate(tree, 50)
 plotTree(rt.50)
+
+
+
+
+
 
 
 
