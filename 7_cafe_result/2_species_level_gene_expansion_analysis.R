@@ -70,10 +70,13 @@ ggplot(merge_df, aes(x = Num, fill = group)) +
   geom_density(alpha = 0.5, bins = 10) +
   xlim(0, 700) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  theme(legend.position = c(0.8, 0.8))
-t.test(species_gene_families$expanded, species_gene_families$extracted)
+  theme(axis.text = element_text(size = 20), axis.title = element_text(size = 24)) +
+  theme(legend.position = c(0.7, 0.8),legend.title=element_text(size=20), 
+        legend.text=element_text(size=20))
+#output 8 x 6
 
+t.test(species_gene_families$expanded, species_gene_families$extracted)
+wilcox.test(species_gene_families$expanded, species_gene_families$extracted, alternative = "two.sided")
 
 
 

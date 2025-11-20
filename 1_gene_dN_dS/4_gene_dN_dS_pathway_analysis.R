@@ -4,6 +4,7 @@
 # Hongzhong Lu
 
 library(readxl)
+library(readr)
 library(hongR)
 library(ggplot2)
 library(dplyr)
@@ -22,6 +23,11 @@ transport_gene0$pathwayID <- "Transport"
 transport_gene0$pathwayName <- "Transporter"
 
 sce_pathway_kegg <- rbind.data.frame(sce_pathway_kegg, transport_gene0)
+# save the gene dn_ds_all_new for re-usage
+write.table(sce_pathway_kegg, "result/sce_pathway_kegg_with_transporter.txt", row.names = FALSE, sep = "\t")
+
+
+
 
 
 # here we just mapping dN_dS onto the existing gene-pathway relation
@@ -128,27 +134,38 @@ interest_pathway <- c("Citrate cycle (TCA cycle)","Glycolysis / Gluconeogenesis"
                       "Biosynthesis of antibiotics",
                       "Biosynthesis of secondary metabolites",
                       "Purine metabolism", "Pyrimidine metabolism")
-dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway, ]
+more_pathway <- c("Biosynthesis of secondary metabolites", "Pyrimidine metabolism", "Biosynthesis of amino acids","Purine metabolism","Carbon metabolism","Glycolysis / Gluconeogenesis","Oxidative phosphorylation")
+
+interest_pathway2 <- unique(c(interest_pathway, more_pathway ))
+
+
+dn_ds_metabolic_pathway1 <- dn_ds_metabolic_pathway[dn_ds_metabolic_pathway$pathway %in% interest_pathway2, ]
 
 dn_ds_summary2 <- group_by(dn_ds_metabolic_pathway1, pathway) %>% summarize(m = median(dN_dS))
-dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = TRUE),]
+
+dn_ds_summary2 <- dn_ds_summary2[order(dn_ds_summary2$m, decreasing = FALSE),]
 
 dn_ds_metabolic_pathway1$pathway <-factor(dn_ds_metabolic_pathway1$pathway, levels=dn_ds_summary2$pathway)
 
 
 
 # plot
-ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS, fill=pathway)) + geom_boxplot() +
-  xlab('') + ylab('dN_dS') +
-  theme_bw() +
+ggplot(dn_ds_metabolic_pathway1 ,aes(x=pathway, y=dN_dS)) + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + # add caps
+  geom_boxplot(fill = "#FF6666") +
+  xlab('') + ylab('dN/dS') +
+  #theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.position = "none") +
-  theme(axis.text=element_text(size=10, family="Arial"),
+  theme(axis.text=element_text(size=12, family="Arial"),
         axis.title=element_text(size=16,family="Arial"),
         legend.text = element_text(size=10, family="Arial")) +
   ggtitle('') +
-  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(panel.background = element_rect(fill = "white", colour = "black"))  +
   coord_flip()
+
+write.csv(dn_ds_metabolic_pathway1, "result/dataset_for_new_Fig.3B.csv")
+
 
 
 G1 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Citrate cycle (TCA cycle)")
@@ -158,12 +175,21 @@ G4 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Bios
 G5 <- filter(dn_ds_metabolic_pathway1, dn_ds_metabolic_pathway1$pathway == "Glycolysis / Gluconeogenesis")
 
 
-
+# t.test
 t.test(G1$dN_dS, G2$dN_dS)
 t.test(G1$dN_dS, G3$dN_dS)
 t.test(G1$dN_dS, G4$dN_dS)
 t.test(G1$dN_dS, G5$dN_dS)
 
-t.test(G2$dN_dS, G5$dN_dS)
+# wilcon.test
+wilcox.test(G1$dN_dS, G2$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G3$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G4$dN_dS, alternative = "two.sided")
+wilcox.test(G1$dN_dS, G5$dN_dS, alternative = "two.sided")
+# By comparison, it could find differences between t.test and wilcon.test
+
+
+
+
 
 

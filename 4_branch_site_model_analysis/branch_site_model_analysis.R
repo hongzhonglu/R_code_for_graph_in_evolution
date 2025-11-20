@@ -1,4 +1,9 @@
 # These scripts are used to produce map related to evolution project
+# This result is based on one calculation
+# heat-tolerance as the main trait
+# Compare the model prediction and selection analysis
+# Compare the proteomics and selection analysis
+# This result is based on the one calculation
 # 2020.04.15
 # Hongzhong Lu
 

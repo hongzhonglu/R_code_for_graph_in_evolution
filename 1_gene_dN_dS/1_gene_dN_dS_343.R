@@ -74,22 +74,23 @@ merge_dN_dS <- rbind.data.frame(B1, B2)
 ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
   xlim(0, 1) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  theme(legend.position = c(0.8, 0.2))
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  theme(legend.position = c(0.75, 0.2)) +
+  xlab("dN/dS") + ylab("Count") +
+  theme(legend.text=element_text(size=16, family="Arial"))
+ggsave(out <- paste('result/','dN_dS_for_all_OGs','.svg', sep = ""), width=8, height=6, dpi=600)
 
 # plot the dN/dS larger than 0.5
 B3 <- B1[B1$dN_dS>0.5, ]
 ggplot(B3, aes(x = dN_dS, fill = group)) + geom_histogram(alpha = 0.5, bins = 50) +
   xlim(0.5, 1.5) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+  theme(axis.text=element_text(size=30, family="Arial"),
+        axis.title=element_text(size=36, family="Arial") ) +
+  xlab("dN/dS") + ylab("Count")+
   theme(legend.position = "none")
-
-
-
-
-
-
+ggsave(out <- paste('result/','dN_dS_larger_than_one_distribution','.svg', sep = ""), width=5, height=5, dpi=600)
 
 
 
@@ -189,9 +190,40 @@ gene_dn_ds_all_new$group <- as.factor(gene_dn_ds_all_new$group)
 ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, color = group)) +
   geom_boxplot() +
   ylim(0,1) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.pdf', sep = ""), width=8, height=6, dpi=600)
+
+# other versions which chould be put in the main figures
+# mutiple color
+ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS, fill=group))  + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + 
+  geom_boxplot() +
+  ylim(0,1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.eps', sep = ""), width=8, height=6, dpi=600)
+
+# single color
+ggplot(gene_dn_ds_all_new, aes(x = group, y = dN_dS))  + 
+  stat_boxplot(geom ='errorbar', width = 0.25) + 
+  geom_boxplot(color="blue") +
+  ylim(0,1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +  
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial") ) +
+  xlab("Orthologs with species number") + ylab("dN/dS")
+ggsave(out <- paste('result/','Relation_between_species_number_and_dN_dS_distribution','.svg', sep = ""), width=8, height=6, dpi=600)
+
+
+
 
 G1 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g1")
 G2 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g2")
@@ -199,10 +231,16 @@ G5 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g5")
 G6 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g6")
 G7 <- filter(gene_dn_ds_all_new, gene_dn_ds_all_new$group == "g7")
 
+# t.test
 t.test(G1$dN_dS, G7$dN_dS)
 t.test(G2$dN_dS, G7$dN_dS)
 t.test(G6$dN_dS, G7$dN_dS)
 t.test(G5$dN_dS, G6$dN_dS)
+
+# wilcon.test
+wilcox.test(G6$dN_dS, G7$dN_dS, alternative = "two.sided")
+wilcox.test(G5$dN_dS, G6$dN_dS, alternative = "two.sided")
+
 # save the gene dn_ds_all_new for re-usage
 write.table(gene_dn_ds_all_new, "result/gene_dn_ds_all_new.txt", row.names = FALSE, sep = "\t")
 
@@ -296,3 +334,173 @@ violins(
   ylab = "dN/dS", # y-axis label
   xlab = "Group of gene" # x-axis label
 )
+
+
+
+##########################################################################
+### analysis based on rxn info
+# combine model information with dN/dS
+gene_core_rxn <- read.table("data/model_info/corerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_core_rxn$V1 <- str_trim(gene_core_rxn$V1, side = "both")
+gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_core_rxn$V1[!str_detect(gene_core_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_core_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_core_rxn$V1)
+print(length(intersect(gene_core_rxn$OG, gene_dn_ds_all_new$OG)))
+gene_core_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_core_rxn$OG )
+gene_core_rxn <- gene_core_rxn[!(gene_core_rxn$dN_dS=="NA"),]
+gene_core_rxn$dN_dS <- as.numeric(gene_core_rxn$dN_dS)
+gene_core_rxn$type <- "1.core metabolic"
+
+
+
+gene_accessory_rxn <- read.table("data/model_info/accerxn_panid.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_accessory_rxn$V1 <- str_trim(gene_accessory_rxn$V1, side = "both")
+gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_accessory_rxn$V1[!str_detect(gene_accessory_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_accessory_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_accessory_rxn$V1)
+gene_accessory_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_accessory_rxn$OG )
+gene_accessory_rxn <- gene_accessory_rxn[!(gene_accessory_rxn$dN_dS=="NA"),]
+gene_accessory_rxn$dN_dS <- as.numeric(gene_accessory_rxn$dN_dS)
+gene_accessory_rxn$type <- "2.accessory metabolic"
+
+
+
+
+gene_pan_rxn <- read.table("data/model_info/panid_panrxn.txt", header = FALSE, stringsAsFactors = FALSE)
+gene_pan_rxn$V1 <- str_trim(gene_pan_rxn$V1, side = "both")
+gene_pan_rxn$V1[!str_detect(gene_pan_rxn$V1, "@")] <- paste("Saccharomyces_cerevisiae@", gene_pan_rxn$V1[!str_detect(gene_pan_rxn$V1, "@")], sep = "")
+# find OG id
+og_pan <- read_tsv("data/representatives.tsv")
+gene_pan_rxn$OG <- getSingleReactionFormula(og_pan$ortho_id,og_pan$representative,gene_pan_rxn$V1)
+gene_pan_rxn$dN_dS <- getSingleReactionFormula(gene_dn_ds_all_new$dN_dS, gene_dn_ds_all_new$OG,gene_pan_rxn$OG )
+gene_pan_rxn <- gene_pan_rxn[!(gene_pan_rxn$dN_dS=="NA"),]
+gene_pan_rxn$dN_dS <- as.numeric(gene_pan_rxn$dN_dS)
+gene_pan_rxn$type <- "3.pan metabolic"
+
+
+
+merge_dN_dS2 <- rbind.data.frame(gene_core_rxn, gene_accessory_rxn, gene_pan_rxn)
+ggplot(merge_dN_dS2, aes(x = type, y = dN_dS, fill = type)) + geom_boxplot() +
+  ylim(0, 0.5) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(legend.position = "none") +
+  theme(axis.text = element_text(size = 14), axis.title = element_text(size =14)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+g1 <- gene_core_rxn$dN_dS
+g2 <- gene_accessory_rxn$dN_dS
+g3 <- gene_pan_rxn$dN_dS
+
+wilcox.test(g1,g3, alternative = "two.sided")
+wilcox.test(g1,g2, alternative = "two.sided")
+wilcox.test(g2,g3, alternative = "two.sided")
+
+
+
+
+B1 <- select(gene_dn_ds_all_new, OG, dN_dS)
+M2 <- select(gene_pan_rxn, OG, dN_dS)
+M3 <- select(gene_core_rxn, OG, dN_dS)
+B1$group <- "All_OG"
+M2$group <- "Metabolic_OG"
+M3$group <- "Core_metabolic_OG"
+merge_dN_dS <- rbind.data.frame(B1, M2, M3)
+ggplot(merge_dN_dS, aes(x = dN_dS, fill = group)) + geom_density(alpha = 0.5) +
+  xlim(0, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text=element_text(size=20, family="Arial"),
+        axis.title=element_text(size=24, family="Arial"),
+        legend.text = element_text(size=16, family="Arial")) +
+  theme(legend.position = c(0.75, 0.3)) +
+  xlab("dN/dS") + ylab("Density") +
+  theme(legend.text=element_text(size=14, family="Arial"))
+
+write.csv(merge_dN_dS, "result/dataset_for_new_Fig.3A.csv")
+
+
+
+
+# add the species number informattion
+gene_core_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_core_rxn$OG)
+gene_core_rxn$species <- as.numeric(gene_core_rxn$species)
+
+gene_accessory_rxn$species <- getSingleReactionFormula(ortholog$species_num,ortholog$ID,gene_accessory_rxn$OG)
+gene_accessory_rxn$species <- as.numeric(gene_accessory_rxn$species)
+
+merge_dN_dS_species <- rbind.data.frame(gene_core_rxn, gene_accessory_rxn)
+
+
+# grou1
+g1 <- 0:100
+g2 <- 100:250
+g3 <- 250:300
+g4 <- 300:343
+merge_dN_dS_species$group <- NA
+for (i in 1:nrow(merge_dN_dS_species)) {
+  print(i)
+  if (merge_dN_dS_species$species[i] %in% g1) {
+    merge_dN_dS_species$group[i] <- "g1"
+  } else if (merge_dN_dS_species$species[i] %in% g2) {
+    merge_dN_dS_species$group[i] <- "g2"
+  } else if (merge_dN_dS_species$species[i] %in% g3) {
+    merge_dN_dS_species$group[i] <- "g3"
+  } else{
+    merge_dN_dS_species$group[i] <- "g4"
+  } 
+}
+
+pd = position_dodge(width = 0.75)
+ggplot(merge_dN_dS_species, aes(x=group, y=dN_dS, fill=type)) + 
+  stat_boxplot(geom="errorbar", position=pd, width=0.2) +# add caps +
+  geom_boxplot()+
+  xlab('Species number') + ylab('dN/dS') +
+  ylim(0,0.6)+
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1)) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  theme(legend.position = c(0.3,0.9)) +
+  theme(axis.text=element_text(size=16, family="Arial"),
+        axis.title=element_text(size=20,family="Arial"),
+        legend.text = element_text(size=16, family="Arial")) +
+  ggtitle('')
+
+# statitical analysis
+merge_dN_dS_species1 <- merge_dN_dS_species[merge_dN_dS_species$group=="g1", ]
+wilcox.test(merge_dN_dS_species1$dN_dS[merge_dN_dS_species1$type=="1.core metabolic"], merge_dN_dS_species1$dN_dS[merge_dN_dS_species1$type=="2.accessory metabolic"], alternative = "two.sided")
+
+
+merge_dN_dS_species2 <- merge_dN_dS_species[merge_dN_dS_species$group=="g2", ]
+wilcox.test(merge_dN_dS_species2$dN_dS[merge_dN_dS_species2$type=="1.core metabolic"], merge_dN_dS_species2$dN_dS[merge_dN_dS_species2$type=="2.accessory metabolic"], alternative = "two.sided")
+
+
+merge_dN_dS_species3 <- merge_dN_dS_species[merge_dN_dS_species$group=="g3", ]
+wilcox.test(merge_dN_dS_species3$dN_dS[merge_dN_dS_species3$type=="1.core metabolic"], merge_dN_dS_species3$dN_dS[merge_dN_dS_species3$type=="2.accessory metabolic"], alternative = "two.sided")
+
+
+merge_dN_dS_species4 <- merge_dN_dS_species[merge_dN_dS_species$group=="g4", ]
+wilcox.test(merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="1.core metabolic"], merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="2.accessory metabolic"], alternative = "two.sided")
+
+# compare g3 & g4
+wilcox.test(merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="1.core metabolic"], merge_dN_dS_species3$dN_dS[merge_dN_dS_species3$type=="1.core metabolic"], alternative = "two.sided")
+wilcox.test(merge_dN_dS_species4$dN_dS[merge_dN_dS_species4$type=="1.core metabolic"], merge_dN_dS_species3$dN_dS[merge_dN_dS_species3$type=="2.accessory metabolic"], alternative = "two.sided")
+
+
+
+'
+# the rxn and GPR mapping in the pan-GEM
+library(readxl)
+rxnMatrix_model <- read_excel("data/model_info/rxnMatrix_model.xlsx", 
+                              col_names = FALSE)
+
+colnames(rxnMatrix_model) <- c("rxn_num","rxnID","GPR")
+
+rxnMatrix_model$GPR0 <- rxnMatrix_model$GPR %>% str_replace_all(.,"\\(", "") %>%
+  str_replace_all(.,"\\)", "") %>% str_replace_all(.," and ", "&&") %>% str_replace_all(.," or ", "&&")
+rxnMatrix_model01 <- splitAndCombine(rxnMatrix_model$GPR0, rxnMatrix_model$rxnID, sep0 = "&&")
+colnames(rxnMatrix_model01) <- c("panID","rxnID")
+rxnMatrix_model01$panID <- str_trim(rxnMatrix_model01$panID, side = "both")
+rxnMatrix_model01$rxnID <- str_trim(rxnMatrix_model01$rxnID, side = "both")
+rxnMatrix_model01$combine <- paste(rxnMatrix_model01$panID, rxnMatrix_model01$rxnID, sep = "&&")
+rxnMatrix_model02 <- rxnMatrix_model01[!duplicated(rxnMatrix_model01$combine),]
+og_rxn_num <- as.data.frame(table(rxnMatrix_model02$panID), stringsAsFactors = FALSE)'
